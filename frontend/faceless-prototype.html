@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faceless. Prove your alpha, stay faceless.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<style>
+  :root {
+    --paper: #EFEBE2;
+    --paper-2: #E7E2D7;
+    --card: #F6F4EE;
+    --ink: #14170F;
+    --ink-soft: #595D4E;
+    --ink-faint: #8C8F7E;
+    --line: #D6D1C3;
+    --line-strong: #C1BBA9;
+    --seal: #1F6B45;
+    --seal-deep: #164E32;
+    --seal-soft: #DDE8DF;
+    --lime: #DCEE55;
+    --clay: #C15B3C;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased;
+    line-height: 1.5; overflow-x: hidden;
+  }
+  .display { font-family: 'Space Grotesk', sans-serif; }
+  .accent-serif { font-family: 'Fraunces', serif; font-style: italic; font-weight: 500; }
+  .mono { font-family: 'Space Mono', monospace; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+  a { color: inherit; text-decoration: none; }
+
+  body::before {
+    content: ''; position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.045;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* ===== ISLAND NAV ===== */
+  nav {
+    position: sticky; top: 18px; z-index: 60;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 18px 0 0;
+  }
+  .brand { display: flex; align-items: center; gap: 11px; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: -0.02em; }
+  .brand .mark { width: 32px; height: 32px; }
+  .island {
+    display: flex; align-items: center; gap: 4px;
+    background: rgba(246,244,238,0.72);
+    border: 1px solid var(--line-strong);
+    backdrop-filter: blur(16px) saturate(140%); -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border-radius: 999px; padding: 7px 7px 7px 12px;
+    box-shadow: 0 14px 40px -18px rgba(20,23,15,0.35);
+  }
+  .island .links { display: flex; gap: 2px; font-size: 14px; color: var(--ink-soft); }
+  .island .links a { padding: 10px 16px; border-radius: 999px; transition: color 0.15s ease, background 0.15s ease; }
+  .island .links a:hover { color: var(--ink); background: rgba(20,23,15,0.05); }
+
+  .btn {
+    font-family: 'Inter', sans-serif; font-size: 13px; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.04em;
+    padding: 12px 22px; border-radius: 999px;
+    border: 1px solid var(--ink); background: transparent; color: var(--ink);
+    cursor: pointer; display: inline-flex; align-items: center; gap: 9px;
+    transition: transform 0.2s cubic-bezier(0.2,0.8,0.3,1), background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+  .btn:hover { transform: translateY(-2px); background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .btn-seal { background: var(--seal); color: #F3F7F0; border-color: var(--seal); }
+  .btn-seal:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .island .btn { padding: 11px 20px; margin-left: 4px; }
+  .btn .arr { transition: transform 0.2s ease; }
+  .btn:hover .arr { transform: translate(2px,0); }
+
+  /* ===== HERO ===== */
+  .hero { padding-top: 20px; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; min-height: 620px; }
+  .hero-left { padding: 40px 0; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 7px 18px 7px 8px; border-radius: 999px;
+    background: var(--card); border: 1px solid var(--line-strong);
+    font-size: 13.5px; color: var(--ink-soft); margin-bottom: 28px;
+  }
+  .badge .dot { width: 22px; height: 22px; border-radius: 50%; background: var(--seal); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .badge .dot svg { width: 12px; height: 12px; }
+  .badge b { color: var(--seal); font-weight: 600; }
+
+  h1 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 72px; line-height: 0.99; letter-spacing: -0.035em; }
+  h1 .accent-serif { color: var(--seal); font-weight: 500; letter-spacing: -0.01em; }
+
+  .hero-sub { margin-top: 26px; font-size: 18px; color: var(--ink-soft); max-width: 440px; line-height: 1.6; }
+  .hero-sub b { color: var(--ink); font-weight: 600; }
+
+  .hero-cta { margin-top: 36px; display: flex; align-items: center; gap: 20px; }
+  .text-link { font-size: 14px; font-weight: 600; color: var(--ink); border-bottom: 1.5px solid var(--ink); padding-bottom: 3px; display: inline-flex; align-items: center; gap: 7px; transition: gap 0.2s ease; }
+  .text-link:hover { gap: 11px; }
+
+  .hero-note { margin-top: 26px; font-family: 'Space Mono', monospace; font-size: 11.5px; color: var(--ink-faint); letter-spacing: 0.02em; }
+
+  /* ===== HANGING SEALED TAG ===== */
+  .tag-stage { position: relative; display: flex; align-items: center; justify-content: center; min-height: 560px; }
+  .tag-hook { position: relative; }
+  .tag-string { position: absolute; left: 50%; top: -46px; width: 2px; height: 52px; background: var(--line-strong); transform-origin: top center; }
+  .tag {
+    position: relative; width: 340px;
+    background: var(--card); border: 1px solid var(--line-strong);
+    border-radius: 20px; padding: 26px;
+    transform: rotate(-3deg);
+    box-shadow: 0 42px 70px -26px rgba(20,23,15,0.42);
+    transition: transform 0.4s cubic-bezier(0.2,0.8,0.3,1), box-shadow 0.4s ease;
+  }
+  .tag::after { content: ''; position: absolute; inset: 9px; border: 1.5px dashed var(--line-strong); border-radius: 13px; pointer-events: none; }
+  .tag-punch { position: absolute; top: -1px; left: 50%; transform: translateX(-50%); width: 34px; height: 17px; background: var(--paper); border: 1px solid var(--line-strong); border-top: none; border-radius: 0 0 999px 999px; }
+  .tag-punch::after { content: ''; position: absolute; top: 3px; left: 50%; transform: translateX(-50%); width: 8px; height: 8px; border-radius: 50%; background: var(--line-strong); }
+  .tag-head { display: flex; justify-content: space-between; font-family: 'Space Mono', monospace; font-size: 10.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-faint); margin-top: 14px; }
+  .tag-rows { margin-top: 22px; }
+  .trow { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .trow:last-child { border-bottom: none; }
+  .tlabel { font-family: 'Space Mono', monospace; font-size: 10.5px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink-soft); }
+  .tlabel span { color: var(--ink-faint); }
+  .redact { height: 18px; flex: 1; max-width: 130px; border-radius: 4px; background: var(--ink); position: relative; overflow: hidden; }
+  .tval { font-family: 'Space Mono', monospace; font-size: 16px; font-weight: 700; color: var(--seal); }
+  .tag-foot { margin-top: 18px; padding-top: 16px; border-top: 1px dashed var(--line-strong); display: flex; align-items: center; justify-content: space-between; }
+  .tag-hash { font-family: 'Space Mono', monospace; font-size: 10.5px; color: var(--ink-faint); }
+  /* wax seal, our signature detail */
+  .wax { width: 42px; height: 42px; border-radius: 50%; background: var(--seal); display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 8px -2px rgba(31,107,69,0.5); position: relative; }
+  .wax::before { content: ''; position: absolute; inset: 4px; border: 1px dashed rgba(243,247,240,0.5); border-radius: 50%; }
+  .wax svg { width: 18px; height: 18px; }
+
+  /* torn testimonial, clay edge kept as our rare secondary */
+  .torn { position: absolute; right: 2px; bottom: 66px; z-index: 5; background: var(--paper); border: 1px solid var(--line); border-left: 3px solid var(--seal); padding: 13px 18px; transform: rotate(3deg); box-shadow: 0 16px 30px -16px rgba(20,23,15,0.4); max-width: 250px; }
+  .torn p { font-family: 'Fraunces', serif; font-style: italic; font-size: 15.5px; color: var(--ink); }
+
+  /* ===== SECTIONS ===== */
+  section { position: relative; }
+  .sec-pad { padding: 96px 0; }
+  .band { border-top: 1px solid var(--line); }
+  .sec-label { font-family: 'Space Mono', monospace; font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+  .sec-label::before { content: ''; width: 22px; height: 1px; background: var(--ink-faint); }
+  h2 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 44px; line-height: 1.05; letter-spacing: -0.03em; max-width: 640px; }
+  h2 .accent-serif { color: var(--seal); }
+  .lead { margin-top: 20px; font-size: 18px; color: var(--ink-soft); max-width: 560px; line-height: 1.6; }
+  .reveal { opacity: 1; }
+  /* when GSAP will animate, pre-hide the animated pieces to avoid a flash before ScrollTrigger fires */
+  .gsap-armed .reveal .sec-label,
+  .gsap-armed .reveal h2,
+  .gsap-armed .reveal .lead,
+  .gsap-armed .trap-grid > *,
+  .gsap-armed .steps > *,
+  .gsap-armed .idx-grid > *,
+  .gsap-armed .third-door,
+  .gsap-armed .split .art-cell,
+  .gsap-armed .peek { opacity: 0; }
+
+  /* trap */
+  .trap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 44px; }
+  .door { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 30px 28px; transition: transform 0.4s cubic-bezier(0.2,0.9,0.3,1), border-color 0.3s ease, box-shadow 0.4s ease; }
+  .door:hover { transform: translateY(-6px); border-color: var(--line-strong); box-shadow: 0 22px 40px -24px rgba(20,23,15,0.3); }
+  .door-tag { font-family: 'Space Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--clay); margin-bottom: 14px; }
+  .door h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 20px; margin-bottom: 10px; text-decoration: line-through; text-decoration-color: var(--clay); text-decoration-thickness: 2px; opacity: 0.62; }
+  .door p { color: var(--ink-soft); font-size: 14.5px; line-height: 1.6; }
+  .third-door { margin-top: 16px; padding: 26px 30px; border-radius: 16px; background: var(--seal-soft); border: 1px solid var(--seal); display: flex; align-items: center; gap: 20px; }
+  .third-door .tdart { width: 76px; height: 76px; flex-shrink: 0; }
+  .third-door p { font-size: 16px; color: var(--ink); }
+  .third-door p b { font-family: 'Space Grotesk', sans-serif; }
+
+  /* how */
+  .steps { margin-top: 46px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; perspective: 1000px; }
+  .step { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 26px 22px 30px; transform-style: preserve-3d; transition: transform 0.45s cubic-bezier(0.34,1.4,0.5,1), border-color 0.3s ease, box-shadow 0.45s ease; }
+  .step:hover { transform: translateY(-6px) rotateY(-8deg) rotateX(6deg) rotate(-1.5deg); border-color: var(--seal); box-shadow: 0 26px 44px -22px rgba(31,107,69,0.32); }
+  .step-n { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--seal); margin-bottom: 34px; font-weight: 700; }
+  .step h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 16px; margin-bottom: 8px; }
+  .step p { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+  .step-ico { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--ink-soft); margin-bottom: 14px; height: 16px; }
+
+  /* indexes */
+  .idx-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .idx-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px; transition: transform 0.4s cubic-bezier(0.2,0.9,0.3,1), border-color 0.3s ease, box-shadow 0.4s ease; }
+  .idx-card:hover { transform: translateY(-6px); border-color: var(--seal); box-shadow: 0 22px 40px -24px rgba(31,107,69,0.28); }
+  .idx-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+  .idx-name { font-family: 'Space Mono', monospace; font-size: 13px; font-weight: 700; }
+  .idx-ver { font-family: 'Space Mono', monospace; font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--seal); display: inline-flex; align-items: center; gap: 5px; }
+  .idx-ver::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--seal); }
+  .idx-return { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 32px; letter-spacing: -0.02em; }
+  .idx-return.up { color: var(--seal); }
+  .idx-return.down { color: var(--clay); }
+  .idx-strat { margin-top: 16px; display: flex; align-items: center; gap: 10px; }
+  .idx-strat .label { font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); }
+  .idx-strat .b { flex: 1; height: 12px; border-radius: 4px; background: var(--ink); }
+
+  /* product split */
+  .split { display: grid; grid-template-columns: 1fr 0.8fr; gap: 56px; align-items: center; margin-top: 44px; }
+  .split .art-cell { aspect-ratio: 1; max-width: 320px; margin: 0 auto; width: 100%; position: relative; }
+  .art-cell::before { content: ''; position: absolute; inset: 14%; background: radial-gradient(circle, rgba(31,107,69,0.12), transparent 68%); filter: blur(22px); }
+  .art-cell svg { position: relative; width: 100%; height: 100%; }
+  .peek { margin-top: 44px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; }
+  .peek-bar { display: flex; align-items: center; gap: 8px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+  .peek-dot { width: 9px; height: 9px; border-radius: 50%; border: 1px solid var(--line-strong); }
+  .peek-url { font-family: 'Space Mono', monospace; font-size: 11px; color: var(--ink-faint); margin-left: 8px; }
+  .peek-body { display: grid; grid-template-columns: 1fr 1fr; }
+  .peek-side { padding: 28px; border-right: 1px solid var(--line); }
+  .peek-side h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 15px; margin-bottom: 20px; }
+  .peek-field { margin-bottom: 14px; }
+  .peek-field .fl { font-family: 'Space Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); margin-bottom: 7px; }
+  .peek-field .fv { height: 34px; border-radius: 7px; background: var(--ink); }
+  .peek-right { padding: 28px; display: flex; flex-direction: column; justify-content: center; gap: 14px; }
+  .peek-metric { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 12px; border-bottom: 1px solid var(--line); }
+  .peek-metric .m-l { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); }
+  .peek-metric .m-v { font-family: 'Space Mono', monospace; font-weight: 700; font-size: 16px; color: var(--seal); }
+
+  /* closing */
+  .closing { text-align: center; padding: 104px 0; }
+  .closing h2 { margin: 0 auto; font-size: 50px; max-width: 780px; }
+  .closing .lead { margin: 22px auto 0; }
+  .closing .hero-cta { justify-content: center; margin-top: 38px; }
+
+  /* footer */
+  footer { border-top: 1px solid var(--line); padding: 34px 0; }
+  .foot-in { display: flex; justify-content: space-between; align-items: center; }
+  .foot-l { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--ink-soft); }
+  .foot-r { display: flex; align-items: center; gap: 18px; }
+  .foot-r .textlinks { font-family: 'Space Mono', monospace; font-size: 12px; color: var(--ink-faint); display: flex; gap: 16px; }
+  .foot-r .textlinks a:hover { color: var(--ink); }
+  .foot-social { display: flex; align-items: center; gap: 10px; padding-left: 16px; border-left: 1px solid var(--line); }
+  .foot-social a { width: 34px; height: 34px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 1px solid var(--line-strong); color: var(--ink-soft); transition: transform 0.18s ease, background 0.18s ease, color 0.18s ease, border-color 0.18s ease; }
+  .foot-social a:hover { background: var(--seal); border-color: var(--seal); color: #F3F7F0; transform: translateY(-2px); }
+  .foot-social svg { width: 15px; height: 15px; }
+
+  /* wallet modal */
+  .modal-layer { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
+  .modal-layer.open { display: flex; }
+  .modal-backdrop { position: absolute; inset: 0; background: rgba(20,23,15,0.4); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); }
+  .modal-card { position: relative; width: 100%; max-width: 400px; border-radius: 20px; padding: 28px; background: var(--card); border: 1px solid var(--line-strong); box-shadow: 0 50px 100px -30px rgba(20,23,15,0.4); animation: modin 0.3s cubic-bezier(0.2,0.9,0.3,1); }
+  @keyframes modin { from { opacity: 0; transform: translateY(14px) scale(0.98); } to { opacity: 1; transform: none; } }
+  .modal-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .modal-head h3 { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; }
+  .modal-close { width: 30px; height: 30px; border-radius: 50%; border: 1px solid var(--line-strong); background: transparent; color: var(--ink-soft); cursor: pointer; display: flex; align-items: center; justify-content: center; }
+  .modal-close:hover { background: var(--paper-2); color: var(--ink); }
+  .modal-sub { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 22px; }
+  .wallet-list { display: flex; flex-direction: column; gap: 10px; }
+  .wallet-opt { display: flex; align-items: center; gap: 14px; width: 100%; padding: 13px 16px; border-radius: 12px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); cursor: pointer; font-size: 14.5px; font-weight: 500; text-align: left; transition: border-color 0.18s, background 0.18s, transform 0.18s; }
+  .wallet-opt:hover { border-color: var(--seal); background: var(--seal-soft); transform: translateX(2px); }
+  .wallet-icon { width: 34px; height: 34px; border-radius: 9px; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; flex-shrink: 0; }
+  .wallet-opt .chev { margin-left: auto; color: var(--ink-faint); font-size: 16px; }
+  .modal-foot-note { margin-top: 20px; font-family: 'Space Mono', monospace; font-size: 10.5px; color: var(--ink-faint); text-align: center; }
+  .connecting-state { display: none; flex-direction: column; align-items: center; padding: 30px 0 10px; text-align: center; }
+  .connecting-state.show { display: flex; }
+  .spinner { width: 44px; height: 44px; border-radius: 50%; border: 3px solid var(--line); border-top-color: var(--seal); animation: spin 0.8s linear infinite; margin-bottom: 20px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .connecting-state p { font-size: 14px; color: var(--ink-soft); }
+  .connecting-state .wname { color: var(--ink); font-weight: 600; }
+
+  /* dashboard */
+  #dashboard-view { display: none; }
+  #dashboard-view.show { display: block; }
+  #site-view.hide { display: none; }
+  .wallet-pill { display: flex; align-items: center; gap: 9px; padding: 8px 16px 8px 8px; border-radius: 999px; font-family: 'Space Mono', monospace; font-size: 12.5px; color: var(--ink); margin-left: 4px; }
+  .wallet-pill .wdot { width: 8px; height: 8px; border-radius: 50%; background: var(--seal); box-shadow: 0 0 0 3px rgba(31,107,69,0.18); }
+  .wallet-pill .wico { width: 22px; height: 22px; border-radius: 6px; display: flex; align-items: center; justify-content: center; font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 10px; }
+  .dash-head { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; flex-wrap: wrap; gap: 20px; }
+  .dash-head h1 { font-size: 40px; }
+  .dash-head .lead { margin-top: 10px; }
+  .dash-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px; }
+  .dstat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 24px 26px; }
+  .dstat .dl { font-family: 'Space Mono', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-faint); margin-bottom: 12px; }
+  .dstat .dv { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 32px; letter-spacing: -0.02em; }
+  .dstat .dv.sc { color: var(--seal); }
+  .dash-section-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
+  .dash-section-head h2 { font-size: 22px; }
+  .mint-card { background: transparent; border: 1px dashed var(--line-strong); border-radius: 16px; padding: 22px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; min-height: 168px; cursor: pointer; transition: border-color 0.2s, background 0.2s, transform 0.2s; }
+  .mint-card:hover { border-color: var(--seal); background: var(--seal-soft); transform: translateY(-3px); }
+  .mint-card .plus { width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line-strong); display: flex; align-items: center; justify-content: center; font-size: 20px; color: var(--ink-soft); }
+  .mint-card span { font-family: 'Space Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-soft); }
+  .activity-log { background: var(--card); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .alog-row { display: flex; align-items: center; gap: 16px; padding: 15px 22px; border-bottom: 1px solid var(--line); font-family: 'Space Mono', monospace; font-size: 12.5px; }
+  .alog-row:last-child { border-bottom: none; }
+  .alog-t { color: var(--ink-faint); width: 70px; flex-shrink: 0; }
+  .alog-a { color: var(--ink); flex: 1; }
+  .alog-h { color: var(--ink-faint); }
+  .alog-status { padding: 3px 10px; border-radius: 999px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--seal); background: var(--seal-soft); }
+
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .reveal { opacity: 1 !important; transform: none !important; } }
+  @media (max-width: 940px) {
+    .hero-grid { grid-template-columns: 1fr; }
+    .tag-stage { min-height: 460px; order: -1; }
+    h1 { font-size: 52px; }
+    .trap-grid { grid-template-columns: 1fr; }
+    .steps { grid-template-columns: 1fr 1fr; }
+    .idx-grid { grid-template-columns: 1fr; }
+    .split { grid-template-columns: 1fr; }
+    .peek-body { grid-template-columns: 1fr; }
+    .peek-side { border-right: none; border-bottom: 1px solid var(--line); }
+    .closing h2 { font-size: 34px; }
+    h2 { font-size: 30px; }
+    .island .links { display: none; }
+    .dash-stats { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    .wrap { padding: 0 22px; }
+    h1 { font-size: 42px; }
+    .steps { grid-template-columns: 1fr; }
+    .foot-in { flex-direction: column; gap: 16px; }
+  }
+</style>
+</head>
+<body>
+<div id="site-view">
+<div class="wrap">
+  <nav>
+    <a class="brand" href="#">
+      <svg class="mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#14170F" stroke-width="2"/><rect x="2" y="13.5" width="28" height="5" rx="1" fill="#14170F"/></svg>
+      faceless
+    </a>
+    <div class="island">
+      <div class="links">
+        <a href="#how">how it works</a>
+        <a href="#indexes">live indexes</a>
+        <a href="#app">the product</a>
+      </div>
+      <button class="btn btn-seal" onclick="Faceless.openWallet()">connect wallet</button>
+    </div>
+  </nav>
+</div>
+
+<header class="hero wrap">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <span class="badge"><span class="dot"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F3F7F0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></span>Live on <b>sepolia</b> testnet</span>
+      <h1 class="display">Prove your alpha.<br>Stay <span class="accent-serif">faceless.</span></h1>
+      <p class="hero-sub">Launch an onchain index around your thesis. Followers see a <b>verified track record</b>. The trades behind it stay sealed, even from us.</p>
+      <div class="hero-cta">
+        <button class="btn btn-seal" onclick="Faceless.openWallet()">mint an index <span class="arr">→</span></button>
+        <a class="text-link" href="#how">read the proof <span>↘</span></a>
+      </div>
+      <p class="hero-note">zero-knowledge verified performance. no positions revealed.</p>
+    </div>
+
+    <div class="tag-stage">
+      <div class="tag-hook">
+        <span class="tag-string" id="tagString"></span>
+        <div class="tag" id="tag">
+          <span class="tag-punch"></span>
+          <div class="tag-head"><span>FACELESS INDEX</span><span>#A1F0</span></div>
+          <div class="tag-rows">
+            <div class="trow"><span class="tlabel">Strategy <span>/ sealed</span></span><span class="redact"></span></div>
+            <div class="trow"><span class="tlabel">Rebalance <span>/ sealed</span></span><span class="redact" style="max-width:100px;"></span></div>
+            <div class="trow"><span class="tlabel">Identity <span>/ withheld</span></span><span class="redact" style="max-width:84px;"></span></div>
+            <div class="trow"><span class="tlabel">Performance <span>/ verified</span></span><span class="tval">+41.2%</span></div>
+          </div>
+          <div class="tag-foot">
+            <span class="tag-hash">proof 0x8f2a.c1e4</span>
+            <span class="wax"><svg viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#F3F7F0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </div>
+        </div>
+        <div class="torn"><p>"finally, proof I can show without getting copied."</p></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="band sec-pad">
+  <div class="wrap reveal">
+    <div class="sec-label">the problem</div>
+    <h2 class="display">Every alpha caller lives with the same trade off.</h2>
+    <div class="trap-grid">
+      <div class="door">
+        <div class="door-tag">option one</div>
+        <h3 class="display">Reveal the whole strategy</h3>
+        <p>Get front run within a day. Lose the edge that made the returns real in the first place.</p>
+      </div>
+      <div class="door">
+        <div class="door-tag">option two</div>
+        <h3 class="display">Ask people to trust you</h3>
+        <p>No verification, no accountability. A screenshot of a portfolio proves nothing.</p>
+      </div>
+    </div>
+    <div class="third-door">
+      <span class="tdart" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none"><circle cx="60" cy="38" r="17" stroke="#1F6B45" stroke-width="3"/><rect x="43" y="32" width="34" height="9" rx="2" fill="#1F6B45"/><path d="M36 96v-12c0-13 11-24 24-24s24 11 24 24v12" stroke="#1F6B45" stroke-width="3" stroke-linecap="round"/><rect x="78" y="74" width="30" height="24" rx="4" fill="#EFEBE2" stroke="#1F6B45" stroke-width="2.4" transform="rotate(-10 93 86)"/><path d="M86 86l3.5 3.5 7-7" stroke="#1F6B45" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-10 93 86)"/></svg>
+      </span>
+      <p><b>Faceless is the third door.</b> Verifiable and private at once. The returns are provably real, the trades behind them are never shown.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band sec-pad" id="how">
+  <div class="wrap reveal">
+    <div class="sec-label">how it works</div>
+    <h2 class="display">Four steps from thesis to <span class="accent-serif">onchain proof</span>.</h2>
+    <div class="steps">
+      <div class="step"><div class="step-n">01</div><div class="step-ico">seal</div><h4 class="display">Seal an index</h4><p>Define your thesis. Positions and weights are sealed the moment you mint.</p></div>
+      <div class="step"><div class="step-n">02</div><div class="step-ico">+24.1%</div><h4 class="display">Trade live</h4><p>The index trades against real SoSoValue benchmark data.</p></div>
+      <div class="step"><div class="step-n">03</div><div class="step-ico">0x8f2a.c1</div><h4 class="display">Generate proof</h4><p>A zero-knowledge proof confirms the returns without exposing a single trade.</p></div>
+      <div class="step"><div class="step-n">04</div><div class="step-ico" style="color:var(--seal);">verified</div><h4 class="display">Verify onchain</h4><p>Anyone can confirm the record on Sepolia. The strategy stays sealed.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band sec-pad" id="indexes">
+  <div class="wrap reveal">
+    <div class="sec-label">verified indexes</div>
+    <h2 class="display">Real returns. <span class="accent-serif">Sealed</span> strategies.</h2>
+    <p class="lead">Each card shows a live index with a verified track record. The performance is proven onchain. The positions behind it stay sealed.</p>
+    <div class="idx-grid">
+      <div class="idx-card"><div class="idx-top"><span class="idx-name">AI-WEB3.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+41.2%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
+      <div class="idx-card"><div class="idx-top"><span class="idx-name">MACRO-HEDGE.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+18.7%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
+      <div class="idx-card"><div class="idx-top"><span class="idx-name">L1-ROTATION.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return down">-3.1%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band sec-pad" id="app">
+  <div class="wrap reveal">
+    <div class="sec-label">inside the product</div>
+    <h2 class="display">You see the returns. You never see <span class="accent-serif">the trades</span>.</h2>
+    <div class="split">
+      <div><p class="lead" style="margin-top:0;">Every metric that proves performance stays public. Every position that could be copied stays sealed. The proof confirms one without ever exposing the other.</p></div>
+      <div class="art-cell" aria-hidden="true">
+        <svg viewBox="0 0 240 240" fill="none"><path d="M40 120c26-40 54-60 80-60s54 20 80 60c-26 40-54 60-80 60s-54-20-80-60Z" stroke="#1F6B45" stroke-width="4" stroke-linejoin="round"/><path d="M40 120c26-40 54-60 80-60s54 20 80 60c-26 40-54 60-80 60s-54-20-80-60Z" fill="#1F6B45" opacity="0.06"/><circle cx="120" cy="120" r="24" stroke="#1F6B45" stroke-width="3.5"/><circle cx="120" cy="120" r="8" fill="#1F6B45"/><rect x="36" y="108" width="168" height="24" rx="6" fill="#14170F"/></svg>
+      </div>
+    </div>
+    <div class="peek">
+      <div class="peek-bar"><span class="peek-dot"></span><span class="peek-dot"></span><span class="peek-dot"></span><span class="peek-url">faceless.xyz/index/ai-web3</span></div>
+      <div class="peek-body">
+        <div class="peek-side"><h4 class="display">Sealed strategy</h4><div class="peek-field"><div class="fl">holdings</div><div class="fv"></div></div><div class="peek-field"><div class="fl">weights</div><div class="fv"></div></div><div class="peek-field"><div class="fl">rebalance rule</div><div class="fv"></div></div></div>
+        <div class="peek-right"><div class="peek-metric"><span class="m-l">verified return</span><span class="m-v">+41.2%</span></div><div class="peek-metric"><span class="m-l">sharpe</span><span class="m-v">2.14</span></div><div class="peek-metric"><span class="m-l">max drawdown</span><span class="m-v" style="color:var(--clay);">-8.3%</span></div><div class="peek-metric" style="border:none;"><span class="m-l">proof</span><span class="m-v" style="font-size:12px;">0x8f2a.c1e4</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band closing">
+  <div class="wrap reveal">
+    <h2 class="display">You just verified a track record<br>you were never <span class="accent-serif">allowed to see</span>.</h2>
+    <p class="lead">That is the whole product. Provable performance, sealed strategy, onchain.</p>
+    <div class="hero-cta">
+      <button class="btn btn-seal" onclick="Faceless.openWallet()">mint your first index <span class="arr">→</span></button>
+      <a class="text-link" href="#">read the docs <span>↘</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <span class="foot-l">faceless, built on sosovalue</span>
+    <span class="foot-r">
+      <span class="textlinks"><a href="#">sepolia</a><a href="#">ssi</a></span>
+      <span class="foot-social">
+        <a href="#" aria-label="X" title="X, link pending"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23.3 22h-7l-5.5-7.2L4.4 22H1.3l8.1-9.3L1 2h7.2l5 6.6L18.9 2Zm-1.2 18h1.7L7.4 4H5.6l12.1 16Z"/></svg></a>
+        <a href="#" aria-label="GitHub" title="GitHub, link pending"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5A10.5 10.5 0 0 0 1.5 12c0 4.66 3.02 8.61 7.22 10.01.53.1.72-.23.72-.51v-1.98c-2.94.64-3.56-1.25-3.56-1.25-.48-1.22-1.17-1.55-1.17-1.55-.96-.65.07-.64.07-.64 1.06.07 1.62 1.09 1.62 1.09.94 1.61 2.46 1.15 3.06.88.1-.68.37-1.15.67-1.42-2.35-.27-4.82-1.17-4.82-5.22 0-1.15.41-2.09 1.09-2.83-.11-.27-.47-1.36.1-2.83 0 0 .89-.28 2.92 1.08a10.1 10.1 0 0 1 5.32 0c2.03-1.36 2.92-1.08 2.92-1.08.57 1.47.21 2.56.1 2.83.68.74 1.09 1.68 1.09 2.83 0 4.06-2.48 4.95-4.84 5.21.38.33.72.97.72 1.96v2.9c0 .28.19.62.73.51A10.51 10.51 0 0 0 22.5 12 10.5 10.5 0 0 0 12 1.5Z"/></svg></a>
+      </span>
+    </span>
+  </div>
+</footer>
+</div>
+
+<div class="modal-layer" id="wallet-modal">
+  <div class="modal-backdrop" onclick="Faceless.closeWallet()"></div>
+  <div class="modal-card">
+    <div id="wallet-select-state">
+      <div class="modal-head"><h3 class="display">Connect wallet</h3><button class="modal-close" onclick="Faceless.closeWallet()">&times;</button></div>
+      <p class="modal-sub">Choose a wallet to connect. This is a simulated demo flow.</p>
+      <div class="wallet-list">
+        <button class="wallet-opt" onclick="Faceless.selectWallet('MetaMask','#C15B3C','M')"><span class="wallet-icon" style="background:rgba(193,91,60,0.16);color:#C15B3C;">M</span>MetaMask<span class="chev">&rsaquo;</span></button>
+        <button class="wallet-opt" onclick="Faceless.selectWallet('Coinbase Wallet','#2C5FF6','C')"><span class="wallet-icon" style="background:rgba(44,95,246,0.16);color:#2C5FF6;">C</span>Coinbase Wallet<span class="chev">&rsaquo;</span></button>
+        <button class="wallet-opt" onclick="Faceless.selectWallet('WalletConnect','#3B99FC','W')"><span class="wallet-icon" style="background:rgba(59,153,252,0.16);color:#3B99FC;">W</span>WalletConnect<span class="chev">&rsaquo;</span></button>
+        <button class="wallet-opt" onclick="Faceless.selectWallet('Rainbow','#1F6B45','R')"><span class="wallet-icon" style="background:rgba(31,107,69,0.16);color:#1F6B45;">R</span>Rainbow<span class="chev">&rsaquo;</span></button>
+      </div>
+      <p class="modal-foot-note">by connecting you agree to sepolia testnet only. no mainnet funds are used.</p>
+    </div>
+    <div class="connecting-state" id="connecting-state"><div class="spinner"></div><p>Connecting to <span class="wname" id="connecting-wname">wallet</span></p></div>
+  </div>
+</div>
+
+<div id="dashboard-view">
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><svg class="mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#14170F" stroke-width="2"/><rect x="2" y="13.5" width="28" height="5" rx="1" fill="#14170F"/></svg>faceless</a>
+      <div class="island">
+        <div class="links"><a href="#" onclick="Faceless.backToSite(); return false;">back to site</a></div>
+        <span class="wallet-pill"><span class="wdot"></span><span class="wico" id="db-wico" style="background:rgba(31,107,69,0.16);color:#1F6B45;">R</span><span id="db-waddr">0x71a2.9f3c</span></span>
+      </div>
+    </nav>
+    <div class="sec-pad" style="padding-top:40px;">
+      <div class="dash-head">
+        <div><h1 class="display">Your indexes</h1><p class="lead">Sealed strategies, verified performance. Only you can see what is inside.</p></div>
+        <button class="btn btn-seal" onclick="Faceless.openWallet()">mint new index <span class="arr">→</span></button>
+      </div>
+      <div class="dash-stats">
+        <div class="dstat"><div class="dl">Sealed indexes</div><div class="dv">3</div></div>
+        <div class="dstat"><div class="dl">Verified proofs</div><div class="dv sc">3</div></div>
+        <div class="dstat"><div class="dl">Best verified return</div><div class="dv sc">+41.2%</div></div>
+      </div>
+      <div class="dash-section-head"><h2 class="display">Sealed indexes</h2></div>
+      <div class="idx-grid" style="margin-top:0;">
+        <div class="idx-card"><div class="idx-top"><span class="idx-name">AI-WEB3.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+41.2%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
+        <div class="idx-card"><div class="idx-top"><span class="idx-name">MACRO-HEDGE.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+18.7%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
+        <div class="mint-card" onclick="Faceless.openWallet()"><span class="plus">+</span><span>Mint new index</span></div>
+      </div>
+      <div class="dash-section-head" style="margin-top:48px;"><h2 class="display">Activity</h2></div>
+      <div class="activity-log">
+        <div class="alog-row"><span class="alog-t">2m ago</span><span class="alog-a">Proof generated for AI-WEB3.fcl</span><span class="alog-h">0x8f2a.c1e4</span><span class="alog-status">verified</span></div>
+        <div class="alog-row"><span class="alog-t">1h ago</span><span class="alog-a">Rebalance sealed for MACRO-HEDGE.fcl</span><span class="alog-h">0x4b91.7aa2</span><span class="alog-status">verified</span></div>
+        <div class="alog-row"><span class="alog-t">1d ago</span><span class="alog-a">Index minted, AI-WEB3.fcl</span><span class="alog-h">0x2e60.d813</span><span class="alog-status">verified</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+window.Faceless = (function () {
+  var modal = document.getElementById('wallet-modal');
+  var selectState = document.getElementById('wallet-select-state');
+  var connectingState = document.getElementById('connecting-state');
+  var connectingName = document.getElementById('connecting-wname');
+  var dashView = document.getElementById('dashboard-view');
+  var siteView = document.getElementById('site-view');
+  var dbWico = document.getElementById('db-wico');
+  function openWallet(){ selectState.style.display='block'; connectingState.classList.remove('show'); modal.classList.add('open'); }
+  function closeWallet(){ modal.classList.remove('open'); }
+  function selectWallet(name,color,initial){
+    selectState.style.display='none'; connectingState.classList.add('show'); connectingName.textContent=name;
+    setTimeout(function(){ closeWallet(); dbWico.textContent=initial; dbWico.style.color=color; dbWico.style.background='rgba(31,107,69,0.10)'; dashView.classList.add('show'); siteView.classList.add('hide'); window.scrollTo(0,0); if (window.__dealDash) window.__dealDash(); }, 1400);
+  }
+  function backToSite(){ dashView.classList.remove('show'); siteView.classList.remove('hide'); window.scrollTo(0,0); }
+  return { openWallet:openWallet, closeWallet:closeWallet, selectWallet:selectWallet, backToSite:backToSite };
+})();
+
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGSAP = window.gsap && window.ScrollTrigger;
+  if (!hasGSAP) document.documentElement.classList.add('no-gsap');
+  if (hasGSAP && !reduce) {
+    document.documentElement.classList.add('gsap-armed');
+    gsap.registerPlugin(ScrollTrigger);
+
+    // shared signature: everything enters along the same up-and-in diagonal with a slight rotate
+    // REPLAY: toggleActions restarts the animation every time you scroll into it, either direction
+    var TA = 'restart none none reverse';
+
+    gsap.utils.toArray('.reveal').forEach(function(block){
+      var intro = block.querySelectorAll('.sec-label, h2, .lead');
+      gsap.fromTo(intro,
+        { opacity: 0, y: 40, rotateX: 8 },
+        { opacity: 1, y: 0, rotateX: 0, duration: 0.9, ease: 'power3.out', stagger: 0.1,
+          scrollTrigger: { trigger: block, start: 'top 82%', toggleActions: TA } }
+      );
+    });
+
+    // CARD GRIDS: spawn in from a diagonal angle, rotated, scaled, staggered like cards being dealt
+    document.querySelectorAll('.trap-grid, .steps, .idx-grid').forEach(function(grid){
+      gsap.set(grid, { perspective: 900 });
+      gsap.fromTo(grid.children,
+        { opacity: 0, y: 64, x: -22, rotateY: -14, rotateX: 10, scale: 0.9, transformOrigin: 'left center' },
+        { opacity: 1, y: 0, x: 0, rotateY: 0, rotateX: 0, scale: 1,
+          duration: 0.85, ease: 'power3.out', stagger: 0.11, clearProps: 'transform',
+          scrollTrigger: { trigger: grid, start: 'top 80%', toggleActions: TA } }
+      );
+    });
+
+    // third-door: the resolution slides up with its asset scaling in just after
+    document.querySelectorAll('.third-door').forEach(function(td){
+      gsap.fromTo(td, { opacity: 0, y: 40, scale: 0.96 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.9, ease: 'power3.out',
+          scrollTrigger: { trigger: td, start: 'top 86%', toggleActions: TA } });
+      gsap.fromTo(td.querySelector('.tdart'), { opacity: 0, scale: 0.5, rotate: -18 },
+        { opacity: 1, scale: 1, rotate: 0, duration: 0.8, ease: 'back.out(1.7)', delay: 0.2,
+          scrollTrigger: { trigger: td, start: 'top 86%', toggleActions: TA } });
+    });
+
+    // split concept asset: eye draws in with a scale + subtle rotate
+    document.querySelectorAll('.split .art-cell').forEach(function(art){
+      gsap.fromTo(art, { opacity: 0, scale: 0.78, rotate: -6 },
+        { opacity: 1, scale: 1, rotate: 0, duration: 1.0, ease: 'power2.out',
+          scrollTrigger: { trigger: art, start: 'top 85%', toggleActions: TA } });
+    });
+
+    // product peek: the whole browser panel rises and un-tilts
+    document.querySelectorAll('.peek').forEach(function(pk){
+      gsap.fromTo(pk, { opacity: 0, y: 60, rotateX: 12, transformOrigin: 'center top' },
+        { opacity: 1, y: 0, rotateX: 0, duration: 1.0, ease: 'power3.out',
+          scrollTrigger: { trigger: pk, start: 'top 84%', toggleActions: TA } });
+    });
+
+    // dashboard stat cards, when the dashboard is shown, deal them in
+    window.__dealDash = function(){
+      gsap.fromTo('#dashboard-view .dstat',
+        { opacity: 0, y: 40, rotateX: 10, scale: 0.94 },
+        { opacity: 1, y: 0, rotateX: 0, scale: 1, duration: 0.7, ease: 'power3.out', stagger: 0.1 });
+      gsap.fromTo('#dashboard-view .idx-card, #dashboard-view .mint-card',
+        { opacity: 0, y: 40, x: -16, rotateY: -12, scale: 0.92 },
+        { opacity: 1, y: 0, x: 0, rotateY: 0, scale: 1, duration: 0.7, ease: 'power3.out', stagger: 0.09, delay: 0.15 });
+      gsap.fromTo('#dashboard-view .alog-row',
+        { opacity: 0, x: -24 },
+        { opacity: 1, x: 0, duration: 0.5, ease: 'power2.out', stagger: 0.07, delay: 0.35 });
+    };
+  }
+  // tag: static by default, animate only on hover
+  var tag = document.getElementById('tag');
+  var str = document.getElementById('tagString');
+  if (tag && !reduce) {
+    tag.addEventListener('mouseenter', function(){
+      if (window.gsap) gsap.to(tag,{rotate:0,y:-6,duration:0.5,ease:'power2.out'});
+      else tag.style.transform='rotate(0deg) translateY(-6px)';
+    });
+    tag.addEventListener('mousemove', function(e){
+      var r = tag.getBoundingClientRect();
+      var px = (e.clientX - r.left)/r.width - 0.5;
+      var py = (e.clientY - r.top)/r.height - 0.5;
+      tag.style.transform = 'rotate(0deg) translateY(-6px) rotateY('+(px*10)+'deg) rotateX('+(-py*10)+'deg)';
+    });
+    tag.addEventListener('mouseleave', function(){
+      if (window.gsap) gsap.to(tag,{rotate:-3,y:0,rotateY:0,rotateX:0,duration:0.55,ease:'power2.out',clearProps:'transform',onComplete:function(){tag.style.transform='rotate(-3deg)';}});
+      else tag.style.transform='rotate(-3deg)';
+    });
+  }
+})();
+</script>
+</body>
+</html>
