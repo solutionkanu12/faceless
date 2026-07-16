@@ -7,3 +7,4 @@ node_modules/
 # zk build artifacts
 *.zkey
 *.wasm
+circuits/build/
