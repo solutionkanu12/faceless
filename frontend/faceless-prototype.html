@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faceless. Prove your alpha, stay faceless.</title>
+<link rel="icon" type="image/svg+xml" href="./favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,500;1,9..144,600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -511,12 +512,22 @@
     <h2 class="display">Build your <span class="accent-serif">sealed</span> basket.</h2>
     <p class="lead">Five tokens, real SoSoValue prices, sealed the moment you mint. Entry and exit dates set the window your proof will cover.</p>
 
+    <div class="my-indexes" id="my-indexes-panel" style="display:none;">
+      <div class="fl" style="margin-bottom:10px;">your sealed indexes</div>
+      <div class="my-indexes-count" id="my-indexes-count"></div>
+      <div id="my-indexes-list"></div>
+    </div>
+
     <div class="mint-locked" id="mint-locked">
       <p>Connect your wallet to mint an index. The basket form unlocks once you are connected on Sepolia.</p>
       <button class="btn btn-seal" onclick="Faceless.openWallet()">connect wallet <span class="arr">→</span></button>
     </div>
 
     <form class="mint-form" id="mint-form" style="display:none;" onsubmit="return false;">
+      <div class="field" style="margin-bottom:22px;">
+        <label class="fl" for="mint-index-name">index name</label>
+        <input type="text" id="mint-index-name" class="field-input mono" placeholder="e.g. AI-WEB3.fcl" maxlength="40" autocomplete="off">
+      </div>
       <div class="mint-legs" id="mint-legs"></div>
       <div class="mint-dates">
         <div class="field">
@@ -549,6 +560,7 @@
           <div class="submit-row" id="submit-row-hash" style="display:none;"><span class="sl">tx hash</span><span class="sv" id="submit-hash"></span></div>
           <div class="submit-row" id="submit-row-block" style="display:none;"><span class="sl">confirmed in block</span><span class="sv" id="submit-block"></span></div>
           <div class="submit-row" id="submit-row-return" style="display:none;"><span class="sl">verifyProof() returned</span><span class="sv" id="submit-return"></span></div>
+          <div class="submit-row" id="submit-row-recorded" style="display:none;"><span class="sl">recorded to dashboard</span><span class="sv" id="submit-recorded"></span></div>
           <p class="proof-note" id="submit-note"></p>
         </div>
       </div>
@@ -639,6 +651,7 @@ window.Faceless = (function () {
   var mintSummaryEl = document.getElementById('mint-summary');
   var entryDateEl = document.getElementById('mint-entry-date');
   var exitDateEl = document.getElementById('mint-exit-date');
+  var indexNameEl = document.getElementById('mint-index-name');
 
   var wallet = { address: null };
 
@@ -682,7 +695,7 @@ window.Faceless = (function () {
 
   // ---- mint form (Part B) ----
   var LEG_COUNT = 5;
-  var mintState = { legs: [], entryDate: '', exitDate: '', valid: false };
+  var mintState = { indexName: '', legs: [], entryDate: '', exitDate: '', valid: false };
   for (var mi = 0; mi < LEG_COUNT; mi++) mintState.legs.push({ currencyId: null, symbol: null, name: null, amount: '' });
 
   // Real oracle price sheet (oracle/data/price-sheet.json, copied to
@@ -819,10 +832,12 @@ window.Faceless = (function () {
     });
     entryDateEl.addEventListener('input', function () { mintState.entryDate = entryDateEl.value; reviewMintForm(false); });
     exitDateEl.addEventListener('input', function () { mintState.exitDate = exitDateEl.value; reviewMintForm(false); });
+    indexNameEl.addEventListener('input', function () { mintState.indexName = indexNameEl.value; reviewMintForm(false); });
   }
 
   function reviewMintForm(showAlways) {
     var errors = [];
+    if (!mintState.indexName || !mintState.indexName.trim()) errors.push('Index name is required.');
     var chosenIds = [];
     mintState.legs.forEach(function (leg, i) {
       if (!leg.currencyId) {
@@ -907,6 +922,7 @@ window.Faceless = (function () {
     getMintState: getMintState,
     getPriceSheet: function () { return priceSheet; },
     getAvailableDateRange: function () { return availableDates ? { min: availableDatesMin, max: availableDatesMax, count: availableDates.size } : null; },
+    getWalletAddress: function () { return wallet.address; },
     _setWalletAddress: _setWalletAddress
   };
 })();
@@ -1013,9 +1029,70 @@ import { REOWN_PROJECT_ID } from './wallet-config.js';
 import { createAppKit } from 'https://esm.sh/@reown/appkit@1.8.22';
 import { EthersAdapter } from 'https://esm.sh/@reown/appkit-adapter-ethers@1.8.22';
 import { sepolia } from 'https://esm.sh/@reown/appkit@1.8.22/networks';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from './supabase-config.js';
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.110.7';
 
 var navConnectBtn = document.getElementById('nav-connect-btn');
 var BRAND_ICON = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%231F6B45'/%3E%3C/svg%3E";
+
+// Supabase client (Phase 5): null until frontend/supabase-config.js has
+// real values, same "no fake fallback" pattern as REOWN_PROJECT_ID above.
+var supabaseClient = (SUPABASE_URL && SUPABASE_ANON_KEY)
+  ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+  : null;
+if (!supabaseClient) {
+  console.error('[Faceless] SUPABASE_URL/SUPABASE_ANON_KEY are not set in frontend/supabase-config.js. Wallet sign-in and mint recording are disabled until configured.');
+}
+window.Faceless.getSupabaseClient = function () { return supabaseClient; };
+
+function extractWalletAddressFromUser(user) {
+  if (!user) return null;
+  var identity = (user.identities || []).filter(function (i) {
+    return i.provider === 'web3' || i.provider === 'ethereum';
+  })[0];
+  if (identity && identity.identity_data && identity.identity_data.address) return identity.identity_data.address;
+  if (identity && identity.provider_id) return identity.provider_id;
+  if (user.user_metadata && user.user_metadata.address) return user.user_metadata.address;
+  if (user.user_metadata && user.user_metadata.custom_claims && user.user_metadata.custom_claims.address) {
+    return user.user_metadata.custom_claims.address;
+  }
+  return null;
+}
+
+var walletSignInPromise = null;
+// Ensures a real wallet-signed Supabase session exists for `address`,
+// signing in fresh if there is no session yet or the existing session
+// belongs to a different wallet (e.g. the user switched accounts).
+// Exposed on window.Faceless so the proof-submission script can call it
+// defensively right before invoking submit-mint, even though this also
+// fires automatically on connect below.
+function ensureWalletSignedIn(address, rawProvider) {
+  if (!supabaseClient) return Promise.reject(new Error('Supabase is not configured (frontend/supabase-config.js).'));
+  if (!address) return Promise.reject(new Error('No wallet address to sign in with.'));
+  if (walletSignInPromise) return walletSignInPromise;
+
+  walletSignInPromise = (async function () {
+    var sessionResult = await supabaseClient.auth.getSession();
+    var currentUser = sessionResult.data && sessionResult.data.session ? sessionResult.data.session.user : null;
+    var currentAddress = extractWalletAddressFromUser(currentUser);
+    if (currentAddress && currentAddress.toLowerCase() === address.toLowerCase()) {
+      return sessionResult.data.session;
+    }
+    var provider = rawProvider || modal.getWalletProvider();
+    var signInResult = await supabaseClient.auth.signInWithWeb3({
+      chain: 'ethereum',
+      wallet: provider,
+      statement: 'Sign in to Faceless to record indexes you mint with this wallet.'
+    });
+    if (signInResult.error) throw signInResult.error;
+    console.log('[Faceless] Wallet-signed Supabase session established for', address);
+    return signInResult.data;
+  })();
+
+  walletSignInPromise.catch(function () { walletSignInPromise = null; });
+  return walletSignInPromise;
+}
+window.Faceless.ensureWalletSignedIn = ensureWalletSignedIn;
 
 if (!REOWN_PROJECT_ID) {
   console.error(
@@ -1069,7 +1146,13 @@ if (!REOWN_PROJECT_ID) {
     };
 
     modal.subscribeAccount(function (account) {
-      window.Faceless._setWalletAddress(account && account.isConnected ? account.address : null);
+      var addr = account && account.isConnected ? account.address : null;
+      window.Faceless._setWalletAddress(addr);
+      if (addr) {
+        ensureWalletSignedIn(addr).catch(function (err) {
+          console.error('[Faceless] Wallet-signed Supabase sign-in failed:', err);
+        });
+      }
     });
 
     // AppKit restores a previous session from localStorage on init
@@ -1369,9 +1452,11 @@ async function submitProof() {
   var rowHash = document.getElementById('submit-row-hash');
   var rowBlock = document.getElementById('submit-row-block');
   var rowReturn = document.getElementById('submit-row-return');
+  var rowRecorded = document.getElementById('submit-row-recorded');
   var hashEl = document.getElementById('submit-hash');
   var blockEl = document.getElementById('submit-block');
   var returnEl = document.getElementById('submit-return');
+  var recordedEl = document.getElementById('submit-recorded');
   var noteEl = document.getElementById('submit-note');
 
   function setStatus(cls, text) {
@@ -1383,6 +1468,7 @@ async function submitProof() {
   rowHash.style.display = 'none';
   rowBlock.style.display = 'none';
   rowReturn.style.display = 'none';
+  rowRecorded.style.display = 'none';
   noteEl.textContent = '';
 
   try {
@@ -1433,6 +1519,77 @@ async function submitProof() {
     noteEl.innerHTML = 'This value is read via a fresh eth_call to the same contract/calldata after confirmation, not decoded from the transaction itself (verifyProof is a view function; transaction receipts carry no return data). View on <a href="https://sepolia.etherscan.io/tx/' + txResponse.hash + '" target="_blank" rel="noopener noreferrer">Etherscan</a>.';
 
     console.log('[Faceless] Real proof submitted onchain.', { txHash: txResponse.hash, blockNumber: receipt.blockNumber, verifyProofReturned: result });
+
+    // Record the mint (Phase 5), but keep this a separate failure domain
+    // from the onchain submission above: the transaction already
+    // genuinely succeeded regardless of whether the dashboard recording
+    // step below works, so a Supabase problem should not overwrite that
+    // "confirmed on Sepolia" status with an error.
+    rowRecorded.style.display = 'flex';
+    if (result !== true) {
+      recordedEl.textContent = 'skipped (verifyProof returned false, not a valid mint)';
+      recordedEl.className = 'sv';
+    } else {
+      recordedEl.textContent = 'recording...';
+      recordedEl.className = 'sv';
+      try {
+        var mintFormState = window.Faceless.getMintState();
+        var walletAddress = window.Faceless.getWalletAddress();
+        if (!walletAddress) throw new Error('No connected wallet address available.');
+        var supabase = window.Faceless.getSupabaseClient ? window.Faceless.getSupabaseClient() : null;
+        if (!supabase) throw new Error('Supabase is not configured (frontend/supabase-config.js).');
+
+        await window.Faceless.ensureWalletSignedIn(walletAddress, rawProvider);
+
+        var mintPayload = {
+          wallet_address: walletAddress,
+          index_name: mintFormState.indexName,
+          entry_date: mintFormState.entryDate,
+          exit_date: mintFormState.exitDate,
+          claimed_return_bp: Number(last.publicSignals[2]),
+          is_negative: last.publicSignals[3] === '1',
+          tx_hash: txResponse.hash,
+          block_number: Number(receipt.blockNumber)
+        };
+
+        console.log('[Faceless] Calling submit-mint with payload:', mintPayload);
+        var invokeResult = await supabase.functions.invoke('submit-mint', { body: { mint: mintPayload } });
+        console.log('[Faceless] submit-mint raw result:', {
+          data: invokeResult.data,
+          error: invokeResult.error,
+          httpStatus: invokeResult.response ? invokeResult.response.status : '(no response object)'
+        });
+
+        if (invokeResult.error) throw invokeResult.error;
+        if (!invokeResult.data || invokeResult.data.error) {
+          throw new Error((invokeResult.data && invokeResult.data.error) || 'Edge Function returned no data.');
+        }
+
+        // Never trust "no error field" alone. A 2xx response from the
+        // wrong function, a stale placeholder, or any other unrelated
+        // success shape would silently satisfy that check without a real
+        // row ever being inserted. Only a genuine `mint` object matching
+        // exactly what was submitted counts as confirmed.
+        var recordedMint = invokeResult.data.mint;
+        if (
+          !recordedMint ||
+          typeof recordedMint !== 'object' ||
+          recordedMint.tx_hash !== mintPayload.tx_hash ||
+          recordedMint.wallet_address !== mintPayload.wallet_address ||
+          Number(recordedMint.claimed_return_bp) !== mintPayload.claimed_return_bp
+        ) {
+          throw new Error('Edge Function response did not contain the expected recorded row. Refusing to report success. Raw response: ' + JSON.stringify(invokeResult.data));
+        }
+
+        recordedEl.textContent = 'yes';
+        recordedEl.className = 'sv true';
+        console.log('[Faceless] Mint recorded to Supabase, confirmed row:', recordedMint);
+      } catch (recordErr) {
+        console.error('[Faceless] Recording mint to Supabase failed:', recordErr);
+        recordedEl.textContent = 'failed: ' + friendlyTxError(recordErr);
+        recordedEl.className = 'sv false';
+      }
+    }
   } catch (err) {
     console.error('[Faceless] Submit proof failed:', err);
     setStatus('err', 'Submission failed: ' + friendlyTxError(err));
