@@ -4,9 +4,14 @@ node_modules/
 # Oracle keys
 /oracle/keys
 
-# zk build artifacts
+# zk build artifacts (regenerable)
 *.zkey
 *.wasm
 circuits/build/
+
+# ...except the runtime copies the browser actually fetches for
+# client-side proving; these must ship with the deployed site.
+!frontend/circuit/*.wasm
+!frontend/circuit/*.zkey
 contracts/cache/
 contracts/out/

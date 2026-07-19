@@ -401,6 +401,7 @@
         <a href="#indexes">live indexes</a>
         <a href="#app">the product</a>
         <a href="#mint">mint</a>
+        <a href="#" onclick="Faceless.showDashboard(); return false;">dashboard</a>
       </div>
       <button class="btn btn-seal" id="nav-connect-btn" onclick="Faceless.openWallet()">connect wallet</button>
       <span class="wallet-pill clickable" id="nav-wallet-pill" style="display:none;" onclick="Faceless.openWallet()" title="Connected on Sepolia">
@@ -524,12 +525,6 @@
     <h2 class="display">Build your <span class="accent-serif">sealed</span> basket.</h2>
     <p class="lead">Five tokens, real SoSoValue prices, sealed the moment you mint. Entry and exit dates set the window your proof will cover.</p>
 
-    <div class="my-indexes" id="my-indexes-panel" style="display:none;">
-      <div class="fl" style="margin-bottom:10px;">your sealed indexes</div>
-      <div class="my-indexes-count" id="my-indexes-count"></div>
-      <div id="my-indexes-list"></div>
-    </div>
-
     <div class="mint-locked" id="mint-locked">
       <p>Connect your wallet to mint an index. The basket form unlocks once you are connected on Sepolia.</p>
       <button class="btn btn-seal" onclick="Faceless.openWallet()">connect wallet <span class="arr">→</span></button>
@@ -616,31 +611,23 @@
       <a class="brand" href="#"><svg class="mark" viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#14170F" stroke-width="2"/><rect x="2" y="13.5" width="28" height="5" rx="1" fill="#14170F"/></svg>faceless</a>
       <div class="island">
         <div class="links"><a href="#" onclick="Faceless.backToSite(); return false;">back to site</a></div>
-        <span class="wallet-pill"><span class="wdot"></span><span class="wico" id="db-wico" style="background:rgba(31,107,69,0.16);color:#1F6B45;">R</span><span id="db-waddr">0x71a2.9f3c</span></span>
+        <span class="wallet-pill"><span class="wdot"></span><span id="db-waddr">0x0000...0000</span></span>
       </div>
     </nav>
     <div class="sec-pad" style="padding-top:40px;">
       <div class="dash-head">
         <div><h1 class="display">Your indexes</h1><p class="lead">Sealed strategies, verified performance. Only you can see what is inside.</p></div>
-        <button class="btn btn-seal" onclick="Faceless.openWallet()">mint new index <span class="arr">→</span></button>
+        <button class="btn btn-seal" onclick="Faceless.backToSite()">mint new index <span class="arr">→</span></button>
       </div>
       <div class="dash-stats">
-        <div class="dstat"><div class="dl">Sealed indexes</div><div class="dv">3</div></div>
-        <div class="dstat"><div class="dl">Verified proofs</div><div class="dv sc">3</div></div>
-        <div class="dstat"><div class="dl">Best verified return</div><div class="dv sc">+41.2%</div></div>
+        <div class="dstat"><div class="dl">Sealed indexes</div><div class="dv" id="dash-stat-sealed">—</div></div>
+        <div class="dstat"><div class="dl">Verified proofs</div><div class="dv sc" id="dash-stat-proofs">—</div></div>
+        <div class="dstat"><div class="dl">Best verified return</div><div class="dv sc" id="dash-stat-best">—</div></div>
       </div>
       <div class="dash-section-head"><h2 class="display">Sealed indexes</h2></div>
-      <div class="idx-grid" style="margin-top:0;">
-        <div class="idx-card"><div class="idx-top"><span class="idx-name">AI-WEB3.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+41.2%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
-        <div class="idx-card"><div class="idx-top"><span class="idx-name">MACRO-HEDGE.fcl</span><span class="idx-ver">verified</span></div><div class="idx-return up">+18.7%</div><div class="idx-strat"><span class="label">strategy</span><span class="b"></span></div></div>
-        <div class="mint-card" onclick="Faceless.openWallet()"><span class="plus">+</span><span>Mint new index</span></div>
-      </div>
+      <div class="idx-grid" style="margin-top:0;" id="dash-idx-grid"></div>
       <div class="dash-section-head" style="margin-top:48px;"><h2 class="display">Activity</h2></div>
-      <div class="activity-log">
-        <div class="alog-row"><span class="alog-t">2m ago</span><span class="alog-a">Proof generated for AI-WEB3.fcl</span><span class="alog-h">0x8f2a.c1e4</span><span class="alog-status">verified</span></div>
-        <div class="alog-row"><span class="alog-t">1h ago</span><span class="alog-a">Rebalance sealed for MACRO-HEDGE.fcl</span><span class="alog-h">0x4b91.7aa2</span><span class="alog-status">verified</span></div>
-        <div class="alog-row"><span class="alog-t">1d ago</span><span class="alog-a">Index minted, AI-WEB3.fcl</span><span class="alog-h">0x2e60.d813</span><span class="alog-status">verified</span></div>
-      </div>
+      <div class="activity-log" id="dash-activity-log"></div>
     </div>
   </div>
 </div>
@@ -653,6 +640,7 @@ var FACELESS_CURRENCIES = [{"currency_id":"1673723677362317889","symbol":"usds",
 window.Faceless = (function () {
   var dashView = document.getElementById('dashboard-view');
   var siteView = document.getElementById('site-view');
+  var dashWaddr = document.getElementById('db-waddr');
   var navConnectBtn = document.getElementById('nav-connect-btn');
   var navWalletPill = document.getElementById('nav-wallet-pill');
   var navWaddr = document.getElementById('nav-waddr');
@@ -701,7 +689,17 @@ window.Faceless = (function () {
   function _setWalletAddress(address) {
     wallet.address = address || null;
     updateConnectedUI();
-    loadMyIndexes(wallet.address);
+    if (wallet.address) {
+      dashWaddr.textContent = truncate(wallet.address);
+      dashView.classList.add('show');
+      siteView.classList.add('hide');
+      window.scrollTo(0, 0);
+      if (window.gsap && window.__dealDash) window.__dealDash();
+      loadMyIndexes(wallet.address);
+    } else {
+      dashView.classList.remove('show');
+      siteView.classList.remove('hide');
+    }
   }
 
   function escapeHtml(s) {
@@ -710,25 +708,40 @@ window.Faceless = (function () {
     return div.innerHTML;
   }
 
-  // Minimal real dashboard read: real mints for the connected wallet,
-  // public select allowed by RLS. No fake rows, no placeholder counts.
-  function loadMyIndexes(address) {
-    var panel = document.getElementById('my-indexes-panel');
-    var countEl = document.getElementById('my-indexes-count');
-    var listEl = document.getElementById('my-indexes-list');
-    if (!panel || !countEl || !listEl) return;
+  function timeAgo(isoString) {
+    var diffSec = Math.max(0, Math.floor((Date.now() - new Date(isoString).getTime()) / 1000));
+    if (diffSec < 60) return diffSec + 's ago';
+    var diffMin = Math.floor(diffSec / 60);
+    if (diffMin < 60) return diffMin + 'm ago';
+    var diffHr = Math.floor(diffMin / 60);
+    if (diffHr < 24) return diffHr + 'h ago';
+    return Math.floor(diffHr / 24) + 'd ago';
+  }
 
-    if (!address) {
-      panel.style.display = 'none';
-      return;
-    }
-    panel.style.display = 'block';
-    countEl.textContent = 'loading real indexes...';
-    listEl.innerHTML = '';
+  // Real dashboard read: real mints for the connected wallet, public
+  // select allowed by RLS. No fake rows, no placeholder counts. Same
+  // Supabase call as before; only the render target changed (full
+  // dashboard view instead of an inline panel).
+  function loadMyIndexes(address) {
+    var statSealed = document.getElementById('dash-stat-sealed');
+    var statProofs = document.getElementById('dash-stat-proofs');
+    var statBest = document.getElementById('dash-stat-best');
+    var grid = document.getElementById('dash-idx-grid');
+    var log = document.getElementById('dash-activity-log');
+    if (!statSealed || !grid || !log) return;
+
+    statSealed.textContent = '...';
+    statProofs.textContent = '...';
+    statBest.textContent = '...';
+    grid.innerHTML = '';
+    log.innerHTML = '';
 
     var supabase = window.Faceless.getSupabaseClient ? window.Faceless.getSupabaseClient() : null;
     if (!supabase) {
-      countEl.textContent = 'Supabase is not configured (frontend/supabase-config.js).';
+      statSealed.textContent = '0';
+      statProofs.textContent = '0';
+      statBest.textContent = '—';
+      grid.innerHTML = '<div class="my-index-empty">Supabase is not configured (frontend/supabase-config.js).</div>';
       return;
     }
 
@@ -739,34 +752,71 @@ window.Faceless = (function () {
       .order('created_at', { ascending: false })
       .then(function (result) {
         if (result.error) {
-          countEl.textContent = 'Could not load real indexes: ' + result.error.message;
+          statSealed.textContent = '0';
+          statProofs.textContent = '0';
+          statBest.textContent = '—';
+          grid.innerHTML = '<div class="my-index-empty">Could not load real indexes: ' + escapeHtml(result.error.message) + '</div>';
           return;
         }
+
         var rows = result.data || [];
-        countEl.textContent = rows.length + (rows.length === 1 ? ' sealed index' : ' sealed indexes');
+        statSealed.textContent = String(rows.length);
+        statProofs.textContent = String(rows.length); // every stored row already passed real onchain verification in submit-mint
+
         if (rows.length === 0) {
-          listEl.innerHTML = '<div class="my-index-empty">No real mints yet for this wallet. Mint one below and it will show up here.</div>';
+          statBest.textContent = '—';
+          grid.innerHTML = '<div class="my-index-empty">No real mints yet for this wallet.</div><div class="mint-card" onclick="Faceless.backToSite()"><span class="plus">+</span><span>Mint your first index</span></div>';
+          log.innerHTML = '<div class="my-index-empty">No activity yet.</div>';
           return;
         }
-        listEl.innerHTML = rows.map(function (row) {
+
+        var bestSigned = null;
+        rows.forEach(function (row) {
+          var signed = (row.is_negative ? -1 : 1) * row.claimed_return_bp;
+          if (bestSigned === null || signed > bestSigned) bestSigned = signed;
+        });
+        statBest.textContent = (bestSigned >= 0 ? '+' : '') + (bestSigned / 100).toFixed(2) + '%';
+
+        grid.innerHTML = rows.map(function (row) {
           var pct = (row.claimed_return_bp / 100).toFixed(2) + '%';
           var sign = row.is_negative ? '-' : '+';
           var cls = row.is_negative ? 'down' : 'up';
+          return '<div class="idx-card">' +
+            '<div class="idx-top"><span class="idx-name">' + escapeHtml(row.index_name) + '</span><span class="idx-ver">verified</span></div>' +
+            '<div class="idx-return ' + cls + '">' + sign + pct + '</div>' +
+            '<div class="idx-strat"><a class="label" href="https://sepolia.etherscan.io/tx/' + row.tx_hash + '" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;">view real proof</a></div>' +
+            '</div>';
+        }).join('') + '<div class="mint-card" onclick="Faceless.backToSite()"><span class="plus">+</span><span>Mint new index</span></div>';
+
+        log.innerHTML = rows.map(function (row) {
           var txHash = String(row.tx_hash);
-          var txShort = txHash.slice(0, 10) + '...' + txHash.slice(-6);
-          return '<div class="my-index-row">' +
-            '<span class="min-name">' + escapeHtml(row.index_name) + '</span>' +
-            '<span class="min-return ' + cls + '">' + sign + pct + '</span>' +
-            '<a class="min-tx" href="https://sepolia.etherscan.io/tx/' + txHash + '" target="_blank" rel="noopener noreferrer">' + txShort + '</a>' +
+          var txShort = txHash.slice(0, 6) + '.' + txHash.slice(-4);
+          return '<div class="alog-row">' +
+            '<span class="alog-t">' + timeAgo(row.created_at) + '</span>' +
+            '<span class="alog-a">Index minted, ' + escapeHtml(row.index_name) + '</span>' +
+            '<a class="alog-h" href="https://sepolia.etherscan.io/tx/' + txHash + '" target="_blank" rel="noopener noreferrer">' + txShort + '</a>' +
+            '<span class="alog-status">verified</span>' +
             '</div>';
         }).join('');
       })
       .catch(function (err) {
-        countEl.textContent = 'Could not load real indexes: ' + err.message;
+        statSealed.textContent = '0';
+        statProofs.textContent = '0';
+        statBest.textContent = '—';
+        grid.innerHTML = '<div class="my-index-empty">Could not load real indexes: ' + escapeHtml(err.message) + '</div>';
       });
   }
 
   function backToSite() { dashView.classList.remove('show'); siteView.classList.remove('hide'); window.scrollTo(0, 0); }
+
+  function showDashboard() {
+    if (!wallet.address) { openWallet(); return; }
+    dashWaddr.textContent = truncate(wallet.address);
+    dashView.classList.add('show');
+    siteView.classList.add('hide');
+    window.scrollTo(0, 0);
+    loadMyIndexes(wallet.address);
+  }
 
   // ---- mint form (Part B) ----
   var LEG_COUNT = 5;
@@ -999,6 +1049,7 @@ window.Faceless = (function () {
     getAvailableDateRange: function () { return availableDates ? { min: availableDatesMin, max: availableDatesMax, count: availableDates.size } : null; },
     getWalletAddress: function () { return wallet.address; },
     refreshMyIndexes: function () { loadMyIndexes(wallet.address); },
+    showDashboard: showDashboard,
     _setWalletAddress: _setWalletAddress
   };
 })();
