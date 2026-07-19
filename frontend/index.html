@@ -400,7 +400,7 @@
         <a href="#how">how it works</a>
         <a href="#indexes">live indexes</a>
         <a href="#app">the product</a>
-        <a href="#mint">mint</a>
+        <a href="#" onclick="Faceless.openWallet(); return false;">mint</a>
         <a href="#" onclick="Faceless.showDashboard(); return false;">dashboard</a>
       </div>
       <button class="btn btn-seal" id="nav-connect-btn" onclick="Faceless.openWallet()">connect wallet</button>
@@ -519,62 +519,6 @@
   </div>
 </section>
 
-<section class="band sec-pad" id="mint">
-  <div class="wrap reveal">
-    <div class="sec-label">mint an index</div>
-    <h2 class="display">Build your <span class="accent-serif">sealed</span> basket.</h2>
-    <p class="lead">Five tokens, real SoSoValue prices, sealed the moment you mint. Entry and exit dates set the window your proof will cover.</p>
-
-    <div class="mint-locked" id="mint-locked">
-      <p>Connect your wallet to mint an index. The basket form unlocks once you are connected on Sepolia.</p>
-      <button class="btn btn-seal" onclick="Faceless.openWallet()">connect wallet <span class="arr">→</span></button>
-    </div>
-
-    <form class="mint-form" id="mint-form" style="display:none;" onsubmit="return false;">
-      <div class="field" style="margin-bottom:22px;">
-        <label class="fl" for="mint-index-name">index name</label>
-        <input type="text" id="mint-index-name" class="field-input mono" placeholder="e.g. AI-WEB3.fcl" maxlength="40" autocomplete="off">
-      </div>
-      <div class="mint-legs" id="mint-legs"></div>
-      <div class="mint-dates">
-        <div class="field">
-          <label class="fl" for="mint-entry-date">entry date</label>
-          <input type="date" id="mint-entry-date" class="field-input mono">
-        </div>
-        <div class="field">
-          <label class="fl" for="mint-exit-date">exit date</label>
-          <input type="date" id="mint-exit-date" class="field-input mono">
-        </div>
-      </div>
-      <div class="mint-errors" id="mint-errors"></div>
-      <div class="mint-summary" id="mint-summary"></div>
-      <button type="button" class="btn btn-seal" id="mint-submit" onclick="Faceless.reviewMintForm()">review basket <span class="arr">→</span></button>
-      <button type="button" class="btn btn-seal" id="mint-generate-proof" disabled>generate real proof <span class="arr">→</span></button>
-      <div class="proof-output" id="proof-output">
-        <div class="proof-status" id="proof-status"></div>
-        <div class="proof-block">
-          <div class="fl">public.json (would be sent onchain in the next phase, not now)</div>
-          <pre id="proof-public"></pre>
-        </div>
-        <div class="proof-block">
-          <div class="fl">proof.json (would be sent onchain in the next phase, not now)</div>
-          <pre id="proof-proof"></pre>
-        </div>
-        <p class="proof-note">Nothing above leaves this browser tab. No network request is made with this data.</p>
-        <button type="button" class="btn btn-seal" id="mint-submit-proof" disabled>submit proof onchain <span class="arr">→</span></button>
-        <div class="submit-output" id="submit-output">
-          <div class="submit-status" id="submit-status"></div>
-          <div class="submit-row" id="submit-row-hash" style="display:none;"><span class="sl">tx hash</span><span class="sv" id="submit-hash"></span></div>
-          <div class="submit-row" id="submit-row-block" style="display:none;"><span class="sl">confirmed in block</span><span class="sv" id="submit-block"></span></div>
-          <div class="submit-row" id="submit-row-return" style="display:none;"><span class="sl">verifyProof() returned</span><span class="sv" id="submit-return"></span></div>
-          <div class="submit-row" id="submit-row-recorded" style="display:none;"><span class="sl">recorded to dashboard</span><span class="sv" id="submit-recorded"></span></div>
-          <p class="proof-note" id="submit-note"></p>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
-
 <section class="band closing">
   <div class="wrap reveal">
     <h2 class="display">You just verified a track record<br>you were never <span class="accent-serif">allowed to see</span>.</h2>
@@ -614,10 +558,10 @@
         <span class="wallet-pill"><span class="wdot"></span><span id="db-waddr">0x0000...0000</span></span>
       </div>
     </nav>
-    <div class="sec-pad" style="padding-top:40px;">
+    <div class="sec-pad" id="dash-home-view" style="padding-top:40px;">
       <div class="dash-head">
         <div><h1 class="display">Your indexes</h1><p class="lead">Sealed strategies, verified performance. Only you can see what is inside.</p></div>
-        <button class="btn btn-seal" onclick="Faceless.backToSite()">mint new index <span class="arr">→</span></button>
+        <button class="btn btn-seal" onclick="Faceless.showDashboardMint()">mint new index <span class="arr">→</span></button>
       </div>
       <div class="dash-stats">
         <div class="dstat"><div class="dl">Sealed indexes</div><div class="dv" id="dash-stat-sealed">—</div></div>
@@ -628,6 +572,60 @@
       <div class="idx-grid" style="margin-top:0;" id="dash-idx-grid"></div>
       <div class="dash-section-head" style="margin-top:48px;"><h2 class="display">Activity</h2></div>
       <div class="activity-log" id="dash-activity-log"></div>
+    </div>
+
+    <div class="sec-pad" id="dash-mint-view" style="padding-top:40px; display:none;">
+      <div class="sec-label"><a href="#" onclick="Faceless.showDashboardHome(); return false;" style="color:inherit;">← back to indexes</a></div>
+      <h2 class="display">Build your <span class="accent-serif">sealed</span> basket.</h2>
+      <p class="lead">Five tokens, real SoSoValue prices, sealed the moment you mint. Entry and exit dates set the window your proof will cover.</p>
+
+      <div class="mint-locked" id="mint-locked">
+        <p>Connect your wallet to mint an index. The basket form unlocks once you are connected on Sepolia.</p>
+        <button class="btn btn-seal" onclick="Faceless.openWallet()">connect wallet <span class="arr">→</span></button>
+      </div>
+
+      <form class="mint-form" id="mint-form" style="display:none;" onsubmit="return false;">
+        <div class="field" style="margin-bottom:22px;">
+          <label class="fl" for="mint-index-name">index name</label>
+          <input type="text" id="mint-index-name" class="field-input mono" placeholder="e.g. AI-WEB3.fcl" maxlength="40" autocomplete="off">
+        </div>
+        <div class="mint-legs" id="mint-legs"></div>
+        <div class="mint-dates">
+          <div class="field">
+            <label class="fl" for="mint-entry-date">entry date</label>
+            <input type="date" id="mint-entry-date" class="field-input mono">
+          </div>
+          <div class="field">
+            <label class="fl" for="mint-exit-date">exit date</label>
+            <input type="date" id="mint-exit-date" class="field-input mono">
+          </div>
+        </div>
+        <div class="mint-errors" id="mint-errors"></div>
+        <div class="mint-summary" id="mint-summary"></div>
+        <button type="button" class="btn btn-seal" id="mint-submit" onclick="Faceless.reviewMintForm()">review basket <span class="arr">→</span></button>
+        <button type="button" class="btn btn-seal" id="mint-generate-proof" disabled>generate real proof <span class="arr">→</span></button>
+        <div class="proof-output" id="proof-output">
+          <div class="proof-status" id="proof-status"></div>
+          <div class="proof-block">
+            <div class="fl">public.json (would be sent onchain in the next phase, not now)</div>
+            <pre id="proof-public"></pre>
+          </div>
+          <div class="proof-block">
+            <div class="fl">proof.json (would be sent onchain in the next phase, not now)</div>
+            <pre id="proof-proof"></pre>
+          </div>
+          <p class="proof-note">Nothing above leaves this browser tab. No network request is made with this data.</p>
+          <button type="button" class="btn btn-seal" id="mint-submit-proof" disabled>submit proof onchain <span class="arr">→</span></button>
+          <div class="submit-output" id="submit-output">
+            <div class="submit-status" id="submit-status"></div>
+            <div class="submit-row" id="submit-row-hash" style="display:none;"><span class="sl">tx hash</span><span class="sv" id="submit-hash"></span></div>
+            <div class="submit-row" id="submit-row-block" style="display:none;"><span class="sl">confirmed in block</span><span class="sv" id="submit-block"></span></div>
+            <div class="submit-row" id="submit-row-return" style="display:none;"><span class="sl">verifyProof() returned</span><span class="sv" id="submit-return"></span></div>
+            <div class="submit-row" id="submit-row-recorded" style="display:none;"><span class="sl">recorded to dashboard</span><span class="sv" id="submit-recorded"></span></div>
+            <p class="proof-note" id="submit-note"></p>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
@@ -686,13 +684,19 @@ window.Faceless = (function () {
     console.warn('[Faceless] Wallet connect is still initializing, or failed to load. Check the console for AppKit errors.');
   }
 
-  function _setWalletAddress(address) {
-    wallet.address = address || null;
-    updateConnectedUI();
+  // Single source of truth for top-level view routing: wallet.address,
+  // set only via _setWalletAddress (itself only ever called from the real
+  // AppKit connection hook). Every place that changes which top-level
+  // view is on screen goes through renderTopLevelView() so there is
+  // exactly one function deciding site-view vs dashboard-view, instead of
+  // several call sites toggling classes independently and drifting out of
+  // sync with each other.
+  function renderTopLevelView() {
     if (wallet.address) {
       dashWaddr.textContent = truncate(wallet.address);
       dashView.classList.add('show');
       siteView.classList.add('hide');
+      showDashboardHome();
       window.scrollTo(0, 0);
       if (window.gsap && window.__dealDash) window.__dealDash();
       loadMyIndexes(wallet.address);
@@ -700,6 +704,12 @@ window.Faceless = (function () {
       dashView.classList.remove('show');
       siteView.classList.remove('hide');
     }
+  }
+
+  function _setWalletAddress(address) {
+    wallet.address = address || null;
+    updateConnectedUI();
+    renderTopLevelView();
   }
 
   function escapeHtml(s) {
@@ -765,7 +775,7 @@ window.Faceless = (function () {
 
         if (rows.length === 0) {
           statBest.textContent = '—';
-          grid.innerHTML = '<div class="my-index-empty">No real mints yet for this wallet.</div><div class="mint-card" onclick="Faceless.backToSite()"><span class="plus">+</span><span>Mint your first index</span></div>';
+          grid.innerHTML = '<div class="my-index-empty">No real mints yet for this wallet.</div><div class="mint-card" onclick="Faceless.showDashboardMint()"><span class="plus">+</span><span>Mint your first index</span></div>';
           log.innerHTML = '<div class="my-index-empty">No activity yet.</div>';
           return;
         }
@@ -786,7 +796,7 @@ window.Faceless = (function () {
             '<div class="idx-return ' + cls + '">' + sign + pct + '</div>' +
             '<div class="idx-strat"><a class="label" href="https://sepolia.etherscan.io/tx/' + row.tx_hash + '" target="_blank" rel="noopener noreferrer" style="text-decoration:underline;">view real proof</a></div>' +
             '</div>';
-        }).join('') + '<div class="mint-card" onclick="Faceless.backToSite()"><span class="plus">+</span><span>Mint new index</span></div>';
+        }).join('') + '<div class="mint-card" onclick="Faceless.showDashboardMint()"><span class="plus">+</span><span>Mint new index</span></div>';
 
         log.innerHTML = rows.map(function (row) {
           var txHash = String(row.tx_hash);
@@ -807,6 +817,11 @@ window.Faceless = (function () {
       });
   }
 
+  // Manual navigation actions layered on top of the connection-state
+  // routing above. Per explicit product decision: "back to site" does
+  // NOT disconnect the wallet, it only shows the landing view while the
+  // wallet stays connected in the background (avoids surprising the user
+  // by dropping their session on a simple navigation click).
   function backToSite() { dashView.classList.remove('show'); siteView.classList.remove('hide'); window.scrollTo(0, 0); }
 
   function showDashboard() {
@@ -814,8 +829,24 @@ window.Faceless = (function () {
     dashWaddr.textContent = truncate(wallet.address);
     dashView.classList.add('show');
     siteView.classList.add('hide');
+    showDashboardHome();
     window.scrollTo(0, 0);
     loadMyIndexes(wallet.address);
+  }
+
+  function showDashboardMint() {
+    var home = document.getElementById('dash-home-view');
+    var mint = document.getElementById('dash-mint-view');
+    if (home) home.style.display = 'none';
+    if (mint) mint.style.display = 'block';
+    window.scrollTo(0, 0);
+  }
+
+  function showDashboardHome() {
+    var home = document.getElementById('dash-home-view');
+    var mint = document.getElementById('dash-mint-view');
+    if (mint) mint.style.display = 'none';
+    if (home) home.style.display = 'block';
   }
 
   // ---- mint form (Part B) ----
@@ -1050,6 +1081,8 @@ window.Faceless = (function () {
     getWalletAddress: function () { return wallet.address; },
     refreshMyIndexes: function () { loadMyIndexes(wallet.address); },
     showDashboard: showDashboard,
+    showDashboardMint: showDashboardMint,
+    showDashboardHome: showDashboardHome,
     _setWalletAddress: _setWalletAddress
   };
 })();
