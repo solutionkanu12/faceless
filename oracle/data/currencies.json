@@ -1,0 +1,6337 @@
+[
+  {
+    "currency_id": "1673723677362317889",
+    "symbol": "usds",
+    "name": "USDS"
+  },
+  {
+    "currency_id": "1673723677362319866",
+    "symbol": "btc",
+    "name": "Bitcoin"
+  },
+  {
+    "currency_id": "1673723677362319867",
+    "symbol": "eth",
+    "name": "Ethereum"
+  },
+  {
+    "currency_id": "1673723677362319868",
+    "symbol": "usdt",
+    "name": "Tether"
+  },
+  {
+    "currency_id": "1673723677362319869",
+    "symbol": "bnb",
+    "name": "Binance Coin"
+  },
+  {
+    "currency_id": "1673723677362319870",
+    "symbol": "USDC",
+    "name": "USDC"
+  },
+  {
+    "currency_id": "1673723677362319871",
+    "symbol": "xrp",
+    "name": "XRP"
+  },
+  {
+    "currency_id": "1673723677362319872",
+    "symbol": "steth",
+    "name": "Lido Staked Ether"
+  },
+  {
+    "currency_id": "1673723677362319873",
+    "symbol": "ada",
+    "name": "Cardano"
+  },
+  {
+    "currency_id": "1673723677362319874",
+    "symbol": "doge",
+    "name": "Dogecoin"
+  },
+  {
+    "currency_id": "1673723677362319875",
+    "symbol": "sol",
+    "name": "Solana"
+  },
+  {
+    "currency_id": "1673723677362319876",
+    "symbol": "ltc",
+    "name": "Litecoin"
+  },
+  {
+    "currency_id": "1673723677362319877",
+    "symbol": "dot",
+    "name": "Polkadot"
+  },
+  {
+    "currency_id": "1673723677362319879",
+    "symbol": "dai",
+    "name": "Dai"
+  },
+  {
+    "currency_id": "1673723677362319881",
+    "symbol": "shib",
+    "name": "Shiba Inu"
+  },
+  {
+    "currency_id": "1673723677362319882",
+    "symbol": "wbtc",
+    "name": "Wrapped Bitcoin"
+  },
+  {
+    "currency_id": "1673723677362319883",
+    "symbol": "avax",
+    "name": "Avalanche"
+  },
+  {
+    "currency_id": "1673723677362319884",
+    "symbol": "uni",
+    "name": "Uniswap"
+  },
+  {
+    "currency_id": "1673723677362319885",
+    "symbol": "leo",
+    "name": "LEO Token"
+  },
+  {
+    "currency_id": "1673723677362319886",
+    "symbol": "tusd",
+    "name": "TrueUSD"
+  },
+  {
+    "currency_id": "1673723677362319887",
+    "symbol": "link",
+    "name": "Chainlink"
+  },
+  {
+    "currency_id": "1673723677362319888",
+    "symbol": "xmr",
+    "name": "Monero"
+  },
+  {
+    "currency_id": "1673723677362319889",
+    "symbol": "okb",
+    "name": "OKB"
+  },
+  {
+    "currency_id": "1673723677362319890",
+    "symbol": "atom",
+    "name": "Cosmos Hub"
+  },
+  {
+    "currency_id": "1673723677362319891",
+    "symbol": "etc",
+    "name": "Ethereum Classic"
+  },
+  {
+    "currency_id": "1673723677362319892",
+    "symbol": "xlm",
+    "name": "Stellar"
+  },
+  {
+    "currency_id": "1673723677362319893",
+    "symbol": "Gram",
+    "name": "Gram"
+  },
+  {
+    "currency_id": "1673723677362319894",
+    "symbol": "bch",
+    "name": "Bitcoin Cash"
+  },
+  {
+    "currency_id": "1673723677362319895",
+    "symbol": "icp",
+    "name": "Internet Computer"
+  },
+  {
+    "currency_id": "1673723677362319896",
+    "symbol": "fil",
+    "name": "Filecoin"
+  },
+  {
+    "currency_id": "1673723677362319897",
+    "symbol": "ldo",
+    "name": "Lido DAO"
+  },
+  {
+    "currency_id": "1673723677362319898",
+    "symbol": "qnt",
+    "name": "Quant"
+  },
+  {
+    "currency_id": "1673723677362319899",
+    "symbol": "apt",
+    "name": "Aptos"
+  },
+  {
+    "currency_id": "1673723677362319900",
+    "symbol": "hbar",
+    "name": "Hedera"
+  },
+  {
+    "currency_id": "1673723677362319901",
+    "symbol": "cro",
+    "name": "Cronos"
+  },
+  {
+    "currency_id": "1673723677362319902",
+    "symbol": "arb",
+    "name": "Arbitrum"
+  },
+  {
+    "currency_id": "1673723677362319903",
+    "symbol": "near",
+    "name": "NEAR Protocol"
+  },
+  {
+    "currency_id": "1673723677362319904",
+    "symbol": "vet",
+    "name": "VeChain"
+  },
+  {
+    "currency_id": "1673723677362319905",
+    "symbol": "usdp",
+    "name": "Pax Dollar"
+  },
+  {
+    "currency_id": "1673723677362319907",
+    "symbol": "grt",
+    "name": "The Graph"
+  },
+  {
+    "currency_id": "1673723677362319908",
+    "symbol": "algo",
+    "name": "Algorand"
+  },
+  {
+    "currency_id": "1673723677362319909",
+    "symbol": "RETH",
+    "name": "Rocket Pool ETH"
+  },
+  {
+    "currency_id": "1673723677362319910",
+    "symbol": "stx",
+    "name": "Stacks"
+  },
+  {
+    "currency_id": "1673723677362319911",
+    "symbol": "rpl",
+    "name": "Rocket Pool"
+  },
+  {
+    "currency_id": "1673723677362319912",
+    "symbol": "egld",
+    "name": "MultiversX"
+  },
+  {
+    "currency_id": "1673723677362319914",
+    "symbol": "ape",
+    "name": "ApeCoin"
+  },
+  {
+    "currency_id": "1673723677362319915",
+    "symbol": "aave",
+    "name": "Aave"
+  },
+  {
+    "currency_id": "1673723677362319916",
+    "symbol": "usdd",
+    "name": "USDD"
+  },
+  {
+    "currency_id": "1673723677362319917",
+    "symbol": "RENDER",
+    "name": "Render"
+  },
+  {
+    "currency_id": "1673723677362319918",
+    "symbol": "sand",
+    "name": "The Sandbox"
+  },
+  {
+    "currency_id": "1673723677362319919",
+    "symbol": "op",
+    "name": "Optimism"
+  },
+  {
+    "currency_id": "1673723677362319921",
+    "symbol": "wbt",
+    "name": "WhiteBIT Token"
+  },
+  {
+    "currency_id": "1673723677362319922",
+    "symbol": "xtz",
+    "name": "Tezos"
+  },
+  {
+    "currency_id": "1673723677362319923",
+    "symbol": "bgb",
+    "name": "Bitget Token"
+  },
+  {
+    "currency_id": "1673723677362319924",
+    "symbol": "theta",
+    "name": "Theta Network"
+  },
+  {
+    "currency_id": "1673723677362319925",
+    "symbol": "imx",
+    "name": "ImmutableX"
+  },
+  {
+    "currency_id": "1673723677362319928",
+    "symbol": "mana",
+    "name": "Decentraland"
+  },
+  {
+    "currency_id": "1673723677362319930",
+    "symbol": "xrd",
+    "name": "Radix"
+  },
+  {
+    "currency_id": "1673723677362319931",
+    "symbol": "snx",
+    "name": "Synthetix Network"
+  },
+  {
+    "currency_id": "1673723677362319933",
+    "symbol": "axs",
+    "name": "Axie Infinity"
+  },
+  {
+    "currency_id": "1673723677362319934",
+    "symbol": "gala",
+    "name": "GALA"
+  },
+  {
+    "currency_id": "1673723677362319935",
+    "symbol": "gt",
+    "name": "Gate"
+  },
+  {
+    "currency_id": "1673723677362319936",
+    "symbol": "neo",
+    "name": "NEO"
+  },
+  {
+    "currency_id": "1673723677362319937",
+    "symbol": "crv",
+    "name": "Curve DAO"
+  },
+  {
+    "currency_id": "1673723677362319938",
+    "symbol": "lunc",
+    "name": "Terra Luna Classic"
+  },
+  {
+    "currency_id": "1673723677362319939",
+    "symbol": "paxg",
+    "name": "PAX Gold"
+  },
+  {
+    "currency_id": "1673723677362319941",
+    "symbol": "inj",
+    "name": "Injective"
+  },
+  {
+    "currency_id": "1673723677362319942",
+    "symbol": "xaut",
+    "name": "Tether Gold"
+  },
+  {
+    "currency_id": "1673723677362319943",
+    "symbol": "flow",
+    "name": "Flow"
+  },
+  {
+    "currency_id": "1673723677362319944",
+    "symbol": "bsv",
+    "name": "Bitcoin SV"
+  },
+  {
+    "currency_id": "1673723677362319945",
+    "symbol": "kava",
+    "name": "Kava"
+  },
+  {
+    "currency_id": "1673723677362319947",
+    "symbol": "btt",
+    "name": "BitTorrent"
+  },
+  {
+    "currency_id": "1673723677362319949",
+    "symbol": "iota",
+    "name": "IOTA"
+  },
+  {
+    "currency_id": "1673723677362319950",
+    "symbol": "cspr",
+    "name": "Casper Network"
+  },
+  {
+    "currency_id": "1673723677362319951",
+    "symbol": "xdc",
+    "name": "XDC Network"
+  },
+  {
+    "currency_id": "1673723677362319952",
+    "symbol": "gmx",
+    "name": "GMX"
+  },
+  {
+    "currency_id": "1673723677362319953",
+    "symbol": "ht",
+    "name": "Huobi"
+  },
+  {
+    "currency_id": "1673723677362319954",
+    "symbol": "sui",
+    "name": "Sui"
+  },
+  {
+    "currency_id": "1673723677362319956",
+    "symbol": "Frax",
+    "name": "Frax"
+  },
+  {
+    "currency_id": "1673723677362319957",
+    "symbol": "mina",
+    "name": "Mina Protocol"
+  },
+  {
+    "currency_id": "1673723677362319959",
+    "symbol": "pepe",
+    "name": "Pepe"
+  },
+  {
+    "currency_id": "1673723677362319960",
+    "symbol": "xec",
+    "name": "eCash"
+  },
+  {
+    "currency_id": "1673723677362319961",
+    "symbol": "twt",
+    "name": "Trust Wallet"
+  },
+  {
+    "currency_id": "1673723677362319962",
+    "symbol": "cfx",
+    "name": "Conflux"
+  },
+  {
+    "currency_id": "1673723677362319963",
+    "symbol": "kas",
+    "name": "Kaspa"
+  },
+  {
+    "currency_id": "1673723677362319964",
+    "symbol": "chz",
+    "name": "Chiliz"
+  },
+  {
+    "currency_id": "1673723677362319965",
+    "symbol": "dash",
+    "name": "Dash"
+  },
+  {
+    "currency_id": "1673723677362319966",
+    "symbol": "nexo",
+    "name": "NEXO"
+  },
+  {
+    "currency_id": "1673723677362319968",
+    "symbol": "ar",
+    "name": "Arweave"
+  },
+  {
+    "currency_id": "1673723677362319970",
+    "symbol": "woo",
+    "name": "WOO Network"
+  },
+  {
+    "currency_id": "1673723677362319971",
+    "symbol": "cake",
+    "name": "PancakeSwap"
+  },
+  {
+    "currency_id": "1673723677362319972",
+    "symbol": "mask",
+    "name": "Mask Network"
+  },
+  {
+    "currency_id": "1673723677362319974",
+    "symbol": "osmo",
+    "name": "Osmosis"
+  },
+  {
+    "currency_id": "1673723677362319975",
+    "symbol": "flr",
+    "name": "Flare"
+  },
+  {
+    "currency_id": "1673723677362319976",
+    "symbol": "zil",
+    "name": "Zilliqa"
+  },
+  {
+    "currency_id": "1673723677362319977",
+    "symbol": "bdx",
+    "name": "Beldex"
+  },
+  {
+    "currency_id": "1673723677362319979",
+    "symbol": "gno",
+    "name": "Gnosis"
+  },
+  {
+    "currency_id": "1673723677362319982",
+    "symbol": "okt",
+    "name": "OKT Chain"
+  },
+  {
+    "currency_id": "1673723677362319983",
+    "symbol": "dydx",
+    "name": "dYdX"
+  },
+  {
+    "currency_id": "1673723677362319984",
+    "symbol": "cvx",
+    "name": "Convex Finance"
+  },
+  {
+    "currency_id": "1673723677362319985",
+    "symbol": "lrc",
+    "name": "Loopring"
+  },
+  {
+    "currency_id": "1673723677362319986",
+    "symbol": "enj",
+    "name": "Enjin Coin"
+  },
+  {
+    "currency_id": "1673723677362319989",
+    "symbol": "bat",
+    "name": "Basic Attention"
+  },
+  {
+    "currency_id": "1673723677362319990",
+    "symbol": "1inch",
+    "name": "1inch"
+  },
+  {
+    "currency_id": "1673723677362319991",
+    "symbol": "rune",
+    "name": "THORChain"
+  },
+  {
+    "currency_id": "1673723677362319993",
+    "symbol": "ilv",
+    "name": "Illuvium"
+  },
+  {
+    "currency_id": "1673723677362319994",
+    "symbol": "xch",
+    "name": "Chia"
+  },
+  {
+    "currency_id": "1673723677362319995",
+    "symbol": "mx",
+    "name": "MX"
+  },
+  {
+    "currency_id": "1673723677362319997",
+    "symbol": "blur",
+    "name": "Blur"
+  },
+  {
+    "currency_id": "1673723677362319999",
+    "symbol": "hot",
+    "name": "Holo"
+  },
+  {
+    "currency_id": "1673723677362320000",
+    "symbol": "rose",
+    "name": "Oasis Network"
+  },
+  {
+    "currency_id": "1673723677362320001",
+    "symbol": "xem",
+    "name": "NEM"
+  },
+  {
+    "currency_id": "1673723677362320004",
+    "symbol": "babydoge",
+    "name": "Baby Doge Coin"
+  },
+  {
+    "currency_id": "1673723677362320005",
+    "symbol": "zec",
+    "name": "Zcash"
+  },
+  {
+    "currency_id": "1673723677362320006",
+    "symbol": "floki",
+    "name": "FLOKI"
+  },
+  {
+    "currency_id": "1673723677362320007",
+    "symbol": "qtum",
+    "name": "Qtum"
+  },
+  {
+    "currency_id": "1673723677362320009",
+    "symbol": "dcr",
+    "name": "Decred"
+  },
+  {
+    "currency_id": "1673723677362320011",
+    "symbol": "ksm",
+    "name": "Kusama"
+  },
+  {
+    "currency_id": "1673723677362320012",
+    "symbol": "RVN",
+    "name": "Ravencoin"
+  },
+  {
+    "currency_id": "1673723677362320013",
+    "symbol": "sxp",
+    "name": "SXP"
+  },
+  {
+    "currency_id": "1673723677362320014",
+    "symbol": "tfuel",
+    "name": "Theta Fuel"
+  },
+  {
+    "currency_id": "1673723677362320015",
+    "symbol": "celo",
+    "name": "Celo"
+  },
+  {
+    "currency_id": "1673723677362320017",
+    "symbol": "ens",
+    "name": "Ethereum Name Service"
+  },
+  {
+    "currency_id": "1673723677362320019",
+    "symbol": "comp",
+    "name": "Compound"
+  },
+  {
+    "currency_id": "1673723677362320020",
+    "symbol": "ethw",
+    "name": "EthereumPoW"
+  },
+  {
+    "currency_id": "1673723677362320021",
+    "symbol": "fet",
+    "name": "Fetch.ai"
+  },
+  {
+    "currency_id": "1673723677362320022",
+    "symbol": "ron",
+    "name": "Ronin"
+  },
+  {
+    "currency_id": "1673723677362320025",
+    "symbol": "yfi",
+    "name": "yearn.finance"
+  },
+  {
+    "currency_id": "1673723677362320026",
+    "symbol": "gmt",
+    "name": "STEPN"
+  },
+  {
+    "currency_id": "1673723677362320027",
+    "symbol": "jasmy",
+    "name": "JasmyCoin"
+  },
+  {
+    "currency_id": "1673723677362320028",
+    "symbol": "astr",
+    "name": "Astar"
+  },
+  {
+    "currency_id": "1673723677362320029",
+    "symbol": "bal",
+    "name": "Balancer"
+  },
+  {
+    "currency_id": "1673723677362320030",
+    "symbol": "icx",
+    "name": "ICON"
+  },
+  {
+    "currency_id": "1673723677362320031",
+    "symbol": "audio",
+    "name": "Audius"
+  },
+  {
+    "currency_id": "1673723677362320032",
+    "symbol": "jst",
+    "name": "JUST"
+  },
+  {
+    "currency_id": "1673723677362320033",
+    "symbol": "wemix",
+    "name": "WEMIX"
+  },
+  {
+    "currency_id": "1673723677362320035",
+    "symbol": "hnt",
+    "name": "Helium"
+  },
+  {
+    "currency_id": "1673723677362320037",
+    "symbol": "luna",
+    "name": "Terra"
+  },
+  {
+    "currency_id": "1673723677362320038",
+    "symbol": "iotx",
+    "name": "IoTeX"
+  },
+  {
+    "currency_id": "1673723677362320039",
+    "symbol": "bone",
+    "name": "Bone ShibaSwap"
+  },
+  {
+    "currency_id": "1673723677362320040",
+    "symbol": "glm",
+    "name": "Golem"
+  },
+  {
+    "currency_id": "1673723677362320041",
+    "symbol": "glmr",
+    "name": "Moonbeam"
+  },
+  {
+    "currency_id": "1673723677362320042",
+    "symbol": "ankr",
+    "name": "Ankr Network"
+  },
+  {
+    "currency_id": "1673723677362320045",
+    "symbol": "magic",
+    "name": "Magic"
+  },
+  {
+    "currency_id": "1673723677362320046",
+    "symbol": "omi",
+    "name": "ECOMI"
+  },
+  {
+    "currency_id": "1673723677362320047",
+    "symbol": "sfp",
+    "name": "SafePal"
+  },
+  {
+    "currency_id": "1673723677362320048",
+    "symbol": "zrx",
+    "name": "0x Protocol"
+  },
+  {
+    "currency_id": "1673723677362320049",
+    "symbol": "ont",
+    "name": "Ontology"
+  },
+  {
+    "currency_id": "1673723677362320052",
+    "symbol": "ocean",
+    "name": "Ocean Protocol"
+  },
+  {
+    "currency_id": "1673723677362320053",
+    "symbol": "iost",
+    "name": "IOST"
+  },
+  {
+    "currency_id": "1673723677362320054",
+    "symbol": "band",
+    "name": "Band Protocol"
+  },
+  {
+    "currency_id": "1673723677362320055",
+    "symbol": "dao",
+    "name": "DAO Maker"
+  },
+  {
+    "currency_id": "1673723677362320056",
+    "symbol": "waxp",
+    "name": "WAX"
+  },
+  {
+    "currency_id": "1673723677362320057",
+    "symbol": "waves",
+    "name": "Waves"
+  },
+  {
+    "currency_id": "1673723677362320058",
+    "symbol": "sc",
+    "name": "Siacoin"
+  },
+  {
+    "currency_id": "1673723677362320062",
+    "symbol": "akt",
+    "name": "Akash Network"
+  },
+  {
+    "currency_id": "1673723677362320063",
+    "symbol": "one",
+    "name": "Harmony"
+  },
+  {
+    "currency_id": "1673723677362320066",
+    "symbol": "edu",
+    "name": "Open Campus"
+  },
+  {
+    "currency_id": "1673723677362320067",
+    "symbol": "bora",
+    "name": "BORA"
+  },
+  {
+    "currency_id": "1673723677362320069",
+    "symbol": "bico",
+    "name": "Biconomy"
+  },
+  {
+    "currency_id": "1673723677362320070",
+    "symbol": "VIC",
+    "name": "Viction"
+  },
+  {
+    "currency_id": "1673723677362320071",
+    "symbol": "ordi",
+    "name": "ORDI"
+  },
+  {
+    "currency_id": "1673723677362320072",
+    "symbol": "kda",
+    "name": "Kadena"
+  },
+  {
+    "currency_id": "1673723677362320073",
+    "symbol": "wbeth",
+    "name": "Wrapped Beacon ETH"
+  },
+  {
+    "currency_id": "1673723677362320074",
+    "symbol": "gns",
+    "name": "Gains Network"
+  },
+  {
+    "currency_id": "1673723677362320075",
+    "symbol": "ssv",
+    "name": "SSV Network"
+  },
+  {
+    "currency_id": "1673723677362320076",
+    "symbol": "flux",
+    "name": "Flux"
+  },
+  {
+    "currency_id": "1673723677362320077",
+    "symbol": "core",
+    "name": "Core"
+  },
+  {
+    "currency_id": "1673723677362320078",
+    "symbol": "kub",
+    "name": "Bitkub Coin"
+  },
+  {
+    "currency_id": "1673723677362320079",
+    "symbol": "axl",
+    "name": "Axelar"
+  },
+  {
+    "currency_id": "1673723677362320080",
+    "symbol": "elf",
+    "name": "aelf"
+  },
+  {
+    "currency_id": "1673723677362320083",
+    "symbol": "ewt",
+    "name": "Energy Web"
+  },
+  {
+    "currency_id": "1673723677362320084",
+    "symbol": "stg",
+    "name": "Stargate Finance"
+  },
+  {
+    "currency_id": "1673723677362320085",
+    "symbol": "sushi",
+    "name": "Sushi"
+  },
+  {
+    "currency_id": "1673723677362320086",
+    "symbol": "ustc",
+    "name": "TerraClassicUSD"
+  },
+  {
+    "currency_id": "1673723677362320087",
+    "symbol": "syn",
+    "name": "Synapse"
+  },
+  {
+    "currency_id": "1673723677362320089",
+    "symbol": "amp",
+    "name": "Amp"
+  },
+  {
+    "currency_id": "1673723677362320090",
+    "symbol": "lpt",
+    "name": "Livepeer"
+  },
+  {
+    "currency_id": "1673723677362320091",
+    "symbol": "skl",
+    "name": "SKALE"
+  },
+  {
+    "currency_id": "1673723677362320092",
+    "symbol": "hive",
+    "name": "Hive"
+  },
+  {
+    "currency_id": "1673723677362320093",
+    "symbol": "uma",
+    "name": "UMA"
+  },
+  {
+    "currency_id": "1673723677362320094",
+    "symbol": "joe",
+    "name": "JOE"
+  },
+  {
+    "currency_id": "1673723677362320095",
+    "symbol": "acs",
+    "name": "Access Protocol"
+  },
+  {
+    "currency_id": "1673723677362320096",
+    "symbol": "rsr",
+    "name": "Reserve Rights"
+  },
+  {
+    "currency_id": "1673723677362320098",
+    "symbol": "lsk",
+    "name": "Lisk"
+  },
+  {
+    "currency_id": "1673723677362320101",
+    "symbol": "dgb",
+    "name": "DigiByte"
+  },
+  {
+    "currency_id": "1673723677362320102",
+    "symbol": "ever",
+    "name": "Everscale"
+  },
+  {
+    "currency_id": "1673723677362320104",
+    "symbol": "ach",
+    "name": "Alchemy Pay"
+  },
+  {
+    "currency_id": "1673723677362320105",
+    "symbol": "msol",
+    "name": "Marinade staked SOL"
+  },
+  {
+    "currency_id": "1673723677362320107",
+    "symbol": "dag",
+    "name": "Constellation"
+  },
+  {
+    "currency_id": "1673723677362320108",
+    "symbol": "mlk",
+    "name": "MiL.k Alliance"
+  },
+  {
+    "currency_id": "1673723677362320109",
+    "symbol": "brise",
+    "name": "Bitgert"
+  },
+  {
+    "currency_id": "1673723677362320111",
+    "symbol": "deso",
+    "name": "Decentralized Social"
+  },
+  {
+    "currency_id": "1673723677362320112",
+    "symbol": "vvs",
+    "name": "VVS Finance"
+  },
+  {
+    "currency_id": "1673723677362320113",
+    "symbol": "tel",
+    "name": "Telcoin"
+  },
+  {
+    "currency_id": "1673723677362320114",
+    "symbol": "ctsi",
+    "name": "Cartesi"
+  },
+  {
+    "currency_id": "1673723677362320115",
+    "symbol": "nym",
+    "name": "Nym"
+  },
+  {
+    "currency_id": "1673723677362320117",
+    "symbol": "trac",
+    "name": "OriginTrail"
+  },
+  {
+    "currency_id": "1673723677362320119",
+    "symbol": "alpha",
+    "name": "Stella"
+  },
+  {
+    "currency_id": "1673723677362320121",
+    "symbol": "rlc",
+    "name": "iExec RLC"
+  },
+  {
+    "currency_id": "1673723677362320122",
+    "symbol": "ckb",
+    "name": "Nervos Network"
+  },
+  {
+    "currency_id": "1673723677362320123",
+    "symbol": "knc",
+    "name": "Kyber Network Crystal"
+  },
+  {
+    "currency_id": "1673723677362320124",
+    "symbol": "zen",
+    "name": "Horizen"
+  },
+  {
+    "currency_id": "1673723677362320125",
+    "symbol": "elon",
+    "name": "Dogelon Mars"
+  },
+  {
+    "currency_id": "1673723677362320126",
+    "symbol": "nft",
+    "name": "APENFT"
+  },
+  {
+    "currency_id": "1673723677362320128",
+    "symbol": "wild",
+    "name": "Wilder World"
+  },
+  {
+    "currency_id": "1673723677362320131",
+    "symbol": "cweb",
+    "name": "Coinweb"
+  },
+  {
+    "currency_id": "1673723677362320132",
+    "symbol": "polyx",
+    "name": "Polymesh"
+  },
+  {
+    "currency_id": "1673723677362320133",
+    "symbol": "rad",
+    "name": "Radworks"
+  },
+  {
+    "currency_id": "1673723677362320134",
+    "symbol": "xno",
+    "name": "Nano"
+  },
+  {
+    "currency_id": "1673723677362320135",
+    "symbol": "rif",
+    "name": "RSK Infrastructure Framework"
+  },
+  {
+    "currency_id": "1673723677362320136",
+    "symbol": "pundix",
+    "name": "Pundi X"
+  },
+  {
+    "currency_id": "1673723677362320138",
+    "symbol": "erg",
+    "name": "Ergo"
+  },
+  {
+    "currency_id": "1673723677362320140",
+    "symbol": "id",
+    "name": "SPACE ID"
+  },
+  {
+    "currency_id": "1673723677362320141",
+    "symbol": "api3",
+    "name": "API3"
+  },
+  {
+    "currency_id": "1673723677362320142",
+    "symbol": "metis",
+    "name": "Metis"
+  },
+  {
+    "currency_id": "1673723677362320143",
+    "symbol": "mtl",
+    "name": "Metal DAO"
+  },
+  {
+    "currency_id": "1673723677362320144",
+    "symbol": "snt",
+    "name": "Status"
+  },
+  {
+    "currency_id": "1673723677362320145",
+    "symbol": "prom",
+    "name": "Prom"
+  },
+  {
+    "currency_id": "1673723677362320150",
+    "symbol": "celr",
+    "name": "Celer Network"
+  },
+  {
+    "currency_id": "1673723677362320157",
+    "symbol": "omg",
+    "name": "OMG Network"
+  },
+  {
+    "currency_id": "1673723677362320159",
+    "symbol": "lqty",
+    "name": "Liquity"
+  },
+  {
+    "currency_id": "1673723677362320164",
+    "symbol": "dka",
+    "name": "dKargo"
+  },
+  {
+    "currency_id": "1673723677362320166",
+    "symbol": "nmr",
+    "name": "Numeraire"
+  },
+  {
+    "currency_id": "1673723677362320167",
+    "symbol": "dexe",
+    "name": "DeXe"
+  },
+  {
+    "currency_id": "1673723677362320170",
+    "symbol": "scrt",
+    "name": "Secret"
+  },
+  {
+    "currency_id": "1673723677362320173",
+    "symbol": "pyr",
+    "name": "Vulcan Forged"
+  },
+  {
+    "currency_id": "1673723677362320174",
+    "symbol": "ali",
+    "name": "Artificial Liquid Intelligence"
+  },
+  {
+    "currency_id": "1673723677362320176",
+    "symbol": "steem",
+    "name": "Steem"
+  },
+  {
+    "currency_id": "1673723677362320177",
+    "symbol": "med",
+    "name": "Medibloc"
+  },
+  {
+    "currency_id": "1673723677362320178",
+    "symbol": "cqt",
+    "name": "Covalent"
+  },
+  {
+    "currency_id": "1673723677362320179",
+    "symbol": "c98",
+    "name": "Coin98"
+  },
+  {
+    "currency_id": "1673723677362320184",
+    "symbol": "rdnt",
+    "name": "Radiant Capital"
+  },
+  {
+    "currency_id": "1673723677362320185",
+    "symbol": "AWE",
+    "name": "AWE Network"
+  },
+  {
+    "currency_id": "1673723677362320186",
+    "symbol": "chr",
+    "name": "Chromia"
+  },
+  {
+    "currency_id": "1673723677362320187",
+    "symbol": "orbs",
+    "name": "Orbs"
+  },
+  {
+    "currency_id": "1673723677362320189",
+    "symbol": "iq",
+    "name": "IQ"
+  },
+  {
+    "currency_id": "1673723677362320191",
+    "symbol": "cfg",
+    "name": "Centrifuge"
+  },
+  {
+    "currency_id": "1673723677362320193",
+    "symbol": "alice",
+    "name": "My Neighbor Alice"
+  },
+  {
+    "currency_id": "1673723677362320195",
+    "symbol": "multi",
+    "name": "Multichain"
+  },
+  {
+    "currency_id": "1673723677362320196",
+    "symbol": "dent",
+    "name": "Dent"
+  },
+  {
+    "currency_id": "1673723677362320197",
+    "symbol": "wnxm",
+    "name": "Wrapped NXM"
+  },
+  {
+    "currency_id": "1673723677362320198",
+    "symbol": "slp",
+    "name": "Smooth Love Potion"
+  },
+  {
+    "currency_id": "1673723677362320200",
+    "symbol": "mvl",
+    "name": "MVL"
+  },
+  {
+    "currency_id": "1673723677362320201",
+    "symbol": "heart",
+    "name": "Humans.ai"
+  },
+  {
+    "currency_id": "1673723677362320203",
+    "symbol": "combo",
+    "name": "COMBO"
+  },
+  {
+    "currency_id": "1673723677362320204",
+    "symbol": "sgb",
+    "name": "Songbird"
+  },
+  {
+    "currency_id": "1673723677362320207",
+    "symbol": "vtho",
+    "name": "VeThor"
+  },
+  {
+    "currency_id": "1673723677362320209",
+    "symbol": "ardr",
+    "name": "Ardor"
+  },
+  {
+    "currency_id": "1673723677362320210",
+    "symbol": "strax",
+    "name": "Stratis"
+  },
+  {
+    "currency_id": "1673723677362320211",
+    "symbol": "hft",
+    "name": "Hashflow"
+  },
+  {
+    "currency_id": "1673723677362320213",
+    "symbol": "win",
+    "name": "WINkLink"
+  },
+  {
+    "currency_id": "1673723677362320214",
+    "symbol": "10set",
+    "name": "Tenset"
+  },
+  {
+    "currency_id": "1673723677362320215",
+    "symbol": "people",
+    "name": "ConstitutionDAO"
+  },
+  {
+    "currency_id": "1673723677362320216",
+    "symbol": "mbox",
+    "name": "Mobox"
+  },
+  {
+    "currency_id": "1673723677362320217",
+    "symbol": "pha",
+    "name": "Phala"
+  },
+  {
+    "currency_id": "1673723677362320218",
+    "symbol": "pond",
+    "name": "Marlin"
+  },
+  {
+    "currency_id": "1673723677362320220",
+    "symbol": "gtc",
+    "name": "Gitcoin"
+  },
+  {
+    "currency_id": "1673723677362320221",
+    "symbol": "cvc",
+    "name": "Civic"
+  },
+  {
+    "currency_id": "1673723677362320222",
+    "symbol": "bfc",
+    "name": "Bifrost"
+  },
+  {
+    "currency_id": "1673723677362320224",
+    "symbol": "req",
+    "name": "Request"
+  },
+  {
+    "currency_id": "1673723677362320228",
+    "symbol": "bnt",
+    "name": "Bancor Network"
+  },
+  {
+    "currency_id": "1673723677362320230",
+    "symbol": "nkn",
+    "name": "NKN"
+  },
+  {
+    "currency_id": "1673723677362320231",
+    "symbol": "powr",
+    "name": "Power Ledger"
+  },
+  {
+    "currency_id": "1673723677362320232",
+    "symbol": "ctk",
+    "name": "Shentu"
+  },
+  {
+    "currency_id": "1673723677362320234",
+    "symbol": "coti",
+    "name": "COTI"
+  },
+  {
+    "currency_id": "1673723677362320237",
+    "symbol": "ren",
+    "name": "REN"
+  },
+  {
+    "currency_id": "1673723677362320238",
+    "symbol": "tlos",
+    "name": "Telos"
+  },
+  {
+    "currency_id": "1673723677362320240",
+    "symbol": "spell",
+    "name": "Spell"
+  },
+  {
+    "currency_id": "1673723677362320241",
+    "symbol": "eurc",
+    "name": "Euro Coin"
+  },
+  {
+    "currency_id": "1673723677362320242",
+    "symbol": "pendle",
+    "name": "Pendle"
+  },
+  {
+    "currency_id": "1673723677362320243",
+    "symbol": "xvs",
+    "name": "Venus"
+  },
+  {
+    "currency_id": "1673723677362320244",
+    "symbol": "qkc",
+    "name": "QuarkChain"
+  },
+  {
+    "currency_id": "1673723677362320245",
+    "symbol": "sun",
+    "name": "Sun Token"
+  },
+  {
+    "currency_id": "1673723677362320246",
+    "symbol": "ctc",
+    "name": "Creditcoin"
+  },
+  {
+    "currency_id": "1673723677362320247",
+    "symbol": "pokt",
+    "name": "Pocket Network"
+  },
+  {
+    "currency_id": "1673723677362320249",
+    "symbol": "dext",
+    "name": "DexTools"
+  },
+  {
+    "currency_id": "1673723677362320251",
+    "symbol": "hook",
+    "name": "Hooked Protocol"
+  },
+  {
+    "currency_id": "1673723677362320255",
+    "symbol": "keep",
+    "name": "Keep Network"
+  },
+  {
+    "currency_id": "1673723677362320257",
+    "symbol": "alex",
+    "name": "ALEX Lab"
+  },
+  {
+    "currency_id": "1673723677362320258",
+    "symbol": "uos",
+    "name": "Ultra"
+  },
+  {
+    "currency_id": "1673723677362320260",
+    "symbol": "qanx",
+    "name": "QANplatform"
+  },
+  {
+    "currency_id": "1673723677362320261",
+    "symbol": "cel",
+    "name": "Celsius Network"
+  },
+  {
+    "currency_id": "1673723677362320262",
+    "symbol": "ceek",
+    "name": "CEEK Smart VR"
+  },
+  {
+    "currency_id": "1673723677362320264",
+    "symbol": "arpa",
+    "name": "ARPA"
+  },
+  {
+    "currency_id": "1673723677362320266",
+    "symbol": "boba",
+    "name": "Boba Network"
+  },
+  {
+    "currency_id": "1673723677362320267",
+    "symbol": "arrr",
+    "name": "Pirate Chain"
+  },
+  {
+    "currency_id": "1673723677362320268",
+    "symbol": "mbx",
+    "name": "Marblex"
+  },
+  {
+    "currency_id": "1673723677362320269",
+    "symbol": "ghst",
+    "name": "Aavegotchi"
+  },
+  {
+    "currency_id": "1673723677362320271",
+    "symbol": "dusk",
+    "name": "DUSK Network"
+  },
+  {
+    "currency_id": "1673723677362320274",
+    "symbol": "vra",
+    "name": "Verasity"
+  },
+  {
+    "currency_id": "1673723677362320278",
+    "symbol": "susd",
+    "name": "sUSD"
+  },
+  {
+    "currency_id": "1673723677362320279",
+    "symbol": "wmt",
+    "name": "World Mobile Token"
+  },
+  {
+    "currency_id": "1673723677362320281",
+    "symbol": "super",
+    "name": "SuperVerse"
+  },
+  {
+    "currency_id": "1673723677362320283",
+    "symbol": "rss3",
+    "name": "RSS3"
+  },
+  {
+    "currency_id": "1673723677362320285",
+    "symbol": "xyo",
+    "name": "XYO Network"
+  },
+  {
+    "currency_id": "1673723677362320286",
+    "symbol": "nxra",
+    "name": "AllianceBlock Nexera"
+  },
+  {
+    "currency_id": "1673723677362320289",
+    "symbol": "zig",
+    "name": "Zignaly"
+  },
+  {
+    "currency_id": "1673723677362320290",
+    "symbol": "rare",
+    "name": "SuperRare"
+  },
+  {
+    "currency_id": "1673723677362320293",
+    "symbol": "tru",
+    "name": "TrueFi"
+  },
+  {
+    "currency_id": "1673723677362320296",
+    "symbol": "vr",
+    "name": "Victoria VR"
+  },
+  {
+    "currency_id": "1673723677362320299",
+    "symbol": "gmt",
+    "name": "Gomining Token"
+  },
+  {
+    "currency_id": "1673723677362320300",
+    "symbol": "badger",
+    "name": "Badger DAO"
+  },
+  {
+    "currency_id": "1673723677362320302",
+    "symbol": "idex",
+    "name": "IDEX"
+  },
+  {
+    "currency_id": "1673723677362320303",
+    "symbol": "fun",
+    "name": "FUNToken"
+  },
+  {
+    "currency_id": "1673723677362320305",
+    "symbol": "aergo",
+    "name": "Aergo"
+  },
+  {
+    "currency_id": "1673723677362320306",
+    "symbol": "mbl",
+    "name": "MovieBloc"
+  },
+  {
+    "currency_id": "1673723677362320307",
+    "symbol": "lcx",
+    "name": "LCX"
+  },
+  {
+    "currency_id": "1673723677362320310",
+    "symbol": "ark",
+    "name": "ARK"
+  },
+  {
+    "currency_id": "1673723677362320311",
+    "symbol": "prime",
+    "name": "Echelon Prime"
+  },
+  {
+    "currency_id": "1673723677362320314",
+    "symbol": "cbk",
+    "name": "Cobak"
+  },
+  {
+    "currency_id": "1673723677362320315",
+    "symbol": "zcx",
+    "name": "Unizen"
+  },
+  {
+    "currency_id": "1673723677362320316",
+    "symbol": "dodo",
+    "name": "DODO"
+  },
+  {
+    "currency_id": "1673723677362320318",
+    "symbol": "tlm",
+    "name": "Alien Worlds"
+  },
+  {
+    "currency_id": "1673723677362320323",
+    "symbol": "wrx",
+    "name": "WazirX"
+  },
+  {
+    "currency_id": "1673723677362320324",
+    "symbol": "movr",
+    "name": "Moonriver"
+  },
+  {
+    "currency_id": "1673723677362320325",
+    "symbol": "sfund",
+    "name": "Seedify.fund"
+  },
+  {
+    "currency_id": "1673723677362320327",
+    "symbol": "bmex",
+    "name": "BitMEX"
+  },
+  {
+    "currency_id": "1673723677362320328",
+    "symbol": "raca",
+    "name": "Radio Caca"
+  },
+  {
+    "currency_id": "1673723677362320329",
+    "symbol": "key",
+    "name": "SelfKey"
+  },
+  {
+    "currency_id": "1673723677362320330",
+    "symbol": "ray",
+    "name": "Raydium"
+  },
+  {
+    "currency_id": "1673723677362320332",
+    "symbol": "ogn",
+    "name": "Origin Protocol"
+  },
+  {
+    "currency_id": "1673723677362320336",
+    "symbol": "reef",
+    "name": "Reef"
+  },
+  {
+    "currency_id": "1673723677362320339",
+    "symbol": "ata",
+    "name": "Automata"
+  },
+  {
+    "currency_id": "1673723677362320342",
+    "symbol": "fei",
+    "name": "Fei USD"
+  },
+  {
+    "currency_id": "1673723677362320343",
+    "symbol": "bel",
+    "name": "Bella Protocol"
+  },
+  {
+    "currency_id": "1673723677362320347",
+    "symbol": "mtrg",
+    "name": "Meter Governance"
+  },
+  {
+    "currency_id": "1673723677362320349",
+    "symbol": "gafi",
+    "name": "GameFi"
+  },
+  {
+    "currency_id": "1673723677362320353",
+    "symbol": "agld",
+    "name": "Adventure Gold"
+  },
+  {
+    "currency_id": "1673723677362320359",
+    "symbol": "lat",
+    "name": "PlatON Network"
+  },
+  {
+    "currency_id": "1673723677362320361",
+    "symbol": "ladys",
+    "name": "Milady Meme Coin"
+  },
+  {
+    "currency_id": "1673723677362320363",
+    "symbol": "storj",
+    "name": "Storj"
+  },
+  {
+    "currency_id": "1673723677362320386",
+    "symbol": "trx",
+    "name": "TRON"
+  },
+  {
+    "currency_id": "1685599799167254531",
+    "symbol": "mnt",
+    "name": "Mantle"
+  },
+  {
+    "currency_id": "1685599799167254532",
+    "symbol": "wld",
+    "name": "Worldcoin"
+  },
+  {
+    "currency_id": "1685599799167254533",
+    "symbol": "unibot",
+    "name": "Unibot"
+  },
+  {
+    "currency_id": "1685599799167254534",
+    "symbol": "arkm",
+    "name": "Arkham"
+  },
+  {
+    "currency_id": "1685599799167254536",
+    "symbol": "bitcoin",
+    "name": "HarryPotterObamaSonic10Inu (ETH)"
+  },
+  {
+    "currency_id": "1685599799167254538",
+    "symbol": "sdex",
+    "name": "SmarDex"
+  },
+  {
+    "currency_id": "1685599799167254539",
+    "symbol": "mav",
+    "name": "Maverick Protocol"
+  },
+  {
+    "currency_id": "1685599799167254540",
+    "symbol": "xvg",
+    "name": "Verge"
+  },
+  {
+    "currency_id": "1685599799167254544",
+    "symbol": "xcad",
+    "name": "XCAD Network"
+  },
+  {
+    "currency_id": "1685599799167254545",
+    "symbol": "aca",
+    "name": "Acala"
+  },
+  {
+    "currency_id": "1685599799167254546",
+    "symbol": "eul",
+    "name": "Euler"
+  },
+  {
+    "currency_id": "1685599799167254547",
+    "symbol": "kin",
+    "name": "Kin"
+  },
+  {
+    "currency_id": "1685599799167254548",
+    "symbol": "xprt",
+    "name": "Persistence"
+  },
+  {
+    "currency_id": "1685599799167254549",
+    "symbol": "leash",
+    "name": "Doge Killer"
+  },
+  {
+    "currency_id": "1685599799167254550",
+    "symbol": "auction",
+    "name": "Bounce"
+  },
+  {
+    "currency_id": "1685599799167254555",
+    "symbol": "tt",
+    "name": "ThunderCore"
+  },
+  {
+    "currency_id": "1685599799167254559",
+    "symbol": "sweat",
+    "name": "Sweatcoin (Sweat Economy)"
+  },
+  {
+    "currency_id": "1685599799167254561",
+    "symbol": "gas",
+    "name": "Gas"
+  },
+  {
+    "currency_id": "1685599799167254563",
+    "symbol": "route",
+    "name": "Router Protocol"
+  },
+  {
+    "currency_id": "1685599799167254564",
+    "symbol": "gods",
+    "name": "Gods Unchained"
+  },
+  {
+    "currency_id": "1685599799167254568",
+    "symbol": "perp",
+    "name": "Perpetual Protocol"
+  },
+  {
+    "currency_id": "1685599799167254573",
+    "symbol": "DNX",
+    "name": "Dynex"
+  },
+  {
+    "currency_id": "1685599799167254574",
+    "symbol": "ygg",
+    "name": "Yield Guild Games"
+  },
+  {
+    "currency_id": "1685599799167254576",
+    "symbol": "srm",
+    "name": "Serum"
+  },
+  {
+    "currency_id": "1685599799167254577",
+    "symbol": "plu",
+    "name": "Pluton"
+  },
+  {
+    "currency_id": "1685599799167254581",
+    "symbol": "hifi",
+    "name": "Hifi Finance"
+  },
+  {
+    "currency_id": "1685599799167254582",
+    "symbol": "flm",
+    "name": "Flamingo Finance"
+  },
+  {
+    "currency_id": "1685599799167254583",
+    "symbol": "pols",
+    "name": "Polkastarter"
+  },
+  {
+    "currency_id": "1685599799167254584",
+    "symbol": "iris",
+    "name": "IRISnet"
+  },
+  {
+    "currency_id": "1685599799167254586",
+    "symbol": "bsw",
+    "name": "Biswap"
+  },
+  {
+    "currency_id": "1685599799167254590",
+    "symbol": "trb",
+    "name": "Tellor Tributes"
+  },
+  {
+    "currency_id": "1685599799167254594",
+    "symbol": "fort",
+    "name": "Forta"
+  },
+  {
+    "currency_id": "1685599799167254596",
+    "symbol": "ctxc",
+    "name": "Cortex"
+  },
+  {
+    "currency_id": "1685599799167254598",
+    "symbol": "yfii",
+    "name": "DFI.money"
+  },
+  {
+    "currency_id": "1685599799167254599",
+    "symbol": "oxt",
+    "name": "Orchid Protocol"
+  },
+  {
+    "currency_id": "1685599799167254600",
+    "symbol": "ern",
+    "name": "Ethernity Chain"
+  },
+  {
+    "currency_id": "1685599799167254601",
+    "symbol": "ator",
+    "name": "AirTor Protocol"
+  },
+  {
+    "currency_id": "1685599799167254602",
+    "symbol": "looks",
+    "name": "LooksRare"
+  },
+  {
+    "currency_id": "1685599799167254604",
+    "symbol": "ava",
+    "name": "Travala.com"
+  },
+  {
+    "currency_id": "1685599799167254605",
+    "symbol": "mdt",
+    "name": "Measurable Data"
+  },
+  {
+    "currency_id": "1685599799167254606",
+    "symbol": "alu",
+    "name": "Altura"
+  },
+  {
+    "currency_id": "1685599799167254610",
+    "symbol": "dia",
+    "name": "DIA"
+  },
+  {
+    "currency_id": "1685599799167254615",
+    "symbol": "ads",
+    "name": "Adshares"
+  },
+  {
+    "currency_id": "1685599799167254618",
+    "symbol": "bond",
+    "name": "BarnBridge"
+  },
+  {
+    "currency_id": "1685599799167254620",
+    "symbol": "kp3r",
+    "name": "Keep3rV1"
+  },
+  {
+    "currency_id": "1685599799167254621",
+    "symbol": "loka",
+    "name": "League of Kingdoms"
+  },
+  {
+    "currency_id": "1685599799167254622",
+    "symbol": "forth",
+    "name": "Ampleforth Governance"
+  },
+  {
+    "currency_id": "1685599799167254627",
+    "symbol": "bifi",
+    "name": "Beefy"
+  },
+  {
+    "currency_id": "1685599799167254628",
+    "symbol": "mln",
+    "name": "Enzyme"
+  },
+  {
+    "currency_id": "1685599799167254629",
+    "symbol": "bake",
+    "name": "BakerySwap"
+  },
+  {
+    "currency_id": "1685599799167254631",
+    "symbol": "PROPC",
+    "name": "Propchain"
+  },
+  {
+    "currency_id": "1685599799167254632",
+    "symbol": "naka",
+    "name": "Nakamoto Games"
+  },
+  {
+    "currency_id": "1685599799167254633",
+    "symbol": "bts",
+    "name": "BitShares"
+  },
+  {
+    "currency_id": "1685599799167254634",
+    "symbol": "xcn",
+    "name": "Onyxcoin"
+  },
+  {
+    "currency_id": "1685599799167254635",
+    "symbol": "alcx",
+    "name": "Alchemix"
+  },
+  {
+    "currency_id": "1685599799167254637",
+    "symbol": "phb",
+    "name": "Phoenix"
+  },
+  {
+    "currency_id": "1685599799167254641",
+    "symbol": "ampl",
+    "name": "Ampleforth"
+  },
+  {
+    "currency_id": "1685599799167254642",
+    "symbol": "ela",
+    "name": "Elastos"
+  },
+  {
+    "currency_id": "1685599799167254647",
+    "symbol": "quick",
+    "name": "Quickswap"
+  },
+  {
+    "currency_id": "1685599799167254652",
+    "symbol": "bar",
+    "name": "FC Barcelona Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254653",
+    "symbol": "dome",
+    "name": "Everdome"
+  },
+  {
+    "currency_id": "1685599799167254655",
+    "symbol": "klv",
+    "name": "Klever"
+  },
+  {
+    "currency_id": "1685599799167254657",
+    "symbol": "aurora",
+    "name": "Aurora"
+  },
+  {
+    "currency_id": "1685599799167254659",
+    "symbol": "hero",
+    "name": "Metahero"
+  },
+  {
+    "currency_id": "1685599799167254663",
+    "symbol": "qi",
+    "name": "BENQI"
+  },
+  {
+    "currency_id": "1685599799167254664",
+    "symbol": "gfi",
+    "name": "Goldfinch"
+  },
+  {
+    "currency_id": "1685599799167254666",
+    "symbol": "FLUID",
+    "name": "Fluid"
+  },
+  {
+    "currency_id": "1685599799167254668",
+    "symbol": "vai",
+    "name": "Vaiot"
+  },
+  {
+    "currency_id": "1685599799167254671",
+    "symbol": "dnt",
+    "name": "district0x"
+  },
+  {
+    "currency_id": "1685599799167254675",
+    "symbol": "vno",
+    "name": "Veno Finance"
+  },
+  {
+    "currency_id": "1685599799167254676",
+    "symbol": "sd",
+    "name": "Stader"
+  },
+  {
+    "currency_id": "1685599799167254677",
+    "symbol": "alpine",
+    "name": "Alpine F1 Team Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254678",
+    "symbol": "city",
+    "name": "Manchester City Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254680",
+    "symbol": "ufo",
+    "name": "UFO Gaming"
+  },
+  {
+    "currency_id": "1685599799167254681",
+    "symbol": "cos",
+    "name": "Contentos"
+  },
+  {
+    "currency_id": "1685599799167254682",
+    "symbol": "blz",
+    "name": "Bluzelle"
+  },
+  {
+    "currency_id": "1685599799167254683",
+    "symbol": "clv",
+    "name": "Clover Finance"
+  },
+  {
+    "currency_id": "1685599799167254684",
+    "symbol": "alpaca",
+    "name": "Alpaca Finance"
+  },
+  {
+    "currency_id": "1685599799167254686",
+    "symbol": "saito",
+    "name": "Saito"
+  },
+  {
+    "currency_id": "1685599799167254690",
+    "symbol": "GOG",
+    "name": "Guild of Guardians"
+  },
+  {
+    "currency_id": "1685599799167254693",
+    "symbol": "unfi",
+    "name": "Unifi Protocol DAO"
+  },
+  {
+    "currency_id": "1685599799167254699",
+    "symbol": "nuls",
+    "name": "Nuls"
+  },
+  {
+    "currency_id": "1685599799167254701",
+    "symbol": "hello",
+    "name": "HELLO"
+  },
+  {
+    "currency_id": "1685599799167254702",
+    "symbol": "pro",
+    "name": "Propy"
+  },
+  {
+    "currency_id": "1685599799167254704",
+    "symbol": "mxc",
+    "name": "MXC"
+  },
+  {
+    "currency_id": "1685599799167254706",
+    "symbol": "kishu",
+    "name": "Kishu Inu"
+  },
+  {
+    "currency_id": "1685599799167254707",
+    "symbol": "orca",
+    "name": "Orca"
+  },
+  {
+    "currency_id": "1685599799167254711",
+    "symbol": "adx",
+    "name": "Ambire AdEx"
+  },
+  {
+    "currency_id": "1685599799167254712",
+    "symbol": "ast",
+    "name": "AirSwap"
+  },
+  {
+    "currency_id": "1685599799167254714",
+    "symbol": "mngo",
+    "name": "Mango"
+  },
+  {
+    "currency_id": "1685599799167254716",
+    "symbol": "gmm",
+    "name": "Gamium"
+  },
+  {
+    "currency_id": "1685599799167254719",
+    "symbol": "opul",
+    "name": "Opulous"
+  },
+  {
+    "currency_id": "1685599799167254722",
+    "symbol": "caps",
+    "name": "Ternoa"
+  },
+  {
+    "currency_id": "1685599799167254728",
+    "symbol": "atlas",
+    "name": "Star Atlas"
+  },
+  {
+    "currency_id": "1685599799167254730",
+    "symbol": "velo",
+    "name": "Velo"
+  },
+  {
+    "currency_id": "1685599799167254735",
+    "symbol": "cru",
+    "name": "Crust Network"
+  },
+  {
+    "currency_id": "1685599799167254739",
+    "symbol": "tko",
+    "name": "Tokocrypto"
+  },
+  {
+    "currency_id": "1685599799167254743",
+    "symbol": "polis",
+    "name": "Star Atlas DAO"
+  },
+  {
+    "currency_id": "1685599799167254746",
+    "symbol": "psg",
+    "name": "Paris Saint-Germain Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254749",
+    "symbol": "df",
+    "name": "dForce"
+  },
+  {
+    "currency_id": "1685599799167254752",
+    "symbol": "lever",
+    "name": "LeverFi"
+  },
+  {
+    "currency_id": "1685599799167254753",
+    "symbol": "wing",
+    "name": "Wing Finance"
+  },
+  {
+    "currency_id": "1685599799167254754",
+    "symbol": "bzz",
+    "name": "Swarm"
+  },
+  {
+    "currency_id": "1685599799167254755",
+    "symbol": "hopr",
+    "name": "HOPR"
+  },
+  {
+    "currency_id": "1685599799167254756",
+    "symbol": "aidoge",
+    "name": "ArbDoge AI"
+  },
+  {
+    "currency_id": "1685599799167254761",
+    "symbol": "xpr",
+    "name": "Proton"
+  },
+  {
+    "currency_id": "1685599799167254767",
+    "symbol": "lazio",
+    "name": "Lazio Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254772",
+    "symbol": "farm",
+    "name": "Harvest Finance"
+  },
+  {
+    "currency_id": "1685599799167254774",
+    "symbol": "ae",
+    "name": "Aeternity"
+  },
+  {
+    "currency_id": "1685599799167254776",
+    "symbol": "velo",
+    "name": "Velodrome Finance"
+  },
+  {
+    "currency_id": "1685599799167254777",
+    "symbol": "pnk",
+    "name": "Kleros"
+  },
+  {
+    "currency_id": "1685599799167254782",
+    "symbol": "voxel",
+    "name": "Voxies"
+  },
+  {
+    "currency_id": "1685599799167254784",
+    "symbol": "MANTRA",
+    "name": "MANTRA"
+  },
+  {
+    "currency_id": "1685599799167254786",
+    "symbol": "hai",
+    "name": "Hacken"
+  },
+  {
+    "currency_id": "1685599799167254788",
+    "symbol": "nct",
+    "name": "PolySwarm"
+  },
+  {
+    "currency_id": "1685599799167254794",
+    "symbol": "MCADE",
+    "name": "Metacade"
+  },
+  {
+    "currency_id": "1685599799167254800",
+    "symbol": "tdrop",
+    "name": "ThetaDrop"
+  },
+  {
+    "currency_id": "1685599799167254803",
+    "symbol": "santos",
+    "name": "Santos FC Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254804",
+    "symbol": "fis",
+    "name": "Stafi"
+  },
+  {
+    "currency_id": "1685599799167254810",
+    "symbol": "boson",
+    "name": "Boson Protocol"
+  },
+  {
+    "currency_id": "1685599799167254812",
+    "symbol": "lbr",
+    "name": "Lybra Finance"
+  },
+  {
+    "currency_id": "1685599799167254817",
+    "symbol": "og",
+    "name": "OG Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254818",
+    "symbol": "fio",
+    "name": "FIO Protocol"
+  },
+  {
+    "currency_id": "1685599799167254819",
+    "symbol": "volt",
+    "name": "Volt Inu"
+  },
+  {
+    "currency_id": "1685599799167254820",
+    "symbol": "ceur",
+    "name": "Celo Euro"
+  },
+  {
+    "currency_id": "1685599799167254827",
+    "symbol": "samo",
+    "name": "Samoyedcoin"
+  },
+  {
+    "currency_id": "1685599799167254829",
+    "symbol": "bonk",
+    "name": "Bonk"
+  },
+  {
+    "currency_id": "1685599799167254836",
+    "symbol": "shdw",
+    "name": "Shadow Token"
+  },
+  {
+    "currency_id": "1685599799167254839",
+    "symbol": "aleph",
+    "name": "Aleph.im"
+  },
+  {
+    "currency_id": "1685599799167254840",
+    "symbol": "xen",
+    "name": "XEN Crypto"
+  },
+  {
+    "currency_id": "1685599799167254853",
+    "symbol": "asto",
+    "name": "Altered State Machine"
+  },
+  {
+    "currency_id": "1685599799167254855",
+    "symbol": "ovr",
+    "name": "Ovr"
+  },
+  {
+    "currency_id": "1685599799167254862",
+    "symbol": "stos",
+    "name": "Stratos"
+  },
+  {
+    "currency_id": "1685599799167254863",
+    "symbol": "cere",
+    "name": "Cere Network"
+  },
+  {
+    "currency_id": "1685599799167254866",
+    "symbol": "aioz",
+    "name": "AIOZ Network"
+  },
+  {
+    "currency_id": "1685599799167254873",
+    "symbol": "num",
+    "name": "NUM Token"
+  },
+  {
+    "currency_id": "1685599799167254874",
+    "symbol": "hegic",
+    "name": "Hegic"
+  },
+  {
+    "currency_id": "1685599799167254875",
+    "symbol": "fida",
+    "name": "Bonfida"
+  },
+  {
+    "currency_id": "1685599799167254884",
+    "symbol": "fuse",
+    "name": "Fuse"
+  },
+  {
+    "currency_id": "1685599799167254886",
+    "symbol": "rari",
+    "name": "Rarible"
+  },
+  {
+    "currency_id": "1685599799167254887",
+    "symbol": "slnd",
+    "name": "Solend"
+  },
+  {
+    "currency_id": "1685599799167254889",
+    "symbol": "acx",
+    "name": "Across Protocol"
+  },
+  {
+    "currency_id": "1685599799167254890",
+    "symbol": "acm",
+    "name": "AC Milan Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254897",
+    "symbol": "afc",
+    "name": "Arsenal Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254898",
+    "symbol": "soul",
+    "name": "Phantasma"
+  },
+  {
+    "currency_id": "1685599799167254901",
+    "symbol": "htr",
+    "name": "Hathor"
+  },
+  {
+    "currency_id": "1685599799167254907",
+    "symbol": "math",
+    "name": "MATH"
+  },
+  {
+    "currency_id": "1685599799167254909",
+    "symbol": "burger",
+    "name": "BurgerCities"
+  },
+  {
+    "currency_id": "1685599799167254915",
+    "symbol": "dmtr",
+    "name": "Dimitra"
+  },
+  {
+    "currency_id": "1685599799167254916",
+    "symbol": "xeta",
+    "name": "XANA"
+  },
+  {
+    "currency_id": "1685599799167254917",
+    "symbol": "isk",
+    "name": "ISKRA Token"
+  },
+  {
+    "currency_id": "1685599799167254920",
+    "symbol": "mnde",
+    "name": "Marinade"
+  },
+  {
+    "currency_id": "1685599799167254921",
+    "symbol": "mdao",
+    "name": "MarsDAO"
+  },
+  {
+    "currency_id": "1685599799167254922",
+    "symbol": "undead",
+    "name": "Undead Blocks"
+  },
+  {
+    "currency_id": "1685599799167254924",
+    "symbol": "orai",
+    "name": "Oraichain"
+  },
+  {
+    "currency_id": "1685599799167254931",
+    "symbol": "poolx",
+    "name": "Poolz Finance"
+  },
+  {
+    "currency_id": "1685599799167254932",
+    "symbol": "crts",
+    "name": "Cratos"
+  },
+  {
+    "currency_id": "1685599799167254939",
+    "symbol": "cho",
+    "name": "Choise.com"
+  },
+  {
+    "currency_id": "1685599799167254940",
+    "symbol": "buy",
+    "name": "Buying.com"
+  },
+  {
+    "currency_id": "1685599799167254943",
+    "symbol": "swftc",
+    "name": "SWFTCOIN"
+  },
+  {
+    "currency_id": "1685599799167254951",
+    "symbol": "sps",
+    "name": "Splintershards"
+  },
+  {
+    "currency_id": "1685599799167254960",
+    "symbol": "lon",
+    "name": "Tokenlon"
+  },
+  {
+    "currency_id": "1685599799167254963",
+    "symbol": "cow",
+    "name": "CoW Protocol"
+  },
+  {
+    "currency_id": "1685599799167254965",
+    "symbol": "alph",
+    "name": "Alephium"
+  },
+  {
+    "currency_id": "1685599799167254969",
+    "symbol": "juv",
+    "name": "Juventus Fan Token"
+  },
+  {
+    "currency_id": "1685599799167254971",
+    "symbol": "cheq",
+    "name": "CHEQD Network"
+  },
+  {
+    "currency_id": "1685599799167254972",
+    "symbol": "cream",
+    "name": "Cream"
+  },
+  {
+    "currency_id": "1685599799167254973",
+    "symbol": "nim",
+    "name": "Nimiq"
+  },
+  {
+    "currency_id": "1685599799167254978",
+    "symbol": "agi",
+    "name": "Delysium"
+  },
+  {
+    "currency_id": "1685599799167254982",
+    "symbol": "fox",
+    "name": "ShapeShift FOX"
+  },
+  {
+    "currency_id": "1685599799167254983",
+    "symbol": "dimo",
+    "name": "DIMO"
+  },
+  {
+    "currency_id": "1685599799167254984",
+    "symbol": "pstake",
+    "name": "pSTAKE Finance"
+  },
+  {
+    "currency_id": "1685599799167254990",
+    "symbol": "uncx",
+    "name": "UNCX Network"
+  },
+  {
+    "currency_id": "1685599799167254998",
+    "symbol": "push",
+    "name": "Push Protocol"
+  },
+  {
+    "currency_id": "1685599799167255003",
+    "symbol": "inv",
+    "name": "Inverse Finance"
+  },
+  {
+    "currency_id": "1685599799167255005",
+    "symbol": "avt",
+    "name": "Aventus"
+  },
+  {
+    "currency_id": "1685599799167255011",
+    "symbol": "toke",
+    "name": "Tokemak"
+  },
+  {
+    "currency_id": "1685599799167255014",
+    "symbol": "atm",
+    "name": "Atletico Madrid Fan Token"
+  },
+  {
+    "currency_id": "1685599799167255015",
+    "symbol": "cpool",
+    "name": "Clearpool"
+  },
+  {
+    "currency_id": "1685599799167255016",
+    "symbol": "sis",
+    "name": "Symbiosis"
+  },
+  {
+    "currency_id": "1685599799167255024",
+    "symbol": "cate",
+    "name": "CateCoin"
+  },
+  {
+    "currency_id": "1685599799167255031",
+    "symbol": "krl",
+    "name": "KRYLL"
+  },
+  {
+    "currency_id": "1685599799167255035",
+    "symbol": "vib",
+    "name": "Viberate"
+  },
+  {
+    "currency_id": "1685599799167255036",
+    "symbol": "abt",
+    "name": "Arcblock"
+  },
+  {
+    "currency_id": "1685599799167255038",
+    "symbol": "impt",
+    "name": "IMPT"
+  },
+  {
+    "currency_id": "1685599799167255040",
+    "symbol": "dego",
+    "name": "Dego Finance"
+  },
+  {
+    "currency_id": "1685599799167255045",
+    "symbol": "GHO",
+    "name": "GHO"
+  },
+  {
+    "currency_id": "1685599799167255048",
+    "symbol": "wojak",
+    "name": "Wojak"
+  },
+  {
+    "currency_id": "1685599799167255049",
+    "symbol": "index",
+    "name": "Index Cooperative"
+  },
+  {
+    "currency_id": "1685599799167255058",
+    "symbol": "swash",
+    "name": "Swash"
+  },
+  {
+    "currency_id": "1685599799167255059",
+    "symbol": "wxt",
+    "name": "WXT Token"
+  },
+  {
+    "currency_id": "1685599799167255069",
+    "symbol": "starl",
+    "name": "StarLink"
+  },
+  {
+    "currency_id": "1685599799167255070",
+    "symbol": "apex",
+    "name": "ApeX"
+  },
+  {
+    "currency_id": "1685599799167255072",
+    "symbol": "spa",
+    "name": "Sperax"
+  },
+  {
+    "currency_id": "1685599799167255073",
+    "symbol": "ald",
+    "name": "Aladdin DAO"
+  },
+  {
+    "currency_id": "1685599799167255077",
+    "symbol": "sidus",
+    "name": "Sidus"
+  },
+  {
+    "currency_id": "1685599799167255078",
+    "symbol": "tra",
+    "name": "Trabzonspor Fan Token"
+  },
+  {
+    "currency_id": "1685599799167255086",
+    "symbol": "sudo",
+    "name": "sudoswap"
+  },
+  {
+    "currency_id": "1685599799167255087",
+    "symbol": "turbo",
+    "name": "Turbo"
+  },
+  {
+    "currency_id": "1685599799167255093",
+    "symbol": "mmpro",
+    "name": "Market Making Pro"
+  },
+  {
+    "currency_id": "1685599799167255095",
+    "symbol": "tet",
+    "name": "Tectum"
+  },
+  {
+    "currency_id": "1685599799167255098",
+    "symbol": "gear",
+    "name": "Gearbox"
+  },
+  {
+    "currency_id": "1685599799167255100",
+    "symbol": "man",
+    "name": "Matrix AI Network"
+  },
+  {
+    "currency_id": "1685599799167255102",
+    "symbol": "fyn",
+    "name": "Affyn"
+  },
+  {
+    "currency_id": "1685599799167255109",
+    "symbol": "rai",
+    "name": "Rai Reflex Index"
+  },
+  {
+    "currency_id": "1685599799167255119",
+    "symbol": "inter",
+    "name": "Inter Milan Fan Token"
+  },
+  {
+    "currency_id": "1685599799167255126",
+    "symbol": "aura",
+    "name": "Aura Network"
+  },
+  {
+    "currency_id": "1685599799167255128",
+    "symbol": "vinu",
+    "name": "Vita Inu"
+  },
+  {
+    "currency_id": "1685599799167255130",
+    "symbol": "grnd",
+    "name": "SuperWalk"
+  },
+  {
+    "currency_id": "1685599799167255140",
+    "symbol": "gzone",
+    "name": "GameZone"
+  },
+  {
+    "currency_id": "1685599799167255142",
+    "symbol": "mcrt",
+    "name": "MagicCraft"
+  },
+  {
+    "currency_id": "1685599799167255146",
+    "symbol": "xava",
+    "name": "Avalaunch"
+  },
+  {
+    "currency_id": "1685599799167255147",
+    "symbol": "brn",
+    "name": "BRN Metaverse"
+  },
+  {
+    "currency_id": "1685599799167255153",
+    "symbol": "dino",
+    "name": "DinoLFG"
+  },
+  {
+    "currency_id": "1685599799167255154",
+    "symbol": "dog",
+    "name": "The Doge NFT"
+  },
+  {
+    "currency_id": "1685599799167255158",
+    "symbol": "shft",
+    "name": "Shyft Network"
+  },
+  {
+    "currency_id": "1685599799167255165",
+    "symbol": "gari",
+    "name": "Gari Network"
+  },
+  {
+    "currency_id": "1685599799167255166",
+    "symbol": "asr",
+    "name": "AS Roma Fan Token"
+  },
+  {
+    "currency_id": "1685599799167255172",
+    "symbol": "dbc",
+    "name": "DeepBrain Chain"
+  },
+  {
+    "currency_id": "1685599799167255176",
+    "symbol": "dep",
+    "name": "DEAPCOIN"
+  },
+  {
+    "currency_id": "1685599799167255187",
+    "symbol": "sylo",
+    "name": "Sylo"
+  },
+  {
+    "currency_id": "1685599799167255191",
+    "symbol": "cgpt",
+    "name": "ChainGPT"
+  },
+  {
+    "currency_id": "1685599799167255193",
+    "symbol": "rfd",
+    "name": "Refund"
+  },
+  {
+    "currency_id": "1685599799167255197",
+    "symbol": "mtv",
+    "name": "MultiVAC"
+  },
+  {
+    "currency_id": "1685599799167255202",
+    "symbol": "dora",
+    "name": "Dora Factory"
+  },
+  {
+    "currency_id": "1685599799167255205",
+    "symbol": "cell",
+    "name": "Cellframe"
+  },
+  {
+    "currency_id": "1685599799167255209",
+    "symbol": "suku",
+    "name": "SUKU"
+  },
+  {
+    "currency_id": "1685599799167255212",
+    "symbol": "fitfi",
+    "name": "Step App"
+  },
+  {
+    "currency_id": "1685599799167255213",
+    "symbol": "muse",
+    "name": "Muse DAO"
+  },
+  {
+    "currency_id": "1685599799167255214",
+    "symbol": "torn",
+    "name": "Tornado Cash"
+  },
+  {
+    "currency_id": "1685599799167255216",
+    "symbol": "rbx",
+    "name": "RabbitX"
+  },
+  {
+    "currency_id": "1685599799167255219",
+    "symbol": "nap",
+    "name": "Napoli Fan Token"
+  },
+  {
+    "currency_id": "1685599799167255225",
+    "symbol": "ctx",
+    "name": "Cryptex Finance"
+  },
+  {
+    "currency_id": "1685599799167255227",
+    "symbol": "the",
+    "name": "Thena"
+  },
+  {
+    "currency_id": "1685599799167255235",
+    "symbol": "smt",
+    "name": "Swarm Markets"
+  },
+  {
+    "currency_id": "1685599799167255240",
+    "symbol": "radar",
+    "name": "DappRadar"
+  },
+  {
+    "currency_id": "1685599799167255248",
+    "symbol": "rjv",
+    "name": "Rejuve.AI"
+  },
+  {
+    "currency_id": "1685599799167255252",
+    "symbol": "mir",
+    "name": "Mirror Protocol"
+  },
+  {
+    "currency_id": "1685599799167255264",
+    "symbol": "epik",
+    "name": "Epik Prime"
+  },
+  {
+    "currency_id": "1685599799167255274",
+    "symbol": "trvl",
+    "name": "TRVL"
+  },
+  {
+    "currency_id": "1685599799167255284",
+    "symbol": "png",
+    "name": "Pangolin"
+  },
+  {
+    "currency_id": "1685599799167255295",
+    "symbol": "grin",
+    "name": "Grin"
+  },
+  {
+    "currency_id": "1685599799167255302",
+    "symbol": "ern",
+    "name": "Ethos Reserve Note"
+  },
+  {
+    "currency_id": "1685599799167255310",
+    "symbol": "ask",
+    "name": "Permission Coin"
+  },
+  {
+    "currency_id": "1685599799167255313",
+    "symbol": "wsi",
+    "name": "WeSendit"
+  },
+  {
+    "currency_id": "1685599799167255337",
+    "symbol": "wallet",
+    "name": "Ambire Wallet"
+  },
+  {
+    "currency_id": "1685599799167255338",
+    "symbol": "moov",
+    "name": "dotmoovs"
+  },
+  {
+    "currency_id": "1685599799167255347",
+    "symbol": "oxy",
+    "name": "Oxygen"
+  },
+  {
+    "currency_id": "1685599799167255354",
+    "symbol": "k21",
+    "name": "K21"
+  },
+  {
+    "currency_id": "1685599799167255359",
+    "symbol": "adp",
+    "name": "Adappter"
+  },
+  {
+    "currency_id": "1685599799167255375",
+    "symbol": "bnc",
+    "name": "Bifrost Native Coin"
+  },
+  {
+    "currency_id": "1685599799167255387",
+    "symbol": "chain",
+    "name": "Chain Games"
+  },
+  {
+    "currency_id": "1685599799167255389",
+    "symbol": "ghx",
+    "name": "GamerCoin"
+  },
+  {
+    "currency_id": "1685599799167255408",
+    "symbol": "ring",
+    "name": "Darwinia Network"
+  },
+  {
+    "currency_id": "1685599799167255414",
+    "symbol": "ncdt",
+    "name": "Nuco.Cloud"
+  },
+  {
+    "currency_id": "1685599799167255434",
+    "symbol": "polk",
+    "name": "Polkamarkets"
+  },
+  {
+    "currency_id": "1685599799167255441",
+    "symbol": "umb",
+    "name": "Umbrella Network"
+  },
+  {
+    "currency_id": "1685599799167255442",
+    "symbol": "polydoge",
+    "name": "PolyDoge"
+  },
+  {
+    "currency_id": "1685599799167255459",
+    "symbol": "nbt",
+    "name": "NanoByte"
+  },
+  {
+    "currency_id": "1685599799167255463",
+    "symbol": "shx",
+    "name": "Stronghold"
+  },
+  {
+    "currency_id": "1685599799167255474",
+    "symbol": "well",
+    "name": "Moonwell"
+  },
+  {
+    "currency_id": "1685599799167255483",
+    "symbol": "pi",
+    "name": "Plian"
+  },
+  {
+    "currency_id": "1685599799167255491",
+    "symbol": "00",
+    "name": "00 Token"
+  },
+  {
+    "currency_id": "1685599799167255518",
+    "symbol": "dose",
+    "name": "DOSE"
+  },
+  {
+    "currency_id": "1685599799167255522",
+    "symbol": "dhb",
+    "name": "DeHub"
+  },
+  {
+    "currency_id": "1685599799167255529",
+    "symbol": "usdp",
+    "name": "USDP Stablecoin"
+  },
+  {
+    "currency_id": "1730846864517042178",
+    "symbol": "meme",
+    "name": "Memecoin"
+  },
+  {
+    "currency_id": "1730846864521236481",
+    "symbol": "lyx",
+    "name": "LUKSO"
+  },
+  {
+    "currency_id": "1730846864525430786",
+    "symbol": "beam",
+    "name": "Beam"
+  },
+  {
+    "currency_id": "1730846864525430787",
+    "symbol": "sei",
+    "name": "Sei"
+  },
+  {
+    "currency_id": "1730846864529625089",
+    "symbol": "ftn",
+    "name": "Fasttoken"
+  },
+  {
+    "currency_id": "1730846864529625091",
+    "symbol": "cbeth",
+    "name": "Coinbase Wrapped Staked ETH"
+  },
+  {
+    "currency_id": "1730847003428196354",
+    "symbol": "crvusd",
+    "name": "crvUSD"
+  },
+  {
+    "currency_id": "1730847003432390659",
+    "symbol": "loom",
+    "name": "Loom Network (NEW)"
+  },
+  {
+    "currency_id": "1730847003432390660",
+    "symbol": "pyusd",
+    "name": "PayPal USD"
+  },
+  {
+    "currency_id": "1730847003436584961",
+    "symbol": "ong",
+    "name": "Ontology Gas"
+  },
+  {
+    "currency_id": "1730847151621345281",
+    "symbol": "paal",
+    "name": "PAAL AI"
+  },
+  {
+    "currency_id": "1730847151625539586",
+    "symbol": "myria",
+    "name": "Myria"
+  },
+  {
+    "currency_id": "1730847151625539587",
+    "symbol": "flip",
+    "name": "Chainflip"
+  },
+  {
+    "currency_id": "1730847151629733890",
+    "symbol": "zeph",
+    "name": "Zephyr Protocol"
+  },
+  {
+    "currency_id": "1730847151629733892",
+    "symbol": "ultima",
+    "name": "Ultima"
+  },
+  {
+    "currency_id": "1730847291425886209",
+    "symbol": "oas",
+    "name": "Oasys"
+  },
+  {
+    "currency_id": "1730847291430080514",
+    "symbol": "cyber",
+    "name": "CyberConnect"
+  },
+  {
+    "currency_id": "1730847291434274818",
+    "symbol": "POL",
+    "name": "Polygon(ex-MATIC)"
+  },
+  {
+    "currency_id": "1730847291434274819",
+    "symbol": "clore",
+    "name": "Clore.ai"
+  },
+  {
+    "currency_id": "1730847442831872001",
+    "symbol": "banana",
+    "name": "Banana Gun"
+  },
+  {
+    "currency_id": "1730847442840260612",
+    "symbol": "bigtime",
+    "name": "Big Time"
+  },
+  {
+    "currency_id": "1730847612629880835",
+    "symbol": "token",
+    "name": "TokenFi"
+  },
+  {
+    "currency_id": "1730847921913663490",
+    "symbol": "myro",
+    "name": "Myro"
+  },
+  {
+    "currency_id": "1731965907046334465",
+    "symbol": "fdusd",
+    "name": "First Digital USD"
+  },
+  {
+    "currency_id": "1732681476264366082",
+    "symbol": "mplx",
+    "name": "Metaplex"
+  },
+  {
+    "currency_id": "1732681674768191490",
+    "symbol": "honey",
+    "name": "Hivemapper"
+  },
+  {
+    "currency_id": "1732682072635674626",
+    "symbol": "toshi",
+    "name": "Toshi"
+  },
+  {
+    "currency_id": "1732682264843849730",
+    "symbol": "mog",
+    "name": "Mog Coin"
+  },
+  {
+    "currency_id": "1732682468091432961",
+    "symbol": "wnt",
+    "name": "Wicrypt"
+  },
+  {
+    "currency_id": "1734026010116374529",
+    "symbol": "jto",
+    "name": "Jito"
+  },
+  {
+    "currency_id": "1734027392131153924",
+    "symbol": "hold",
+    "name": "Holdstation"
+  },
+  {
+    "currency_id": "1736439700283342849",
+    "symbol": "pyth",
+    "name": "Pyth Network"
+  },
+  {
+    "currency_id": "1736440025874579457",
+    "symbol": "coq",
+    "name": "Coq Inu"
+  },
+  {
+    "currency_id": "1736440351436455939",
+    "symbol": "neon",
+    "name": "Neon"
+  },
+  {
+    "currency_id": "1736440720602316804",
+    "symbol": "nodl",
+    "name": "Nodle Network"
+  },
+  {
+    "currency_id": "1736441263705964548",
+    "symbol": "aero",
+    "name": "Aerodrome Finance"
+  },
+  {
+    "currency_id": "1736668121113501698",
+    "symbol": "tao",
+    "name": "Bittensor"
+  },
+  {
+    "currency_id": "1738976569143476226",
+    "symbol": "wif",
+    "name": "dogwifhat"
+  },
+  {
+    "currency_id": "1738976569143476227",
+    "symbol": "mubi",
+    "name": "Multibit"
+  },
+  {
+    "currency_id": "1738976729881788417",
+    "symbol": "xpla",
+    "name": "XPLA"
+  },
+  {
+    "currency_id": "1738977815019536386",
+    "symbol": "popcat",
+    "name": "Popcat"
+  },
+  {
+    "currency_id": "1738978001070473218",
+    "symbol": "geod",
+    "name": "Geodnet"
+  },
+  {
+    "currency_id": "1739853234366259201",
+    "symbol": "sats",
+    "name": "SATS (Ordinals) "
+  },
+  {
+    "currency_id": "1739890875493195777",
+    "symbol": "TIA",
+    "name": "Celestia"
+  },
+  {
+    "currency_id": "1739912101074771969",
+    "symbol": "rats",
+    "name": "Rats"
+  },
+  {
+    "currency_id": "1742422936259813378",
+    "symbol": "nfp",
+    "name": "NFPrompt"
+  },
+  {
+    "currency_id": "1742430748893405186",
+    "symbol": "CETUS",
+    "name": "Cetus Protocol"
+  },
+  {
+    "currency_id": "1742792996014940161",
+    "symbol": "1 cat",
+    "name": "Bitcoin Cats"
+  },
+  {
+    "currency_id": "1742845591492386818",
+    "symbol": "TURBOS",
+    "name": "Turbos Finance"
+  },
+  {
+    "currency_id": "1744051651406610434",
+    "symbol": "aitech",
+    "name": "Solidus Ai Tech"
+  },
+  {
+    "currency_id": "1744188158485405698",
+    "symbol": "HORD",
+    "name": "Hord"
+  },
+  {
+    "currency_id": "1744623567569575937",
+    "symbol": "DYM",
+    "name": "Dymension "
+  },
+  {
+    "currency_id": "1744933678896062465",
+    "symbol": "XAI",
+    "name": "Xai"
+  },
+  {
+    "currency_id": "1744942271809347586",
+    "symbol": "RSC",
+    "name": "ResearchCoin"
+  },
+  {
+    "currency_id": "1745767512063549441",
+    "symbol": "AI",
+    "name": "Sleepless AI "
+  },
+  {
+    "currency_id": "1747088812711288834",
+    "symbol": "MANTA",
+    "name": "Manta Network"
+  },
+  {
+    "currency_id": "1747510294885113857",
+    "symbol": "vanry",
+    "name": "Vanar Chain"
+  },
+  {
+    "currency_id": "1747836477468991489",
+    "symbol": "ALT",
+    "name": "AltLayer"
+  },
+  {
+    "currency_id": "1747877485162422273",
+    "symbol": "ondo",
+    "name": "Ondo Finance"
+  },
+  {
+    "currency_id": "1749123276715999233",
+    "symbol": "t",
+    "name": "Threshold Network"
+  },
+  {
+    "currency_id": "1749123276720193537",
+    "symbol": "NTRN",
+    "name": "Neutron"
+  },
+  {
+    "currency_id": "1750354343673405441",
+    "symbol": "SAVM",
+    "name": "SatoshiVM"
+  },
+  {
+    "currency_id": "1751660503379623939",
+    "symbol": "trump",
+    "name": "MAGA"
+  },
+  {
+    "currency_id": "1751661439556665345",
+    "symbol": "arty",
+    "name": "Artyfact"
+  },
+  {
+    "currency_id": "1751802697364217857",
+    "symbol": "WEN",
+    "name": "Wen"
+  },
+  {
+    "currency_id": "1751808228544634882",
+    "symbol": "JUP",
+    "name": "Jupiter"
+  },
+  {
+    "currency_id": "1752569198698504194",
+    "symbol": "DMAIL",
+    "name": "Dmail Network"
+  },
+  {
+    "currency_id": "1752922234667081730",
+    "symbol": "DEFI",
+    "name": "De.Fi"
+  },
+  {
+    "currency_id": "1753246533051424770",
+    "symbol": "ZETA",
+    "name": "ZetaChain"
+  },
+  {
+    "currency_id": "1754002369147985921",
+    "symbol": "PORK",
+    "name": "PepeFork"
+  },
+  {
+    "currency_id": "1754198298119782402",
+    "symbol": "ponke",
+    "name": "PONKE"
+  },
+  {
+    "currency_id": "1754198298119782403",
+    "symbol": "saros",
+    "name": "Saros"
+  },
+  {
+    "currency_id": "1756735244146720770",
+    "symbol": "gtai",
+    "name": "GT-Protocol"
+  },
+  {
+    "currency_id": "1759062185636995073",
+    "symbol": "PIXEL",
+    "name": "Pixels"
+  },
+  {
+    "currency_id": "1759270471545012226",
+    "symbol": "comai",
+    "name": "Commune AI"
+  },
+  {
+    "currency_id": "1759271372196298754",
+    "symbol": "far",
+    "name": "FARCANA"
+  },
+  {
+    "currency_id": "1759780731976048641",
+    "symbol": "STRK",
+    "name": "Starknet"
+  },
+  {
+    "currency_id": "1759793296709197825",
+    "symbol": "MAVIA",
+    "name": "Heroes of Mavia"
+  },
+  {
+    "currency_id": "1760500337862664194",
+    "symbol": "SLN",
+    "name": "Smart Layer Network"
+  },
+  {
+    "currency_id": "1761806860891340801",
+    "symbol": "nos",
+    "name": "Nosana"
+  },
+  {
+    "currency_id": "1761808053675900929",
+    "symbol": "vara",
+    "name": "Vara Network"
+  },
+  {
+    "currency_id": "1761973848191950850",
+    "symbol": "PORTAL",
+    "name": "Portal"
+  },
+  {
+    "currency_id": "1764343566077149185",
+    "symbol": "cheel",
+    "name": "Cheelee"
+  },
+  {
+    "currency_id": "1764344409631375362",
+    "symbol": "axgt",
+    "name": "AxonDAO Governance Token"
+  },
+  {
+    "currency_id": "1765577481839390722",
+    "symbol": "AEUR",
+    "name": "Anchored Coins EUR"
+  },
+  {
+    "currency_id": "1765678665078824962",
+    "symbol": "ACE",
+    "name": "Fusionist"
+  },
+  {
+    "currency_id": "1765687513806168066",
+    "symbol": "SPURS",
+    "name": "Tottenham Hotspur FC Fan Token"
+  },
+  {
+    "currency_id": "1765980602847666177",
+    "symbol": "GOAL",
+    "name": "TopGoal"
+  },
+  {
+    "currency_id": "1765998058958643202",
+    "symbol": "SEAM",
+    "name": "Seamless Protocol"
+  },
+  {
+    "currency_id": "1767834851544354817",
+    "symbol": "TROLL",
+    "name": "TROLL"
+  },
+  {
+    "currency_id": "1767835460502769669",
+    "symbol": "duel",
+    "name": "GameGPT"
+  },
+  {
+    "currency_id": "1767857532889153538",
+    "symbol": "AEVO ",
+    "name": "Aevo"
+  },
+  {
+    "currency_id": "1768156277778366465",
+    "symbol": "USDE",
+    "name": "Ethena USDe"
+  },
+  {
+    "currency_id": "1768979190978920450",
+    "symbol": "BOME",
+    "name": "BOOK OF MEME"
+  },
+  {
+    "currency_id": "1769418764532273155",
+    "symbol": "gui",
+    "name": "Gui Inu"
+  },
+  {
+    "currency_id": "1769670913929461762",
+    "symbol": "SLERF",
+    "name": "Slerf"
+  },
+  {
+    "currency_id": "1769692084892811266",
+    "symbol": "ETHFI",
+    "name": "Ether.fi"
+  },
+  {
+    "currency_id": "1771954314313158657",
+    "symbol": "virtual",
+    "name": "Virtuals Protocol"
+  },
+  {
+    "currency_id": "1771954697869676545",
+    "symbol": "peng",
+    "name": "Peng"
+  },
+  {
+    "currency_id": "1771954697873870849",
+    "symbol": "flt",
+    "name": "Fluence"
+  },
+  {
+    "currency_id": "1771955285789462529",
+    "symbol": "port3",
+    "name": "Port3 Network"
+  },
+  {
+    "currency_id": "1771956125761753090",
+    "symbol": "GIGA",
+    "name": "Gigachad"
+  },
+  {
+    "currency_id": "1771956125761753091",
+    "symbol": "navx",
+    "name": "NAVI Protocol"
+  },
+  {
+    "currency_id": "1774490489867423745",
+    "symbol": "brett",
+    "name": "Brett"
+  },
+  {
+    "currency_id": "1774490489871618050",
+    "symbol": "mew",
+    "name": "cat in a dogs world"
+  },
+  {
+    "currency_id": "1774490689302384641",
+    "symbol": "boden",
+    "name": "Jeo Boden"
+  },
+  {
+    "currency_id": "1774665535210733570",
+    "symbol": "DEGEN",
+    "name": "Degen"
+  },
+  {
+    "currency_id": "1775072922459398146",
+    "symbol": "ENA",
+    "name": "Ethena"
+  },
+  {
+    "currency_id": "1775364558229946370",
+    "symbol": "W",
+    "name": "Wormhole"
+  },
+  {
+    "currency_id": "1777028363309502466",
+    "symbol": "doginme",
+    "name": "doginme"
+  },
+  {
+    "currency_id": "1777196569135370242",
+    "symbol": "ZEUS",
+    "name": "Zeus Network"
+  },
+  {
+    "currency_id": "1777316758162198530",
+    "symbol": "SAGA",
+    "name": "Saga"
+  },
+  {
+    "currency_id": "1777356399594782721",
+    "symbol": "TNSR",
+    "name": "Tensor"
+  },
+  {
+    "currency_id": "1778018954457600003",
+    "symbol": "ftt",
+    "name": "FTX"
+  },
+  {
+    "currency_id": "1778018954461794305",
+    "symbol": "HIGH",
+    "name": "Highstreet"
+  },
+  {
+    "currency_id": "1778018954461794307",
+    "symbol": "bnx",
+    "name": "BinaryX"
+  },
+  {
+    "currency_id": "1778018954465988609",
+    "symbol": "ROOT",
+    "name": "The Root Network"
+  },
+  {
+    "currency_id": "1778316604935589890",
+    "symbol": "FOXY",
+    "name": "Foxy"
+  },
+  {
+    "currency_id": "1780522413346078722",
+    "symbol": "PRCL",
+    "name": "Parcl"
+  },
+  {
+    "currency_id": "1780825674091413505",
+    "symbol": "MERL",
+    "name": "Merlin Chain"
+  },
+  {
+    "currency_id": "1782100776053329922",
+    "symbol": "pci",
+    "name": "Paycoin"
+  },
+  {
+    "currency_id": "1782100776057524225",
+    "symbol": "omni",
+    "name": "Omni Network"
+  },
+  {
+    "currency_id": "1782102901365886979",
+    "symbol": "fire",
+    "name": "Matr1x Fire"
+  },
+  {
+    "currency_id": "1782608684893683713",
+    "symbol": "KARRAT",
+    "name": "Karrat"
+  },
+  {
+    "currency_id": "1782693686176075777",
+    "symbol": "safe",
+    "name": "Safe"
+  },
+  {
+    "currency_id": "1783079617622261762",
+    "symbol": "ZKJ",
+    "name": "Polyhedra Network"
+  },
+  {
+    "currency_id": "1783385747690835970",
+    "symbol": "METH",
+    "name": "Mantle Staked Ether"
+  },
+  {
+    "currency_id": "1784637307905331202",
+    "symbol": "venom",
+    "name": "Venom"
+  },
+  {
+    "currency_id": "1784637652001837060",
+    "symbol": "APU",
+    "name": "Apu Apustaja"
+  },
+  {
+    "currency_id": "1784638006655406081",
+    "symbol": "mfer",
+    "name": "mfercoin"
+  },
+  {
+    "currency_id": "1784638557585625090",
+    "symbol": "mumu",
+    "name": "MUMU THE BULL"
+  },
+  {
+    "currency_id": "1784639145295695873",
+    "symbol": "wuf",
+    "name": "WUFFI"
+  },
+  {
+    "currency_id": "1784784900170006529",
+    "symbol": "RSIC",
+    "name": "RSIC•GENESIS•RUNE"
+  },
+  {
+    "currency_id": "1784816572726853634",
+    "symbol": " LOBO",
+    "name": "LOBO•THE•WOLF•PUP"
+  },
+  {
+    "currency_id": "1785256507183157250",
+    "symbol": "REZ",
+    "name": "Renzo"
+  },
+  {
+    "currency_id": "1787174567783649282",
+    "symbol": "zent",
+    "name": "Zentry"
+  },
+  {
+    "currency_id": "1787174752609849346",
+    "symbol": "kmno",
+    "name": "Kamino"
+  },
+  {
+    "currency_id": "1787174752609849347",
+    "symbol": "maneki",
+    "name": "MANEKI"
+  },
+  {
+    "currency_id": "1787175316861177857",
+    "symbol": "tremp",
+    "name": "Doland Tremp"
+  },
+  {
+    "currency_id": "1787175703882190851",
+    "symbol": "sca",
+    "name": "Scallop-Sui"
+  },
+  {
+    "currency_id": "1787744573084880898",
+    "symbol": "ZERO",
+    "name": "ZeroLend"
+  },
+  {
+    "currency_id": "1789712435274010625",
+    "symbol": "tai",
+    "name": "TARS Protocol"
+  },
+  {
+    "currency_id": "1789960757201031169",
+    "symbol": "BB",
+    "name": "BounceBit"
+  },
+  {
+    "currency_id": "1790582693878906882",
+    "symbol": "NOT",
+    "name": "Notcoin"
+  },
+  {
+    "currency_id": "1790602710095839234",
+    "symbol": " SC",
+    "name": "Shark Cat"
+  },
+  {
+    "currency_id": "1792248000385077249",
+    "symbol": "spec",
+    "name": "Spectral"
+  },
+  {
+    "currency_id": "1792248214625931266",
+    "symbol": "drift",
+    "name": "Drift Protocol"
+  },
+  {
+    "currency_id": "1792248775697977347",
+    "symbol": "gme",
+    "name": "GME"
+  },
+  {
+    "currency_id": "1793564063525720066",
+    "symbol": "MAGA",
+    "name": "MAGA Hat"
+  },
+  {
+    "currency_id": "1794351716256927746",
+    "symbol": "SPX",
+    "name": "SPX6900"
+  },
+  {
+    "currency_id": "1794353131444457475",
+    "symbol": "MASA",
+    "name": "Masa"
+  },
+  {
+    "currency_id": "1794356097274564612",
+    "symbol": "michi",
+    "name": "michi"
+  },
+  {
+    "currency_id": "1794356097278758916",
+    "symbol": "$BEER",
+    "name": "BEER"
+  },
+  {
+    "currency_id": "1794357886434627588",
+    "symbol": "KEYCAT",
+    "name": "Keyboard Cat"
+  },
+  {
+    "currency_id": "1794786098776068098",
+    "symbol": "nyan",
+    "name": "Nyan Heroes"
+  },
+  {
+    "currency_id": "1794786493741092865",
+    "symbol": "CTA",
+    "name": "Cross The Ages"
+  },
+  {
+    "currency_id": "1795130973828632578",
+    "symbol": "DUKO",
+    "name": "Duko"
+  },
+  {
+    "currency_id": "1795656165864849410",
+    "symbol": "LISTA",
+    "name": "Lista DAO"
+  },
+  {
+    "currency_id": "1796159666684383234",
+    "symbol": "MON",
+    "name": "MON Protocol"
+  },
+  {
+    "currency_id": "1796405821993340930",
+    "symbol": "ULTI ",
+    "name": "Ultiverse"
+  },
+  {
+    "currency_id": "1798228706210828289",
+    "symbol": "WHY",
+    "name": "WHY"
+  },
+  {
+    "currency_id": "1798553890788818946",
+    "symbol": "TAIKO",
+    "name": "Taiko"
+  },
+  {
+    "currency_id": "1799858184389349378",
+    "symbol": "purr",
+    "name": "Purr"
+  },
+  {
+    "currency_id": "1800384152216489985",
+    "symbol": "SQD",
+    "name": "Subsquid"
+  },
+  {
+    "currency_id": "1800466778033967105",
+    "symbol": "HTX",
+    "name": "HTX DAO"
+  },
+  {
+    "currency_id": "1800525498285772802",
+    "symbol": "IO",
+    "name": "Ionet"
+  },
+  {
+    "currency_id": "1800771587748478978",
+    "symbol": "ese",
+    "name": "Eesee"
+  },
+  {
+    "currency_id": "1800853043820580866",
+    "symbol": "ATH",
+    "name": "Aethir"
+  },
+  {
+    "currency_id": "1801172878945374210",
+    "symbol": "PIRATE",
+    "name": "Pirate Nation"
+  },
+  {
+    "currency_id": "1802611462445547522",
+    "symbol": "ZK",
+    "name": "zkSync"
+  },
+  {
+    "currency_id": "1803106888223248385",
+    "symbol": "BILLY",
+    "name": "BILLY"
+  },
+  {
+    "currency_id": "1803731805876736001",
+    "symbol": "ZRO",
+    "name": "LayerZero"
+  },
+  {
+    "currency_id": "1805806092657840130",
+    "symbol": "BLAST",
+    "name": "Blast"
+  },
+  {
+    "currency_id": "1808542340744957953",
+    "symbol": "KAMA",
+    "name": "Kamala Horris"
+  },
+  {
+    "currency_id": "1810182655021236226",
+    "symbol": "SVL",
+    "name": "Slash Vision Labs"
+  },
+  {
+    "currency_id": "1811439276334469122",
+    "symbol": "MOCA",
+    "name": "Moca Coin"
+  },
+  {
+    "currency_id": "1812542902297645057",
+    "symbol": "hfun",
+    "name": "Hypurr Fun"
+  },
+  {
+    "currency_id": "1812888746762915843",
+    "symbol": "CXT",
+    "name": "Covalent X Token"
+  },
+  {
+    "currency_id": "1813554773528104962",
+    "symbol": "A8",
+    "name": "Ancient8"
+  },
+  {
+    "currency_id": "1813815798320025602",
+    "symbol": "UXLINK",
+    "name": "UXLINK"
+  },
+  {
+    "currency_id": "1813921702700863490",
+    "symbol": "MIGGLES",
+    "name": "Mister Miggles"
+  },
+  {
+    "currency_id": "1814158676758056961",
+    "symbol": "G",
+    "name": "Gravity"
+  },
+  {
+    "currency_id": "1815079101834940417",
+    "symbol": "cloud",
+    "name": "Cloud"
+  },
+  {
+    "currency_id": "1815219453711568898",
+    "symbol": "PIXFI",
+    "name": "Pixelverse"
+  },
+  {
+    "currency_id": "1815947612149071873",
+    "symbol": "AVAIL",
+    "name": "Avail"
+  },
+  {
+    "currency_id": "1816938500383789057",
+    "symbol": "$TIME",
+    "name": "TIME"
+  },
+  {
+    "currency_id": "1817258521068912641",
+    "symbol": "L3",
+    "name": "Layer3"
+  },
+  {
+    "currency_id": "1817602447109738497",
+    "symbol": "NEIRO",
+    "name": "First Neiro on Ethereum"
+  },
+  {
+    "currency_id": "1817616355237253121",
+    "symbol": "ZKL",
+    "name": "zkLink"
+  },
+  {
+    "currency_id": "1818084377945133058",
+    "symbol": "LRDS",
+    "name": "BLOCKLORDS"
+  },
+  {
+    "currency_id": "1818324561089482754",
+    "symbol": "NEIRO",
+    "name": "Neiro on ETH"
+  },
+  {
+    "currency_id": "1819949343417647106",
+    "symbol": "MAX",
+    "name": "Matr1x"
+  },
+  {
+    "currency_id": "1820151835547881473",
+    "symbol": "deusd",
+    "name": "Elixir deUSD"
+  },
+  {
+    "currency_id": "1820862512046493698",
+    "symbol": "XUSD",
+    "name": "StraitsX USD"
+  },
+  {
+    "currency_id": "1825225500085932034",
+    "symbol": "SUNDOG",
+    "name": "Sundog"
+  },
+  {
+    "currency_id": "1827505059183415300",
+    "symbol": "DOGE",
+    "name": "Department Of Government Efficiency"
+  },
+  {
+    "currency_id": "1827761951323410434",
+    "symbol": "cat",
+    "name": "Simon's Cat"
+  },
+  {
+    "currency_id": "1827939306885296129",
+    "symbol": "DOGS",
+    "name": "Dogs"
+  },
+  {
+    "currency_id": "1827961186610143234",
+    "symbol": "ORDER",
+    "name": "Orderly Network"
+  },
+  {
+    "currency_id": "1829256579818147841",
+    "symbol": "RFRM",
+    "name": "Reform"
+  },
+  {
+    "currency_id": "1829446257832890369",
+    "symbol": "SLF",
+    "name": "Self Chain"
+  },
+  {
+    "currency_id": "1830298399918477313",
+    "symbol": "LBTC",
+    "name": "Lombard Staked BTC"
+  },
+  {
+    "currency_id": "1830300697365270530",
+    "symbol": "sparklet",
+    "name": "Upland"
+  },
+  {
+    "currency_id": "1834493974360829953",
+    "symbol": "FB",
+    "name": "Fractal Bitcoin"
+  },
+  {
+    "currency_id": "1837096580868018177",
+    "symbol": "cati",
+    "name": "Catizen"
+  },
+  {
+    "currency_id": "1837910175887609858",
+    "symbol": "bbsol",
+    "name": "Bybit Staked SOL"
+  },
+  {
+    "currency_id": "1838195509183598594",
+    "symbol": "TERMINUS",
+    "name": "First City in Mars"
+  },
+  {
+    "currency_id": "1838476992481681409",
+    "symbol": "HMSTR",
+    "name": "Hamster Kombat"
+  },
+  {
+    "currency_id": "1838481890461184002",
+    "symbol": "WAT",
+    "name": "WATCoin"
+  },
+  {
+    "currency_id": "1838496011226013698",
+    "symbol": "MAK ",
+    "name": "MetaCene"
+  },
+  {
+    "currency_id": "1838805265871220738",
+    "symbol": " LOGX",
+    "name": "LogX Network"
+  },
+  {
+    "currency_id": "1838980666316509185",
+    "symbol": "moodeng",
+    "name": "MOO DENG"
+  },
+  {
+    "currency_id": "1840686570145533954",
+    "symbol": "EIGEN",
+    "name": "Eigenlayer"
+  },
+  {
+    "currency_id": "1840737489142894594",
+    "symbol": "UNIO",
+    "name": "Unio Coin"
+  },
+  {
+    "currency_id": "1842981814807515138",
+    "symbol": "aleo",
+    "name": "ALEO"
+  },
+  {
+    "currency_id": "1842982253619793921",
+    "symbol": "hippo",
+    "name": "Sudeng"
+  },
+  {
+    "currency_id": "1842982959412105218",
+    "symbol": "rbtc",
+    "name": "RabBitcoin"
+  },
+  {
+    "currency_id": "1842983200307761153",
+    "symbol": "egp",
+    "name": "Eigenpie"
+  },
+  {
+    "currency_id": "1842983694140919809",
+    "symbol": "cheems",
+    "name": "Cheems Token"
+  },
+  {
+    "currency_id": "1843863368987783170",
+    "symbol": "CATS",
+    "name": "CATS"
+  },
+  {
+    "currency_id": "1844240771043774466",
+    "symbol": "CARV",
+    "name": "CARV"
+  },
+  {
+    "currency_id": "1844754749731069953",
+    "symbol": "scr",
+    "name": "Scroll "
+  },
+  {
+    "currency_id": "1845506759320096770",
+    "symbol": "GOAT",
+    "name": "Goatseus Maximus"
+  },
+  {
+    "currency_id": "1845867395711455233",
+    "symbol": "PUFFER",
+    "name": "Puffer Finance"
+  },
+  {
+    "currency_id": "1846068908245213186",
+    "symbol": "DEEP",
+    "name": "DeepBook"
+  },
+  {
+    "currency_id": "1848055894946566146",
+    "symbol": "gnon",
+    "name": "Numogram"
+  },
+  {
+    "currency_id": "1848056118632992770",
+    "symbol": "dbr",
+    "name": "deBridge"
+  },
+  {
+    "currency_id": "1848528721042690049",
+    "symbol": "LUNA",
+    "name": "Luna by Virtuals"
+  },
+  {
+    "currency_id": "1850159228742488065",
+    "symbol": "GAME",
+    "name": "GAME by Virtuals"
+  },
+  {
+    "currency_id": "1850593376107974657",
+    "symbol": "fartcoin",
+    "name": "Fartcoin"
+  },
+  {
+    "currency_id": "1850594113365954563",
+    "symbol": "act",
+    "name": "Act I The AI Prophecy"
+  },
+  {
+    "currency_id": "1850594612341329923",
+    "symbol": "shoggoth",
+    "name": "Shoggoth"
+  },
+  {
+    "currency_id": "1850807789992808449",
+    "symbol": "GRASS",
+    "name": "Grass"
+  },
+  {
+    "currency_id": "1851063010019987457",
+    "symbol": "Ban",
+    "name": "Comedian"
+  },
+  {
+    "currency_id": "1851425535844634632",
+    "symbol": "LUCE",
+    "name": "LUCE"
+  },
+  {
+    "currency_id": "1853056026800771073",
+    "symbol": "Pnut",
+    "name": "Peanut the Squirrel"
+  },
+  {
+    "currency_id": "1853128669520416771",
+    "symbol": "kaia",
+    "name": "Kaia"
+  },
+  {
+    "currency_id": "1853176806654038018",
+    "symbol": "ZEREBRO",
+    "name": "zerebro"
+  },
+  {
+    "currency_id": "1853372158904713217",
+    "symbol": "X",
+    "name": "X Empire"
+  },
+  {
+    "currency_id": "1853381559995985922",
+    "symbol": "OMNIA",
+    "name": "Omnia Protocol"
+  },
+  {
+    "currency_id": "1854504281573117954",
+    "symbol": "SWELL",
+    "name": "Swell "
+  },
+  {
+    "currency_id": "1855595259386089474",
+    "symbol": "CLANKER",
+    "name": "tokenbot"
+  },
+  {
+    "currency_id": "1855668204783489028",
+    "symbol": "USDG",
+    "name": "Global Dollar"
+  },
+  {
+    "currency_id": "1856136540155760641",
+    "symbol": "degenai",
+    "name": "Degen Spartan AI"
+  },
+  {
+    "currency_id": "1856276247182188546",
+    "symbol": "PEAQ",
+    "name": "peaq"
+  },
+  {
+    "currency_id": "1856920107781672961",
+    "symbol": "SYRUP",
+    "name": "Maple Finance"
+  },
+  {
+    "currency_id": "1857646602661613571",
+    "symbol": "pippin",
+    "name": "PIPPIN"
+  },
+  {
+    "currency_id": "1857646602661613574",
+    "symbol": "BULLY",
+    "name": "Dolos The Bully"
+  },
+  {
+    "currency_id": "1858202910729129985",
+    "symbol": "koma",
+    "name": "Koma Inu"
+  },
+  {
+    "currency_id": "1858203837489958913",
+    "symbol": "vvaifu",
+    "name": "Dasha"
+  },
+  {
+    "currency_id": "1858204509207744516",
+    "symbol": "hat",
+    "name": "Top Hat"
+  },
+  {
+    "currency_id": "1858204509207744517",
+    "symbol": "opus",
+    "name": "Opus"
+  },
+  {
+    "currency_id": "1858391433165864961",
+    "symbol": "URO",
+    "name": "Urolithin A"
+  },
+  {
+    "currency_id": "1858410187509661698",
+    "symbol": "RIF",
+    "name": "Rifampicin"
+  },
+  {
+    "currency_id": "1858613006181289988",
+    "symbol": "CHILLGUY",
+    "name": "Chill Guy"
+  },
+  {
+    "currency_id": "1858712282512105473",
+    "symbol": "Usual",
+    "name": "Usual"
+  },
+  {
+    "currency_id": "1858854457100161026",
+    "symbol": "scihub",
+    "name": "sci-hub"
+  },
+  {
+    "currency_id": "1858857111939403777",
+    "symbol": "AIXBT",
+    "name": "aixbt by Virtuals"
+  },
+  {
+    "currency_id": "1858857111943598081",
+    "symbol": "SEKOIA",
+    "name": "sekoia by Virtuals"
+  },
+  {
+    "currency_id": "1858913307824181249",
+    "symbol": "ORA",
+    "name": "ORA Coin"
+  },
+  {
+    "currency_id": "1858975337042104322",
+    "symbol": "ELIZA",
+    "name": "Eliza"
+  },
+  {
+    "currency_id": "1858975337042104323",
+    "symbol": "eliza",
+    "name": "ai16zeliza"
+  },
+  {
+    "currency_id": "1859111581761863682",
+    "symbol": "OL",
+    "name": "Open Loot"
+  },
+  {
+    "currency_id": "1859517319720161281",
+    "symbol": "MORPHO",
+    "name": "Morpho Token"
+  },
+  {
+    "currency_id": "1859860126002454530",
+    "symbol": "MEMEFI",
+    "name": "MEMEFI"
+  },
+  {
+    "currency_id": "1859866658213564418",
+    "symbol": "GODL",
+    "name": "RoOLZ"
+  },
+  {
+    "currency_id": "1859940053084229634",
+    "symbol": "REKT",
+    "name": "Rekt"
+  },
+  {
+    "currency_id": "1859944257026740225",
+    "symbol": "VADER",
+    "name": "VaderAI by Virtuals"
+  },
+  {
+    "currency_id": "1860739559728041986",
+    "symbol": "lumia",
+    "name": "Lumia"
+  },
+  {
+    "currency_id": "1860739749683875842",
+    "symbol": "ava",
+    "name": "Ava AI"
+  },
+  {
+    "currency_id": "1860968251868680194",
+    "symbol": "ZRC",
+    "name": "Zircuit"
+  },
+  {
+    "currency_id": "1861409858904494081",
+    "symbol": "HSK",
+    "name": "HashKey Platform Token"
+  },
+  {
+    "currency_id": "1861756026861096962",
+    "symbol": "SUPRA",
+    "name": "Supra"
+  },
+  {
+    "currency_id": "1862356822333784066",
+    "symbol": "MAJOR",
+    "name": "Major"
+  },
+  {
+    "currency_id": "1862422393394962433",
+    "symbol": "MGT",
+    "name": "Moongate"
+  },
+  {
+    "currency_id": "1862702593582522369",
+    "symbol": "HYPE",
+    "name": "Hyperliquid"
+  },
+  {
+    "currency_id": "1863202986790703105",
+    "symbol": "ALCH",
+    "name": "Alchemist AI"
+  },
+  {
+    "currency_id": "1863276823842607108",
+    "symbol": "banana",
+    "name": "Banana For Scale"
+  },
+  {
+    "currency_id": "1863277275850166273",
+    "symbol": "NS",
+    "name": "SuiNS Token"
+  },
+  {
+    "currency_id": "1863326109204697090",
+    "symbol": "FAI",
+    "name": "Freysa AI"
+  },
+  {
+    "currency_id": "1863926334227173378",
+    "symbol": "SKY",
+    "name": "Sky"
+  },
+  {
+    "currency_id": "1864538574672318465",
+    "symbol": "XION",
+    "name": "XION"
+  },
+  {
+    "currency_id": "1864924092946812930",
+    "symbol": "goats",
+    "name": "GOATS"
+  },
+  {
+    "currency_id": "1864974256574255105",
+    "symbol": "F",
+    "name": "SynFutures"
+  },
+  {
+    "currency_id": "1865619184602009602",
+    "symbol": "GRIFFAIN",
+    "name": "GRIFFAIN"
+  },
+  {
+    "currency_id": "1865753860629024770",
+    "symbol": "DTEC",
+    "name": "Dtec token"
+  },
+  {
+    "currency_id": "1865815821240717315",
+    "symbol": "cookie",
+    "name": "Cookie DAO"
+  },
+  {
+    "currency_id": "1866040301773099010",
+    "symbol": "Move",
+    "name": "Movement"
+  },
+  {
+    "currency_id": "1866102167759974401",
+    "symbol": "GRIFT",
+    "name": "ORBIT"
+  },
+  {
+    "currency_id": "1866159911129018369",
+    "symbol": "CULT",
+    "name": "Milady Cult Coin"
+  },
+  {
+    "currency_id": "1866389493490094082",
+    "symbol": "LIQUIDIUM (RUNES)",
+    "name": "LIQUIDIUM•TOKEN"
+  },
+  {
+    "currency_id": "1866396334390595585",
+    "symbol": "ME",
+    "name": "Magic Eden"
+  },
+  {
+    "currency_id": "1866467298297737218",
+    "symbol": "BNKR",
+    "name": "BankrCoin"
+  },
+  {
+    "currency_id": "1867370404447481858",
+    "symbol": "arc",
+    "name": "AI Rig Complex"
+  },
+  {
+    "currency_id": "1867466368641101825",
+    "symbol": "MOZ",
+    "name": "Lumoz"
+  },
+  {
+    "currency_id": "1868349744239951873",
+    "symbol": "BLUE",
+    "name": "Bluefin"
+  },
+  {
+    "currency_id": "1868351894437314561",
+    "symbol": "max",
+    "name": "MAX"
+  },
+  {
+    "currency_id": "1868595966264143874",
+    "symbol": "VANA",
+    "name": "Vana"
+  },
+  {
+    "currency_id": "1869009874973466625",
+    "symbol": "PENGU",
+    "name": "Pudgy Penguins"
+  },
+  {
+    "currency_id": "1869060358092439553",
+    "symbol": "ISLAND",
+    "name": "ISLAND"
+  },
+  {
+    "currency_id": "1869724590608113665",
+    "symbol": "FUEL",
+    "name": "Fuel Network"
+  },
+  {
+    "currency_id": "1870011734471892993",
+    "symbol": "monky",
+    "name": "Wise Monkey"
+  },
+  {
+    "currency_id": "1870209037954605060",
+    "symbol": "UFD",
+    "name": "Unicorn Fart Dust"
+  },
+  {
+    "currency_id": "1870686144783577090",
+    "symbol": "EARNM",
+    "name": "Earnm"
+  },
+  {
+    "currency_id": "1870697274260930562",
+    "symbol": "REX",
+    "name": "REVOX"
+  },
+  {
+    "currency_id": "1870704900003598338",
+    "symbol": "STREAM",
+    "name": "Streamflow"
+  },
+  {
+    "currency_id": "1871175311188377601",
+    "symbol": "swarms",
+    "name": "swarms"
+  },
+  {
+    "currency_id": "1871600836616355842",
+    "symbol": "MAG7.ssi",
+    "name": "MAG7.ssi"
+  },
+  {
+    "currency_id": "1871736420051681281",
+    "symbol": "RLUSD",
+    "name": "Ripple USD"
+  },
+  {
+    "currency_id": "1871852257044144129",
+    "symbol": "MRSOON",
+    "name": "Ton Station"
+  },
+  {
+    "currency_id": "1872202244013887489",
+    "symbol": "MIRA",
+    "name": "Mira"
+  },
+  {
+    "currency_id": "1872262522990694401",
+    "symbol": "SPORE",
+    "name": "SPORE"
+  },
+  {
+    "currency_id": "1872264991632199682",
+    "symbol": "USSI",
+    "name": "USSI"
+  },
+  {
+    "currency_id": "1872264991632199683",
+    "symbol": "DEFI.ssi",
+    "name": "DEFI.ssi"
+  },
+  {
+    "currency_id": "1872264991632199684",
+    "symbol": "MEME.ssi",
+    "name": "MEME.ssi"
+  },
+  {
+    "currency_id": "1872460803817541634",
+    "symbol": "NEUR",
+    "name": "neur.sh"
+  },
+  {
+    "currency_id": "1874439441053454337",
+    "symbol": "FLOCK",
+    "name": "FLOCK"
+  },
+  {
+    "currency_id": "1874654269253750785",
+    "symbol": " SONIC",
+    "name": "Sonic SVM"
+  },
+  {
+    "currency_id": "1875074716886360066",
+    "symbol": "BIO",
+    "name": "Bio Protocol"
+  },
+  {
+    "currency_id": "1875722664694788097",
+    "symbol": "s",
+    "name": "Sonic"
+  },
+  {
+    "currency_id": "1876447469248737282",
+    "symbol": "BGSC",
+    "name": "BugsCoin"
+  },
+  {
+    "currency_id": "1876447469252931586",
+    "symbol": "lava",
+    "name": "Lava Network"
+  },
+  {
+    "currency_id": "1876809892111609858",
+    "symbol": "AB",
+    "name": "AB"
+  },
+  {
+    "currency_id": "1877154868304756738",
+    "symbol": "BUZZ",
+    "name": "Hive AI"
+  },
+  {
+    "currency_id": "1877172250251313154",
+    "symbol": "xter",
+    "name": "Xterio"
+  },
+  {
+    "currency_id": "1879713036812238850",
+    "symbol": "treat",
+    "name": "Shiba Inu Treat"
+  },
+  {
+    "currency_id": "1879826558650621953",
+    "symbol": "DUCK",
+    "name": "Duckchain"
+  },
+  {
+    "currency_id": "1879936101113401346",
+    "symbol": "GPS",
+    "name": "GoPlus Security"
+  },
+  {
+    "currency_id": "1880219500419756033",
+    "symbol": "SOLV ",
+    "name": "Solv Protocol"
+  },
+  {
+    "currency_id": "1880476955350953985",
+    "symbol": "TRUMP",
+    "name": "OFFICIAL TRUMP"
+  },
+  {
+    "currency_id": "1880476955359342594",
+    "symbol": "FIGHT",
+    "name": "FIGHT"
+  },
+  {
+    "currency_id": "1881141676928430081",
+    "symbol": "MELANIA",
+    "name": "Melania Meme"
+  },
+  {
+    "currency_id": "1881284387083984898",
+    "symbol": "OBT",
+    "name": "Orbiter Finance"
+  },
+  {
+    "currency_id": "1881520910251356162",
+    "symbol": "NC",
+    "name": "Nodecoin"
+  },
+  {
+    "currency_id": "1881683434246475778",
+    "symbol": "PLUME",
+    "name": "Plume"
+  },
+  {
+    "currency_id": "1882017700757737474",
+    "symbol": "D",
+    "name": "Dar Open Network"
+  },
+  {
+    "currency_id": "1882245663131631617",
+    "symbol": "j",
+    "name": "Jambo"
+  },
+  {
+    "currency_id": "1882354756497571841",
+    "symbol": "ANIME ",
+    "name": "Animecoin"
+  },
+  {
+    "currency_id": "1882368619935268865",
+    "symbol": "SOSO",
+    "name": "SoSoValue"
+  },
+  {
+    "currency_id": "1882530500887379971",
+    "symbol": "VINE",
+    "name": "Vine Coin"
+  },
+  {
+    "currency_id": "1884237493023223810",
+    "symbol": "VVV",
+    "name": "Venice Token"
+  },
+  {
+    "currency_id": "1884966887407108097",
+    "symbol": "jellyjelly",
+    "name": "jelly-my-jelly"
+  },
+  {
+    "currency_id": "1887357062736928769",
+    "symbol": "BERA",
+    "name": "Berachain"
+  },
+  {
+    "currency_id": "1888547368123043842",
+    "symbol": "TST",
+    "name": "Test"
+  },
+  {
+    "currency_id": "1888614629689069570",
+    "symbol": "jailstool",
+    "name": "Stool Prisondente"
+  },
+  {
+    "currency_id": "1888912918965739521",
+    "symbol": "ANLOG",
+    "name": "Analog"
+  },
+  {
+    "currency_id": "1889105776992088066",
+    "symbol": "B3",
+    "name": "B3"
+  },
+  {
+    "currency_id": "1889196796889632769",
+    "symbol": "LAYER",
+    "name": "Solayer"
+  },
+  {
+    "currency_id": "1889855817343635457",
+    "symbol": "AVL",
+    "name": "Avalon"
+  },
+  {
+    "currency_id": "1889954147552653313",
+    "symbol": "DIAM",
+    "name": "Diamante"
+  },
+  {
+    "currency_id": "1889970037468008450",
+    "symbol": "IP",
+    "name": "Story"
+  },
+  {
+    "currency_id": "1890205075991891970",
+    "symbol": "SHELL",
+    "name": "MyShell"
+  },
+  {
+    "currency_id": "1890297450295164930",
+    "symbol": "HEI",
+    "name": "Heima"
+  },
+  {
+    "currency_id": "1890331257695399937",
+    "symbol": "BROCCOLI",
+    "name": "CZ'S Dog"
+  },
+  {
+    "currency_id": "1892093148513906689",
+    "symbol": "PI",
+    "name": "Pi Network"
+  },
+  {
+    "currency_id": "1892392528282587138",
+    "symbol": "SIREN",
+    "name": "Siren"
+  },
+  {
+    "currency_id": "1892456115755622401",
+    "symbol": "KAITO",
+    "name": "KAITO"
+  },
+  {
+    "currency_id": "1894688930519998465",
+    "symbol": "RED",
+    "name": "RedStone"
+  },
+  {
+    "currency_id": "1894725562350972930",
+    "symbol": "ZOO",
+    "name": "Zoo"
+  },
+  {
+    "currency_id": "1897118136814546945",
+    "symbol": "USDtb",
+    "name": "USDtb"
+  },
+  {
+    "currency_id": "1897538013927522306",
+    "symbol": "ELX",
+    "name": "Elixir"
+  },
+  {
+    "currency_id": "1897649200791359490",
+    "symbol": "ROAM",
+    "name": "ROAM"
+  },
+  {
+    "currency_id": "1897828337441517570",
+    "symbol": "PUNDIAI",
+    "name": "Pundi AI"
+  },
+  {
+    "currency_id": "1897875820329955330",
+    "symbol": "MINT",
+    "name": "Mint Blockchain"
+  },
+  {
+    "currency_id": "1899390748897779713",
+    "symbol": "BMT",
+    "name": "Bubblemaps"
+  },
+  {
+    "currency_id": "1900094365324226561",
+    "symbol": "EPIC",
+    "name": "Epic Chain"
+  },
+  {
+    "currency_id": "1900365095551053826",
+    "symbol": "KTA",
+    "name": "Keeta"
+  },
+  {
+    "currency_id": "1901498533348605954",
+    "symbol": "MUBARAK",
+    "name": "Mubarak"
+  },
+  {
+    "currency_id": "1901814635500089346",
+    "symbol": "tut",
+    "name": "Tutorial"
+  },
+  {
+    "currency_id": "1902677782537277442",
+    "symbol": "BR",
+    "name": "Bedrock Token"
+  },
+  {
+    "currency_id": "1902985926143107073",
+    "symbol": "FORM",
+    "name": "Four"
+  },
+  {
+    "currency_id": "1903022360901681153",
+    "symbol": "NIL",
+    "name": "Nillion"
+  },
+  {
+    "currency_id": "1904407182231552001",
+    "symbol": "PARTI",
+    "name": "Particle Network"
+  },
+  {
+    "currency_id": "1904713706732728322",
+    "symbol": "AO",
+    "name": "ao Computer"
+  },
+  {
+    "currency_id": "1904823911997644802",
+    "symbol": "AMI",
+    "name": "Amnis Finance"
+  },
+  {
+    "currency_id": "1905132016915943425",
+    "symbol": "WAL",
+    "name": "Walrus"
+  },
+  {
+    "currency_id": "1905253754969227265",
+    "symbol": "kilo",
+    "name": "KiloEx"
+  },
+  {
+    "currency_id": "1905511578430758914",
+    "symbol": "corn",
+    "name": "Corn"
+  },
+  {
+    "currency_id": "1906596216358244354",
+    "symbol": "GUN ",
+    "name": "Gunz"
+  },
+  {
+    "currency_id": "1906617952519839746",
+    "symbol": "IMT",
+    "name": "Immortal Token"
+  },
+  {
+    "currency_id": "1907239743891922945",
+    "symbol": "PUMPBTC",
+    "name": "PumpBTC"
+  },
+  {
+    "currency_id": "1907612904298737665",
+    "symbol": "RFC",
+    "name": "Retard Finder Coin"
+  },
+  {
+    "currency_id": "1907638904106323969",
+    "symbol": "STO",
+    "name": "StakeStone"
+  },
+  {
+    "currency_id": "1907670301877157889",
+    "symbol": "EDGE",
+    "name": "Definitive"
+  },
+  {
+    "currency_id": "1909889320943419393",
+    "symbol": "PROMPT",
+    "name": "Wayfinder"
+  },
+  {
+    "currency_id": "1909892439211311106",
+    "symbol": "KERNEL",
+    "name": "KernelDAO"
+  },
+  {
+    "currency_id": "1910149570150617089",
+    "symbol": "HOUSE",
+    "name": "Housecoin"
+  },
+  {
+    "currency_id": "1910229394087567361",
+    "symbol": "BABY",
+    "name": "Babylon"
+  },
+  {
+    "currency_id": "1910263123433881601",
+    "symbol": "FHE",
+    "name": "Mind Network"
+  },
+  {
+    "currency_id": "1911157633722867714",
+    "symbol": "USD1",
+    "name": "USD1"
+  },
+  {
+    "currency_id": "1911697461563203585",
+    "symbol": "INIT",
+    "name": "Initia"
+  },
+  {
+    "currency_id": "1912017355554246657",
+    "symbol": "WCT",
+    "name": "WalletConnect"
+  },
+  {
+    "currency_id": "1912334025585811458",
+    "symbol": "PAWS",
+    "name": "Paws"
+  },
+  {
+    "currency_id": "1912422736390479874",
+    "symbol": "GM",
+    "name": "Gomble"
+  },
+  {
+    "currency_id": "1913407481406169090",
+    "symbol": "BANK",
+    "name": "Lorenzo Protocol"
+  },
+  {
+    "currency_id": "1914145411093843970",
+    "symbol": "EPT",
+    "name": "Balance"
+  },
+  {
+    "currency_id": "1914545109503115265",
+    "symbol": "HYPER",
+    "name": "Hyperlane"
+  },
+  {
+    "currency_id": "1914868108994379778",
+    "symbol": "ZORA",
+    "name": "Zora"
+  },
+  {
+    "currency_id": "1915221847068241921",
+    "symbol": "SKYAI",
+    "name": "SkyAI"
+  },
+  {
+    "currency_id": "1915231321680580610",
+    "symbol": "DOLO",
+    "name": "Dolomite"
+  },
+  {
+    "currency_id": "1916737730480513025",
+    "symbol": "SIGN",
+    "name": "Sign"
+  },
+  {
+    "currency_id": "1917151296104366082",
+    "symbol": "HAEDAL",
+    "name": "Haedal Protocol"
+  },
+  {
+    "currency_id": "1917408394369236994",
+    "symbol": "B2",
+    "name": "BSquared Network"
+  },
+  {
+    "currency_id": "1917474233735028737",
+    "symbol": "OBOL",
+    "name": "Obol"
+  },
+  {
+    "currency_id": "1918986633310203905",
+    "symbol": "GORK",
+    "name": "New XAI gork"
+  },
+  {
+    "currency_id": "1919637775022366721",
+    "symbol": "BOOP",
+    "name": "BOOP"
+  },
+  {
+    "currency_id": "1919696838171488257",
+    "symbol": "MYX",
+    "name": "MYX Finance"
+  },
+  {
+    "currency_id": "1920305315616854017",
+    "symbol": "SXT",
+    "name": "Space and Time"
+  },
+  {
+    "currency_id": "1920359621409837057",
+    "symbol": "SHM",
+    "name": "Shardeum"
+  },
+  {
+    "currency_id": "1920673725746262017",
+    "symbol": "DOOD",
+    "name": "Doodles"
+  },
+  {
+    "currency_id": "1920742315503751169",
+    "symbol": "JITOSOL",
+    "name": "Jito Staked SOL"
+  },
+  {
+    "currency_id": "1922186675466076161",
+    "symbol": "RDAC",
+    "name": "Redacted"
+  },
+  {
+    "currency_id": "1922456570576367618",
+    "symbol": "LAUNCHCOIN",
+    "name": "Launch Coin on Believe"
+  },
+  {
+    "currency_id": "1922832334927110145",
+    "symbol": "PRAI",
+    "name": "Privasea AI"
+  },
+  {
+    "currency_id": "1922883411505463297",
+    "symbol": "NXPC",
+    "name": "NEXPACE"
+  },
+  {
+    "currency_id": "1925489421513490434",
+    "symbol": "B",
+    "name": "BUILDon"
+  },
+  {
+    "currency_id": "1925596926067695617",
+    "symbol": "NOICE",
+    "name": "noice"
+  },
+  {
+    "currency_id": "1925742116367228929",
+    "symbol": "SOON",
+    "name": "SOON"
+  },
+  {
+    "currency_id": "1926829002053746689",
+    "symbol": "HUMA",
+    "name": "Huma Finance"
+  },
+  {
+    "currency_id": "1926877923421806593",
+    "symbol": "PPT",
+    "name": "Pop Social"
+  },
+  {
+    "currency_id": "1926913883148484610",
+    "symbol": "PELL",
+    "name": "Pell Network"
+  },
+  {
+    "currency_id": "1927287379039645698",
+    "symbol": "MAMO",
+    "name": "Mamo"
+  },
+  {
+    "currency_id": "1927335495772426242",
+    "symbol": "PFVS",
+    "name": "Puffverse"
+  },
+  {
+    "currency_id": "1927553001140080642",
+    "symbol": "SOPH",
+    "name": "Sophon"
+  },
+  {
+    "currency_id": "1927593750334361602",
+    "symbol": "A",
+    "name": "Vaulta"
+  },
+  {
+    "currency_id": "1927599302395912194",
+    "symbol": "STOP",
+    "name": "LETSTOP"
+  },
+  {
+    "currency_id": "1928372806749511681",
+    "symbol": "ASRR",
+    "name": "Assister AI"
+  },
+  {
+    "currency_id": "1929726239378735106",
+    "symbol": "BDXN",
+    "name": "Bondex"
+  },
+  {
+    "currency_id": "1930087180104597506",
+    "symbol": "RWA",
+    "name": "Allo"
+  },
+  {
+    "currency_id": "1930254129820811266",
+    "symbol": "LA",
+    "name": "Lagrange"
+  },
+  {
+    "currency_id": "1930457757651255298",
+    "symbol": "WNZ",
+    "name": "Winnerz"
+  },
+  {
+    "currency_id": "1930571936807800833",
+    "symbol": "CUDIS",
+    "name": "CUDIS"
+  },
+  {
+    "currency_id": "1931906409274114049",
+    "symbol": "FLY",
+    "name": "Fly"
+  },
+  {
+    "currency_id": "1931954448711127042",
+    "symbol": "SKATE",
+    "name": "Skate"
+  },
+  {
+    "currency_id": "1932259669863829506",
+    "symbol": "HOME",
+    "name": "HOME"
+  },
+  {
+    "currency_id": "1932315545674133506",
+    "symbol": "RESOLV",
+    "name": "Resolv"
+  },
+  {
+    "currency_id": "1932602403891212289",
+    "symbol": "BOMB",
+    "name": "Bombie"
+  },
+  {
+    "currency_id": "1932673885939650561",
+    "symbol": "IDOL",
+    "name": "MEET48"
+  },
+  {
+    "currency_id": "1933037844109598722",
+    "symbol": "TAG",
+    "name": "Tagger"
+  },
+  {
+    "currency_id": "1933101184412426241",
+    "symbol": "SGC",
+    "name": "SGC"
+  },
+  {
+    "currency_id": "1934800341161582594",
+    "symbol": "SPK",
+    "name": "Spark"
+  },
+  {
+    "currency_id": "1935585852580036609",
+    "symbol": "MAT",
+    "name": "Matchain"
+  },
+  {
+    "currency_id": "1935886684003078146",
+    "symbol": "LOT",
+    "name": "League of Traders"
+  },
+  {
+    "currency_id": "1936950733021728770",
+    "symbol": "BRIC",
+    "name": "RedBrick"
+  },
+  {
+    "currency_id": "1936959912504741890",
+    "symbol": "BULLA",
+    "name": "Bulla"
+  },
+  {
+    "currency_id": "1937339151337738241",
+    "symbol": "MGO",
+    "name": "Mango Network"
+  },
+  {
+    "currency_id": "1937352392733986817",
+    "symbol": "NEWT",
+    "name": "Newton Protocol "
+  },
+  {
+    "currency_id": "1937382575022948354",
+    "symbol": "DMC",
+    "name": "DeLorean"
+  },
+  {
+    "currency_id": "1937751087949373442",
+    "symbol": "H",
+    "name": "Humanity"
+  },
+  {
+    "currency_id": "1938065210657357825",
+    "symbol": "SAHARA",
+    "name": "Sahara AI"
+  },
+  {
+    "currency_id": "1938074358412038146",
+    "symbol": "CESS",
+    "name": "CESS Network"
+  },
+  {
+    "currency_id": "1938437721831059457",
+    "symbol": "BLUM",
+    "name": "Blum"
+  },
+  {
+    "currency_id": "1938472257620635649",
+    "symbol": "MORE",
+    "name": "Moonveil"
+  },
+  {
+    "currency_id": "1939517700409810946",
+    "symbol": "USELESS",
+    "name": "Useless Coin"
+  },
+  {
+    "currency_id": "1939626413661028353",
+    "symbol": "NODE",
+    "name": "NodeOps"
+  },
+  {
+    "currency_id": "1939877328782036994",
+    "symbol": "FRAG",
+    "name": "Fragmetric"
+  },
+  {
+    "currency_id": "1939898100671258625",
+    "symbol": "COINX",
+    "name": "Coinbase xStock"
+  },
+  {
+    "currency_id": "1939901402813116418",
+    "symbol": "NVDAX",
+    "name": "NVIDIA xStock"
+  },
+  {
+    "currency_id": "1939940864888745985",
+    "symbol": "CRCLX",
+    "name": "Circle xStock"
+  },
+  {
+    "currency_id": "1940038508219138050",
+    "symbol": "AAPLX",
+    "name": "Apple xStock"
+  },
+  {
+    "currency_id": "1940238898430205954",
+    "symbol": "METAX",
+    "name": "Meta xStock"
+  },
+  {
+    "currency_id": "1940279907367206913",
+    "symbol": "HOODX",
+    "name": "Robinhood xStock"
+  },
+  {
+    "currency_id": "1940599516650209282",
+    "symbol": "M",
+    "name": "MemeCore"
+  },
+  {
+    "currency_id": "1940608847159967746",
+    "symbol": "GOOGLX",
+    "name": "Alphabet xStock"
+  },
+  {
+    "currency_id": "1940642611474939906",
+    "symbol": "AMZNX ",
+    "name": "Amazon xStock"
+  },
+  {
+    "currency_id": "1940652650313015297",
+    "symbol": "ICNT",
+    "name": "Impossible Cloud Network Token"
+  },
+  {
+    "currency_id": "1941028266940854274",
+    "symbol": "CROSS",
+    "name": "CROSS"
+  },
+  {
+    "currency_id": "1941130055145119745",
+    "symbol": "TSLAX",
+    "name": "Tesla xStock"
+  },
+  {
+    "currency_id": "1942046080527892481",
+    "symbol": "QQQX",
+    "name": "Nasdaq xStock"
+  },
+  {
+    "currency_id": "1942050399443038209",
+    "symbol": "SPYX",
+    "name": "SP500 xStock"
+  },
+  {
+    "currency_id": "1942121818882076673",
+    "symbol": "MSTRX",
+    "name": "MicroStrategy xStock"
+  },
+  {
+    "currency_id": "1942127219329495042",
+    "symbol": "DFDVX",
+    "name": "DeFi Development Corp"
+  },
+  {
+    "currency_id": "1942408392807940098",
+    "symbol": "MCDX",
+    "name": "McDonald's xStock"
+  },
+  {
+    "currency_id": "1942858328563220481",
+    "symbol": "TANSSI",
+    "name": "Tanssi"
+  },
+  {
+    "currency_id": "1944614603784155137",
+    "symbol": "A47",
+    "name": "AGENDA 47"
+  },
+  {
+    "currency_id": "1944803565692538882",
+    "symbol": "C",
+    "name": "Chainbase"
+  },
+  {
+    "currency_id": "1944907752733888514",
+    "symbol": "PUMP",
+    "name": "Pump.fun"
+  },
+  {
+    "currency_id": "1945049630733701122",
+    "symbol": "TAC",
+    "name": "TAC"
+  },
+  {
+    "currency_id": "1945102949860790274",
+    "symbol": "ANI",
+    "name": "Ani Grok Companion"
+  },
+  {
+    "currency_id": "1945311323982671873",
+    "symbol": "ES",
+    "name": "Eclipse"
+  },
+  {
+    "currency_id": "1945718157612691458",
+    "symbol": "ERA",
+    "name": "Caldera"
+  },
+  {
+    "currency_id": "1946134076029677569",
+    "symbol": "RION",
+    "name": "Hyperion"
+  },
+  {
+    "currency_id": "1947183109030219777",
+    "symbol": "TA",
+    "name": "Trusta AI"
+  },
+  {
+    "currency_id": "1947888766519300097",
+    "symbol": "EGL1",
+    "name": "EGL1"
+  },
+  {
+    "currency_id": "1948582353462181890",
+    "symbol": "ASP",
+    "name": "Aspecta"
+  },
+  {
+    "currency_id": "1950036741853483009",
+    "symbol": "IKA",
+    "name": "Ika"
+  },
+  {
+    "currency_id": "1950039746892877826",
+    "symbol": "SPON",
+    "name": "Spheron Network"
+  },
+  {
+    "currency_id": "1950069971527151618",
+    "symbol": "NERO",
+    "name": "NERO Chain"
+  },
+  {
+    "currency_id": "1950079271279595522",
+    "symbol": "TREE",
+    "name": "Treehouse"
+  },
+  {
+    "currency_id": "1950463842517798914",
+    "symbol": "A2Z",
+    "name": "Arena-Z"
+  },
+  {
+    "currency_id": "1950841109294039042",
+    "symbol": "NAORIS",
+    "name": "Naoris Protocol"
+  },
+  {
+    "currency_id": "1952608430454947841",
+    "symbol": "TOWNS",
+    "name": "Towns"
+  },
+  {
+    "currency_id": "1952910604875546625",
+    "symbol": "PROVE",
+    "name": "Succinct"
+  },
+  {
+    "currency_id": "1953707260893011969",
+    "symbol": "K",
+    "name": "Sidekick"
+  },
+  {
+    "currency_id": "1955810079472451585",
+    "symbol": "BFUSD",
+    "name": "BFUSD"
+  },
+  {
+    "currency_id": "1958363629318176769",
+    "symbol": "SAPIEN",
+    "name": "Sapien"
+  },
+  {
+    "currency_id": "1958370998781607937",
+    "symbol": "YZY",
+    "name": "YZY MONEY"
+  },
+  {
+    "currency_id": "1960540365211975682",
+    "symbol": "CAMP",
+    "name": "Camp Network"
+  },
+  {
+    "currency_id": "1961396045614239746",
+    "symbol": "MITO",
+    "name": "Mitosis"
+  },
+  {
+    "currency_id": "1961669775839346690",
+    "symbol": "BTR",
+    "name": "Bitlayer"
+  },
+  {
+    "currency_id": "1962347183957491713",
+    "symbol": "WLFI",
+    "name": "World Liberty Financial"
+  },
+  {
+    "currency_id": "1962783647049056258",
+    "symbol": "Q",
+    "name": "Quack AI"
+  },
+  {
+    "currency_id": "1962868580978552834",
+    "symbol": "SOMI",
+    "name": "Somnia"
+  },
+  {
+    "currency_id": "1963116949030588417",
+    "symbol": "PTB",
+    "name": "Portal To Bitcoin"
+  },
+  {
+    "currency_id": "1963437754519941122",
+    "symbol": "TAKE",
+    "name": "OVERTAKE"
+  },
+  {
+    "currency_id": "1963443829810790401",
+    "symbol": "ARIA",
+    "name": "Aria.AI"
+  },
+  {
+    "currency_id": "1963508447086247938",
+    "symbol": "U",
+    "name": "Union"
+  },
+  {
+    "currency_id": "1964942957117505538",
+    "symbol": "OPEN",
+    "name": "OpenLedger"
+  },
+  {
+    "currency_id": "1965277368561987586",
+    "symbol": "ART",
+    "name": "LiveArt"
+  },
+  {
+    "currency_id": "1965280338229018625",
+    "symbol": "AVNT",
+    "name": "Avantis"
+  },
+  {
+    "currency_id": "1965620304811999234",
+    "symbol": "LINEA",
+    "name": "Linea"
+  },
+  {
+    "currency_id": "1965654777887342594",
+    "symbol": "AIO",
+    "name": "OlaXBT"
+  },
+  {
+    "currency_id": "1965978838969303041",
+    "symbol": "HOLO",
+    "name": "Holoworld AI"
+  },
+  {
+    "currency_id": "1966397593961394177",
+    "symbol": "XPIN",
+    "name": "XPIN Network"
+  },
+  {
+    "currency_id": "1967467045026365441",
+    "symbol": "ZKC",
+    "name": "Boundless"
+  },
+  {
+    "currency_id": "1967824074017742850",
+    "symbol": "UB",
+    "name": "Unibase"
+  },
+  {
+    "currency_id": "1967855876886601729",
+    "symbol": "PORTALS",
+    "name": "Portals"
+  },
+  {
+    "currency_id": "1968146467707232257",
+    "symbol": "STBL",
+    "name": "STBL"
+  },
+  {
+    "currency_id": "1968513417417990145",
+    "symbol": "BARD",
+    "name": "Lombard"
+  },
+  {
+    "currency_id": "1968514401268490242",
+    "symbol": "AIA",
+    "name": "DeAgentAI"
+  },
+  {
+    "currency_id": "1969275774678269954",
+    "symbol": "ASTER",
+    "name": "Aster"
+  },
+  {
+    "currency_id": "1969991625149652994",
+    "symbol": "0G",
+    "name": "0G"
+  },
+  {
+    "currency_id": "1970003469278453762",
+    "symbol": "TRADOOR",
+    "name": "Tradoor"
+  },
+  {
+    "currency_id": "1970335652385587201",
+    "symbol": "BLESS",
+    "name": "Bless"
+  },
+  {
+    "currency_id": "1970361524514213890",
+    "symbol": "HEMI",
+    "name": "Hemi"
+  },
+  {
+    "currency_id": "1970365325646725121",
+    "symbol": "RIVER",
+    "name": "River"
+  },
+  {
+    "currency_id": "1970380833384636418",
+    "symbol": "XAN",
+    "name": "Anoma"
+  },
+  {
+    "currency_id": "1971051214005149697",
+    "symbol": "XPL",
+    "name": "Plasma"
+  },
+  {
+    "currency_id": "1971084534669611010",
+    "symbol": "COAI",
+    "name": "ChainOpera AI"
+  },
+  {
+    "currency_id": "1971411890825404417",
+    "symbol": "HANA",
+    "name": "Hana Network"
+  },
+  {
+    "currency_id": "1972180630116171778",
+    "symbol": "LIGHT",
+    "name": "Bitlight"
+  },
+  {
+    "currency_id": "1972180647988273153",
+    "symbol": "AKE",
+    "name": "Akedo"
+  },
+  {
+    "currency_id": "1972264136152784897",
+    "symbol": "GOATED",
+    "name": "GOAT Network"
+  },
+  {
+    "currency_id": "1972503537791299586",
+    "symbol": "FF",
+    "name": "Falcon Finance"
+  },
+  {
+    "currency_id": "1972867571813928961",
+    "symbol": "VFY",
+    "name": "zkVerify"
+  },
+  {
+    "currency_id": "1972898757666172930",
+    "symbol": "EDEN",
+    "name": "OpenEden"
+  },
+  {
+    "currency_id": "1975410890464423938",
+    "symbol": "2Z",
+    "name": "DoubleZero"
+  },
+  {
+    "currency_id": "1975411788244795393",
+    "symbol": "NOM",
+    "name": "Nomina"
+  },
+  {
+    "currency_id": "1975730282012950529",
+    "symbol": "币安人生",
+    "name": "币安人生"
+  },
+  {
+    "currency_id": "1976128552460156930",
+    "symbol": "SYND",
+    "name": "Syndicate"
+  },
+  {
+    "currency_id": "1976139746817441794",
+    "symbol": "EVAA",
+    "name": "EVAA Protocol"
+  },
+  {
+    "currency_id": "1976139895644946434",
+    "symbol": "LYN",
+    "name": "Everlyn"
+  },
+  {
+    "currency_id": "1976140024375017473",
+    "symbol": "GIGGLE",
+    "name": "Giggle Fund"
+  },
+  {
+    "currency_id": "1976291187305705474",
+    "symbol": "KLINK",
+    "name": "Klink Finance"
+  },
+  {
+    "currency_id": "1976297423862460418",
+    "symbol": "KGEN",
+    "name": "KGeN"
+  },
+  {
+    "currency_id": "1976527081573904386",
+    "symbol": "TRUTH",
+    "name": "Swarm Network"
+  },
+  {
+    "currency_id": "1976533661145714689",
+    "symbol": "4",
+    "name": "4"
+  },
+  {
+    "currency_id": "1977570495584235521",
+    "symbol": "P",
+    "name": "PoP Planet"
+  },
+  {
+    "currency_id": "1977571556835422209",
+    "symbol": "PIPE",
+    "name": "Pipe Network"
+  },
+  {
+    "currency_id": "1977933256844316673",
+    "symbol": "CLO",
+    "name": "Yei Finance"
+  },
+  {
+    "currency_id": "1977938892848041986",
+    "symbol": "ENSO",
+    "name": "Enso"
+  },
+  {
+    "currency_id": "1978297889672261633",
+    "symbol": "YB",
+    "name": "Yield Basis"
+  },
+  {
+    "currency_id": "1978376921317326850",
+    "symbol": "RECALL",
+    "name": "Recall"
+  },
+  {
+    "currency_id": "1978646706876399617",
+    "symbol": "LAB",
+    "name": "LAB"
+  },
+  {
+    "currency_id": "1979068906081636354",
+    "symbol": "ZBT",
+    "name": "ZEROBASE"
+  },
+  {
+    "currency_id": "1980101478317899777",
+    "symbol": "RVV",
+    "name": "Astra Nova"
+  },
+  {
+    "currency_id": "1980534881724350466",
+    "symbol": "BLUAI",
+    "name": "Bluwhale"
+  },
+  {
+    "currency_id": "1980897787170197505",
+    "symbol": "TURTLE",
+    "name": "Turtle"
+  },
+  {
+    "currency_id": "1981255232093675522",
+    "symbol": "CGN",
+    "name": "Cygnus"
+  },
+  {
+    "currency_id": "1981262849856704513",
+    "symbol": "MET",
+    "name": "Meteora"
+  },
+  {
+    "currency_id": "1981531681982357506",
+    "symbol": "APR",
+    "name": "aPriori"
+  },
+  {
+    "currency_id": "1982713046476103682",
+    "symbol": "ON",
+    "name": "Orochi Network"
+  },
+  {
+    "currency_id": "1982723243742171138",
+    "symbol": "AT",
+    "name": "APRO"
+  },
+  {
+    "currency_id": "1982796096614240258",
+    "symbol": "COMMON",
+    "name": "Common"
+  },
+  {
+    "currency_id": "1983425062062485505",
+    "symbol": "PIGGY",
+    "name": "Piggycell"
+  },
+  {
+    "currency_id": "1983434148011274241",
+    "symbol": "VELVET",
+    "name": "Velvet"
+  },
+  {
+    "currency_id": "1983443482697814017",
+    "symbol": "EAT",
+    "name": "375ai"
+  },
+  {
+    "currency_id": "1983806909454893057",
+    "symbol": "BOS",
+    "name": "BitcoinOS"
+  },
+  {
+    "currency_id": "1985317292070793218",
+    "symbol": "KITE",
+    "name": "Kite"
+  },
+  {
+    "currency_id": "1985579109850411010",
+    "symbol": "MMT",
+    "name": "Momentum"
+  },
+  {
+    "currency_id": "1985589405959868418",
+    "symbol": "BAY",
+    "name": "Marina Protocol"
+  },
+  {
+    "currency_id": "1985594290418061313",
+    "symbol": "BEAT",
+    "name": "Audiera"
+  },
+  {
+    "currency_id": "1986264788640731138",
+    "symbol": "TRUST",
+    "name": "Intuition"
+  },
+  {
+    "currency_id": "1986677773217693698",
+    "symbol": "UAI",
+    "name": "UnifAI Network"
+  },
+  {
+    "currency_id": "1986682867927150593",
+    "symbol": "FOLKS",
+    "name": "FOLKS"
+  },
+  {
+    "currency_id": "1987771603058528258",
+    "symbol": "CC",
+    "name": "Canton Network"
+  },
+  {
+    "currency_id": "1988083772820512769",
+    "symbol": "JCT",
+    "name": "Janction"
+  },
+  {
+    "currency_id": "1988120299460460546",
+    "symbol": "MON",
+    "name": "Monad"
+  },
+  {
+    "currency_id": "1988143146268819457",
+    "symbol": "ALLO",
+    "name": "Allora"
+  },
+  {
+    "currency_id": "1988489552290725889",
+    "symbol": "ELIZAOS",
+    "name": "ElizaOS"
+  },
+  {
+    "currency_id": "1989219707284549634",
+    "symbol": "PIEVERSE",
+    "name": "Pieverse"
+  },
+  {
+    "currency_id": "1991084261672947713",
+    "symbol": "GAIB",
+    "name": "GAIB"
+  },
+  {
+    "currency_id": "1991708403923947522",
+    "symbol": "BOB",
+    "name": "Build on Bitcoin"
+  },
+  {
+    "currency_id": "1993516954993512450",
+    "symbol": "IRYS",
+    "name": "Irys"
+  },
+  {
+    "currency_id": "1995726681366540290",
+    "symbol": "RLS",
+    "name": "Rayls"
+  },
+  {
+    "currency_id": "1995733198476902402",
+    "symbol": "GUA",
+    "name": "Superfortune"
+  },
+  {
+    "currency_id": "1996046930282516481",
+    "symbol": "VSN",
+    "name": "Vision"
+  },
+  {
+    "currency_id": "1996757473956855810",
+    "symbol": "ESPORTS",
+    "name": "Yooldo Games"
+  },
+  {
+    "currency_id": "1997927337797177346",
+    "symbol": "POWER",
+    "name": "Power Protocol"
+  },
+  {
+    "currency_id": "1998010703781912578",
+    "symbol": "STABLE",
+    "name": "Stable"
+  },
+  {
+    "currency_id": "1998266327176511489",
+    "symbol": "NIGHT",
+    "name": "Midnight"
+  },
+  {
+    "currency_id": "1998364523088662529",
+    "symbol": "WET",
+    "name": "HumidiFi"
+  },
+  {
+    "currency_id": "1999011602151960578",
+    "symbol": "ALMANAK",
+    "name": "Almanak"
+  },
+  {
+    "currency_id": "1999292005423009794",
+    "symbol": "US",
+    "name": "Talus Network"
+  },
+  {
+    "currency_id": "1999363651926720514",
+    "symbol": "CYS",
+    "name": "Cysic"
+  },
+  {
+    "currency_id": "1999367932247633922",
+    "symbol": "RAVE",
+    "name": "RaveDAO"
+  },
+  {
+    "currency_id": "2001123587744264194",
+    "symbol": "THQ",
+    "name": "Theoriq"
+  },
+  {
+    "currency_id": "2001188225270501377",
+    "symbol": "MAGMA",
+    "name": "Magma Finance"
+  },
+  {
+    "currency_id": "2001209183871664129",
+    "symbol": "SCOR",
+    "name": "Scor"
+  },
+  {
+    "currency_id": "2001476221958553602",
+    "symbol": "IR",
+    "name": "Infrared Finance"
+  },
+  {
+    "currency_id": "2001825760548048898",
+    "symbol": "VOOI",
+    "name": "VOOI"
+  },
+  {
+    "currency_id": "2001912982161821697",
+    "symbol": "ZKP",
+    "name": "zkPass"
+  },
+  {
+    "currency_id": "2004536132376752129",
+    "symbol": "BRL1",
+    "name": "BRL1"
+  },
+  {
+    "currency_id": "2005563817414696962",
+    "symbol": "COLLECT",
+    "name": "Collect on Fanable"
+  },
+  {
+    "currency_id": "2006159033781559298",
+    "symbol": "LIT",
+    "name": "Lighter"
+  },
+  {
+    "currency_id": "2008416449281462274",
+    "symbol": "BREV",
+    "name": "Brevis"
+  },
+  {
+    "currency_id": "2008424891036860418",
+    "symbol": "ESIM",
+    "name": "Depinsim"
+  },
+  {
+    "currency_id": "2008511404055851010",
+    "symbol": "WHITEWHALE",
+    "name": "The White Whale"
+  },
+  {
+    "currency_id": "2010585679565840385",
+    "symbol": "DN",
+    "name": "DeepNode"
+  },
+  {
+    "currency_id": "2010913361128517634",
+    "symbol": "U",
+    "name": "United Stables"
+  },
+  {
+    "currency_id": "2011627469662941185",
+    "symbol": "FOGO",
+    "name": "Fogo"
+  },
+  {
+    "currency_id": "2011976779325136898",
+    "symbol": "FUN",
+    "name": "Sport.fun"
+  },
+  {
+    "currency_id": "2013064688052625409",
+    "symbol": "ROLL",
+    "name": "RollX"
+  },
+  {
+    "currency_id": "2013088323998420994",
+    "symbol": "OWL",
+    "name": "Owlto Finance"
+  },
+  {
+    "currency_id": "2013565660115709953",
+    "symbol": "ELSA",
+    "name": "HeyElsa"
+  },
+  {
+    "currency_id": "2013795864182931457",
+    "symbol": "SKR",
+    "name": "Seeker"
+  },
+  {
+    "currency_id": "2014151045755543553",
+    "symbol": "我踏马来了",
+    "name": "我踏马来了"
+  },
+  {
+    "currency_id": "2014165072740818945",
+    "symbol": "ACU",
+    "name": "Acurast"
+  },
+  {
+    "currency_id": "2014228153805111298",
+    "symbol": "GWEI",
+    "name": "ETHGas"
+  },
+  {
+    "currency_id": "2014233616506568705",
+    "symbol": "SENT",
+    "name": "Sentient"
+  },
+  {
+    "currency_id": "2014340174586462210",
+    "symbol": "IMU",
+    "name": "Immunefi token"
+  },
+  {
+    "currency_id": "2014655786973331458",
+    "symbol": "SPACE",
+    "name": "Spacecoin"
+  },
+  {
+    "currency_id": "2015698082568814593",
+    "symbol": "PYBOBO",
+    "name": "Capybobo"
+  },
+  {
+    "currency_id": "2016042030062317569",
+    "symbol": "USAT",
+    "name": "USAT"
+  },
+  {
+    "currency_id": "2016068560160124930",
+    "symbol": "KGST",
+    "name": "Kyrgyz Som Stablecoin"
+  },
+  {
+    "currency_id": "2016366711698309121",
+    "symbol": "BIRB",
+    "name": "Moonbirds"
+  },
+  {
+    "currency_id": "2017166515588759554",
+    "symbol": "INTCX",
+    "name": "Intel xStock"
+  },
+  {
+    "currency_id": "2017756811234050050",
+    "symbol": "PENGUIN",
+    "name": "Nietzschean Penguin"
+  },
+  {
+    "currency_id": "2017760867904335874",
+    "symbol": "INX",
+    "name": "Infinex"
+  },
+  {
+    "currency_id": "2018245712159809538",
+    "symbol": "ZAMA",
+    "name": "Zama"
+  },
+  {
+    "currency_id": "2018545810597060609",
+    "symbol": "TRIA",
+    "name": "Tria"
+  },
+  {
+    "currency_id": "2018973405503963137",
+    "symbol": "ELON",
+    "name": "Echelon"
+  },
+  {
+    "currency_id": "2019595955930021890",
+    "symbol": "RNBW",
+    "name": "Rainbow"
+  },
+  {
+    "currency_id": "2021427380009254913",
+    "symbol": "UP",
+    "name": "Superform"
+  },
+  {
+    "currency_id": "2021745098207916033",
+    "symbol": "AZTEC",
+    "name": "Aztec"
+  },
+  {
+    "currency_id": "2021851745668788226",
+    "symbol": "ESP",
+    "name": "Espresso"
+  },
+  {
+    "currency_id": "2027300284139782145",
+    "symbol": "ROBO",
+    "name": "Fabric-Protocol"
+  },
+  {
+    "currency_id": "2030838316175142913",
+    "symbol": "OPN",
+    "name": "Opinion"
+  },
+  {
+    "currency_id": "2030843813670748161",
+    "symbol": "BSB",
+    "name": "Block Street"
+  },
+  {
+    "currency_id": "2030915822877888513",
+    "symbol": "LMTS",
+    "name": "Limitless"
+  },
+  {
+    "currency_id": "2034248879616696321",
+    "symbol": "KAT",
+    "name": "Katana"
+  },
+  {
+    "currency_id": "2036648965474754562",
+    "symbol": "PRL",
+    "name": "Perle"
+  },
+  {
+    "currency_id": "2038544696523624450",
+    "symbol": "BASED",
+    "name": "Based"
+  },
+  {
+    "currency_id": "2038874228162658305",
+    "symbol": "EDGE",
+    "name": "EdgeX"
+  },
+  {
+    "currency_id": "2039325656432791553",
+    "symbol": "MEZO",
+    "name": "MEZO"
+  },
+  {
+    "currency_id": "2039961394086170626",
+    "symbol": "Checkmate",
+    "name": "Checkmate"
+  },
+  {
+    "currency_id": "2042206644666634241",
+    "symbol": "OFC",
+    "name": "OneFootball Credits"
+  },
+  {
+    "currency_id": "2043887199245975554",
+    "symbol": "GENIUS",
+    "name": "Genius"
+  },
+  {
+    "currency_id": "2046416986494566402",
+    "symbol": "OPG",
+    "name": "OpenGradient"
+  },
+  {
+    "currency_id": "2046424151280410626",
+    "symbol": "CHIP",
+    "name": "CHIP"
+  },
+  {
+    "currency_id": "2046767062086012929",
+    "symbol": "DIEM",
+    "name": "DIEM"
+  },
+  {
+    "currency_id": "2046848714552332290",
+    "symbol": "AUDM",
+    "name": "Macropod"
+  },
+  {
+    "currency_id": "2047201818616197121",
+    "symbol": "TGBP",
+    "name": "Tokenised GBP"
+  },
+  {
+    "currency_id": "2047663060463337474",
+    "symbol": "BLEND",
+    "name": "Fluent"
+  },
+  {
+    "currency_id": "2049119424294260738",
+    "symbol": "PROS",
+    "name": "Pharos"
+  },
+  {
+    "currency_id": "2049645960108306433",
+    "symbol": "AI",
+    "name": "Gensyn"
+  },
+  {
+    "currency_id": "2049788097949806593",
+    "symbol": "MEGA",
+    "name": "MegaETH"
+  },
+  {
+    "currency_id": "2051178019050704898",
+    "symbol": "BILL",
+    "name": "Billions Network"
+  },
+  {
+    "currency_id": "2051952098825551874",
+    "symbol": "KAIO",
+    "name": "KAIO"
+  },
+  {
+    "currency_id": "2057321749754671105",
+    "symbol": "NEX",
+    "name": "Nexus"
+  },
+  {
+    "currency_id": "2059265428674940929",
+    "symbol": "CTR",
+    "name": "Citrea"
+  },
+  {
+    "currency_id": "2066431386923061250",
+    "symbol": "BP",
+    "name": "Backpack"
+  },
+  {
+    "currency_id": "2067595911531958274",
+    "symbol": "O",
+    "name": "o1.exchange"
+  },
+  {
+    "currency_id": "2069060028319866882",
+    "symbol": "ARX",
+    "name": "Arcium"
+  },
+  {
+    "currency_id": "2070000012909494273",
+    "symbol": "VERONA",
+    "name": "Verona"
+  },
+  {
+    "currency_id": "2074405172786036737",
+    "symbol": "Grove",
+    "name": "GROVE"
+  },
+  {
+    "currency_id": "2075498720716382209",
+    "symbol": "SLX",
+    "name": "SLX"
+  },
+  {
+    "currency_id": "2075500456057446401",
+    "symbol": "RE",
+    "name": "RE"
+  }
+]

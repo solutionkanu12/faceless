@@ -8,3 +8,5 @@ node_modules/
 *.zkey
 *.wasm
 circuits/build/
+contracts/cache/
+contracts/out/

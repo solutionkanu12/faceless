@@ -1,0 +1,1766 @@
+{
+  "day": "2026-07-18",
+  "merkleRoot": "0x1efbc5c62c7bbbef66528e224054d56836e54d2f43db90b87482ef2cdbf4782c",
+  "treeDepth": 8,
+  "leafCount": 256,
+  "currencies": {
+    "BTC": "1673723677362319866",
+    "ETH": "1673723677362319867",
+    "SOL": "1673723677362319875",
+    "BNB": "1673723677362319869",
+    "XRP": "1673723677362319871"
+  },
+  "daysPerCurrency": 50,
+  "leaves": [
+    {
+      "index": 0,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "7388438000000",
+      "timestamp": "1780099200000"
+    },
+    {
+      "index": 1,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "7367439000000",
+      "timestamp": "1780185600000"
+    },
+    {
+      "index": 2,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "7140890000000",
+      "timestamp": "1780272000000"
+    },
+    {
+      "index": 3,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6676083000000",
+      "timestamp": "1780358400000"
+    },
+    {
+      "index": 4,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6414275000000",
+      "timestamp": "1780444800000"
+    },
+    {
+      "index": 5,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6388599000000",
+      "timestamp": "1780531200000"
+    },
+    {
+      "index": 6,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6105647000000",
+      "timestamp": "1780617600000"
+    },
+    {
+      "index": 7,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6088462000000",
+      "timestamp": "1780704000000"
+    },
+    {
+      "index": 8,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6333201000000",
+      "timestamp": "1780790400000"
+    },
+    {
+      "index": 9,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6308599000000",
+      "timestamp": "1780876800000"
+    },
+    {
+      "index": 10,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6173000000000",
+      "timestamp": "1780963200000"
+    },
+    {
+      "index": 11,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6151099000000",
+      "timestamp": "1781049600000"
+    },
+    {
+      "index": 12,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6362599000000",
+      "timestamp": "1781136000000"
+    },
+    {
+      "index": 13,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6358001000000",
+      "timestamp": "1781222400000"
+    },
+    {
+      "index": 14,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6445801000000",
+      "timestamp": "1781308800000"
+    },
+    {
+      "index": 15,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6574645000000",
+      "timestamp": "1781395200000"
+    },
+    {
+      "index": 16,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6632874000000",
+      "timestamp": "1781481600000"
+    },
+    {
+      "index": 17,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6567501000000",
+      "timestamp": "1781568000000"
+    },
+    {
+      "index": 18,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6450940000000",
+      "timestamp": "1781654400000"
+    },
+    {
+      "index": 19,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6295801000000",
+      "timestamp": "1781740800000"
+    },
+    {
+      "index": 20,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6354391000000",
+      "timestamp": "1781827200000"
+    },
+    {
+      "index": 21,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6429801000000",
+      "timestamp": "1781913600000"
+    },
+    {
+      "index": 22,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6331199000000",
+      "timestamp": "1782000000000"
+    },
+    {
+      "index": 23,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6402001000000",
+      "timestamp": "1782086400000"
+    },
+    {
+      "index": 24,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6273457000000",
+      "timestamp": "1782172800000"
+    },
+    {
+      "index": 25,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6107799000000",
+      "timestamp": "1782259200000"
+    },
+    {
+      "index": 26,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "5979400000000",
+      "timestamp": "1782345600000"
+    },
+    {
+      "index": 27,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6009727000000",
+      "timestamp": "1782432000000"
+    },
+    {
+      "index": 28,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6002900000000",
+      "timestamp": "1782518400000"
+    },
+    {
+      "index": 29,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "5957701000000",
+      "timestamp": "1782604800000"
+    },
+    {
+      "index": 30,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6026021000000",
+      "timestamp": "1782691200000"
+    },
+    {
+      "index": 31,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "5862471000000",
+      "timestamp": "1782777600000"
+    },
+    {
+      "index": 32,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6002400000000",
+      "timestamp": "1782864000000"
+    },
+    {
+      "index": 33,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6156000000000",
+      "timestamp": "1782950400000"
+    },
+    {
+      "index": 34,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6258326000000",
+      "timestamp": "1783036800000"
+    },
+    {
+      "index": 35,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6314401000000",
+      "timestamp": "1783123200000"
+    },
+    {
+      "index": 36,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6365000000000",
+      "timestamp": "1783209600000"
+    },
+    {
+      "index": 37,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6404202000000",
+      "timestamp": "1783296000000"
+    },
+    {
+      "index": 38,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6336399000000",
+      "timestamp": "1783382400000"
+    },
+    {
+      "index": 39,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6229000000000",
+      "timestamp": "1783468800000"
+    },
+    {
+      "index": 40,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6323000000000",
+      "timestamp": "1783555200000"
+    },
+    {
+      "index": 41,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6416172000000",
+      "timestamp": "1783641600000"
+    },
+    {
+      "index": 42,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6381900000000",
+      "timestamp": "1783728000000"
+    },
+    {
+      "index": 43,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6378000000000",
+      "timestamp": "1783814400000"
+    },
+    {
+      "index": 44,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6233452000000",
+      "timestamp": "1783900800000"
+    },
+    {
+      "index": 45,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6504398000000",
+      "timestamp": "1783987200000"
+    },
+    {
+      "index": 46,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6475628000000",
+      "timestamp": "1784073600000"
+    },
+    {
+      "index": 47,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6383020000000",
+      "timestamp": "1784160000000"
+    },
+    {
+      "index": 48,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6393167000000",
+      "timestamp": "1784246400000"
+    },
+    {
+      "index": 49,
+      "symbol": "BTC",
+      "currencyId": "1673723677362319866",
+      "price": "6415000000000",
+      "timestamp": "1784332800000"
+    },
+    {
+      "index": 50,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "202244000000",
+      "timestamp": "1780099200000"
+    },
+    {
+      "index": 51,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "200701000000",
+      "timestamp": "1780185600000"
+    },
+    {
+      "index": 52,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "200673000000",
+      "timestamp": "1780272000000"
+    },
+    {
+      "index": 53,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "185984000000",
+      "timestamp": "1780358400000"
+    },
+    {
+      "index": 54,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "181305000000",
+      "timestamp": "1780444800000"
+    },
+    {
+      "index": 55,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "177077000000",
+      "timestamp": "1780531200000"
+    },
+    {
+      "index": 56,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "158340000000",
+      "timestamp": "1780617600000"
+    },
+    {
+      "index": 57,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "156969000000",
+      "timestamp": "1780704000000"
+    },
+    {
+      "index": 58,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "169051000000",
+      "timestamp": "1780790400000"
+    },
+    {
+      "index": 59,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "169049000000",
+      "timestamp": "1780876800000"
+    },
+    {
+      "index": 60,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "163952000000",
+      "timestamp": "1780963200000"
+    },
+    {
+      "index": 61,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "162159000000",
+      "timestamp": "1781049600000"
+    },
+    {
+      "index": 62,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "167346000000",
+      "timestamp": "1781136000000"
+    },
+    {
+      "index": 63,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "166641000000",
+      "timestamp": "1781222400000"
+    },
+    {
+      "index": 64,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "168118000000",
+      "timestamp": "1781308800000"
+    },
+    {
+      "index": 65,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "172562000000",
+      "timestamp": "1781395200000"
+    },
+    {
+      "index": 66,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "179613000000",
+      "timestamp": "1781481600000"
+    },
+    {
+      "index": 67,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "179299000000",
+      "timestamp": "1781568000000"
+    },
+    {
+      "index": 68,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "175060000000",
+      "timestamp": "1781654400000"
+    },
+    {
+      "index": 69,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "171111000000",
+      "timestamp": "1781740800000"
+    },
+    {
+      "index": 70,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "171119000000",
+      "timestamp": "1781827200000"
+    },
+    {
+      "index": 71,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "174108000000",
+      "timestamp": "1781913600000"
+    },
+    {
+      "index": 72,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "170694000000",
+      "timestamp": "1782000000000"
+    },
+    {
+      "index": 73,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "172819000000",
+      "timestamp": "1782086400000"
+    },
+    {
+      "index": 74,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "166713000000",
+      "timestamp": "1782172800000"
+    },
+    {
+      "index": 75,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "162217000000",
+      "timestamp": "1782259200000"
+    },
+    {
+      "index": 76,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "156784000000",
+      "timestamp": "1782345600000"
+    },
+    {
+      "index": 77,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "157868000000",
+      "timestamp": "1782432000000"
+    },
+    {
+      "index": 78,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "157399000000",
+      "timestamp": "1782518400000"
+    },
+    {
+      "index": 79,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "157196000000",
+      "timestamp": "1782604800000"
+    },
+    {
+      "index": 80,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "161307000000",
+      "timestamp": "1782691200000"
+    },
+    {
+      "index": 81,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "157201000000",
+      "timestamp": "1782777600000"
+    },
+    {
+      "index": 82,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "160958000000",
+      "timestamp": "1782864000000"
+    },
+    {
+      "index": 83,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "170057000000",
+      "timestamp": "1782950400000"
+    },
+    {
+      "index": 84,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "175821000000",
+      "timestamp": "1783036800000"
+    },
+    {
+      "index": 85,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "178064000000",
+      "timestamp": "1783123200000"
+    },
+    {
+      "index": 86,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "178565000000",
+      "timestamp": "1783209600000"
+    },
+    {
+      "index": 87,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "179956000000",
+      "timestamp": "1783296000000"
+    },
+    {
+      "index": 88,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "177145000000",
+      "timestamp": "1783382400000"
+    },
+    {
+      "index": 89,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "174354000000",
+      "timestamp": "1783468800000"
+    },
+    {
+      "index": 90,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "174516000000",
+      "timestamp": "1783555200000"
+    },
+    {
+      "index": 91,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "179685000000",
+      "timestamp": "1783641600000"
+    },
+    {
+      "index": 92,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "178776000000",
+      "timestamp": "1783728000000"
+    },
+    {
+      "index": 93,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "180680000000",
+      "timestamp": "1783814400000"
+    },
+    {
+      "index": 94,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "177672000000",
+      "timestamp": "1783900800000"
+    },
+    {
+      "index": 95,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "189187000000",
+      "timestamp": "1783987200000"
+    },
+    {
+      "index": 96,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "191786000000",
+      "timestamp": "1784073600000"
+    },
+    {
+      "index": 97,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "186471000000",
+      "timestamp": "1784160000000"
+    },
+    {
+      "index": 98,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "184193000000",
+      "timestamp": "1784246400000"
+    },
+    {
+      "index": 99,
+      "symbol": "ETH",
+      "currencyId": "1673723677362319867",
+      "price": "184378000000",
+      "timestamp": "1784332800000"
+    },
+    {
+      "index": 100,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8273000000",
+      "timestamp": "1780099200000"
+    },
+    {
+      "index": 101,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8244000000",
+      "timestamp": "1780185600000"
+    },
+    {
+      "index": 102,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8128000000",
+      "timestamp": "1780272000000"
+    },
+    {
+      "index": 103,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7423000000",
+      "timestamp": "1780358400000"
+    },
+    {
+      "index": 104,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7161000000",
+      "timestamp": "1780444800000"
+    },
+    {
+      "index": 105,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6888000000",
+      "timestamp": "1780531200000"
+    },
+    {
+      "index": 106,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6364000000",
+      "timestamp": "1780617600000"
+    },
+    {
+      "index": 107,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6220000000",
+      "timestamp": "1780704000000"
+    },
+    {
+      "index": 108,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6650000000",
+      "timestamp": "1780790400000"
+    },
+    {
+      "index": 109,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6682000000",
+      "timestamp": "1780876800000"
+    },
+    {
+      "index": 110,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6496000000",
+      "timestamp": "1780963200000"
+    },
+    {
+      "index": 111,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6319000000",
+      "timestamp": "1781049600000"
+    },
+    {
+      "index": 112,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6693000000",
+      "timestamp": "1781136000000"
+    },
+    {
+      "index": 113,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6682000000",
+      "timestamp": "1781222400000"
+    },
+    {
+      "index": 114,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6894000000",
+      "timestamp": "1781308800000"
+    },
+    {
+      "index": 115,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7128000000",
+      "timestamp": "1781395200000"
+    },
+    {
+      "index": 116,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7398000000",
+      "timestamp": "1781481600000"
+    },
+    {
+      "index": 117,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7352000000",
+      "timestamp": "1781568000000"
+    },
+    {
+      "index": 118,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7205000000",
+      "timestamp": "1781654400000"
+    },
+    {
+      "index": 119,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6971000000",
+      "timestamp": "1781740800000"
+    },
+    {
+      "index": 120,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6974000000",
+      "timestamp": "1781827200000"
+    },
+    {
+      "index": 121,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7322000000",
+      "timestamp": "1781913600000"
+    },
+    {
+      "index": 122,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7246000000",
+      "timestamp": "1782000000000"
+    },
+    {
+      "index": 123,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7195000000",
+      "timestamp": "1782086400000"
+    },
+    {
+      "index": 124,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6971000000",
+      "timestamp": "1782172800000"
+    },
+    {
+      "index": 125,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6811000000",
+      "timestamp": "1782259200000"
+    },
+    {
+      "index": 126,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "6772000000",
+      "timestamp": "1782345600000"
+    },
+    {
+      "index": 127,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7190000000",
+      "timestamp": "1782432000000"
+    },
+    {
+      "index": 128,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7050000000",
+      "timestamp": "1782518400000"
+    },
+    {
+      "index": 129,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7138000000",
+      "timestamp": "1782604800000"
+    },
+    {
+      "index": 130,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7516000000",
+      "timestamp": "1782691200000"
+    },
+    {
+      "index": 131,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7367000000",
+      "timestamp": "1782777600000"
+    },
+    {
+      "index": 132,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7746000000",
+      "timestamp": "1782864000000"
+    },
+    {
+      "index": 133,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8073000000",
+      "timestamp": "1782950400000"
+    },
+    {
+      "index": 134,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8234000000",
+      "timestamp": "1783036800000"
+    },
+    {
+      "index": 135,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8180000000",
+      "timestamp": "1783123200000"
+    },
+    {
+      "index": 136,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8159000000",
+      "timestamp": "1783209600000"
+    },
+    {
+      "index": 137,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8194000000",
+      "timestamp": "1783296000000"
+    },
+    {
+      "index": 138,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "8058000000",
+      "timestamp": "1783382400000"
+    },
+    {
+      "index": 139,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7783000000",
+      "timestamp": "1783468800000"
+    },
+    {
+      "index": 140,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7804000000",
+      "timestamp": "1783555200000"
+    },
+    {
+      "index": 141,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7813000000",
+      "timestamp": "1783641600000"
+    },
+    {
+      "index": 142,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7679000000",
+      "timestamp": "1783728000000"
+    },
+    {
+      "index": 143,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7692000000",
+      "timestamp": "1783814400000"
+    },
+    {
+      "index": 144,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7501000000",
+      "timestamp": "1783900800000"
+    },
+    {
+      "index": 145,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7787000000",
+      "timestamp": "1783987200000"
+    },
+    {
+      "index": 146,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7729000000",
+      "timestamp": "1784073600000"
+    },
+    {
+      "index": 147,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7532000000",
+      "timestamp": "1784160000000"
+    },
+    {
+      "index": 148,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7504000000",
+      "timestamp": "1784246400000"
+    },
+    {
+      "index": 149,
+      "symbol": "SOL",
+      "currencyId": "1673723677362319875",
+      "price": "7483000000",
+      "timestamp": "1784332800000"
+    },
+    {
+      "index": 150,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "71874000000",
+      "timestamp": "1780099200000"
+    },
+    {
+      "index": 151,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "71055000000",
+      "timestamp": "1780185600000"
+    },
+    {
+      "index": 152,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "69310000000",
+      "timestamp": "1780272000000"
+    },
+    {
+      "index": 153,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "65069000000",
+      "timestamp": "1780358400000"
+    },
+    {
+      "index": 154,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "62063000000",
+      "timestamp": "1780444800000"
+    },
+    {
+      "index": 155,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60453000000",
+      "timestamp": "1780531200000"
+    },
+    {
+      "index": 156,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57222000000",
+      "timestamp": "1780617600000"
+    },
+    {
+      "index": 157,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57453000000",
+      "timestamp": "1780704000000"
+    },
+    {
+      "index": 158,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60444000000",
+      "timestamp": "1780790400000"
+    },
+    {
+      "index": 159,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60186000000",
+      "timestamp": "1780876800000"
+    },
+    {
+      "index": 160,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "59344000000",
+      "timestamp": "1780963200000"
+    },
+    {
+      "index": 161,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58653000000",
+      "timestamp": "1781049600000"
+    },
+    {
+      "index": 162,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60576000000",
+      "timestamp": "1781136000000"
+    },
+    {
+      "index": 163,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60383000000",
+      "timestamp": "1781222400000"
+    },
+    {
+      "index": 164,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60965000000",
+      "timestamp": "1781308800000"
+    },
+    {
+      "index": 165,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "61679000000",
+      "timestamp": "1781395200000"
+    },
+    {
+      "index": 166,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "61787000000",
+      "timestamp": "1781481600000"
+    },
+    {
+      "index": 167,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60494000000",
+      "timestamp": "1781568000000"
+    },
+    {
+      "index": 168,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "60163000000",
+      "timestamp": "1781654400000"
+    },
+    {
+      "index": 169,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57848000000",
+      "timestamp": "1781740800000"
+    },
+    {
+      "index": 170,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58142000000",
+      "timestamp": "1781827200000"
+    },
+    {
+      "index": 171,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58803000000",
+      "timestamp": "1781913600000"
+    },
+    {
+      "index": 172,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58423000000",
+      "timestamp": "1782000000000"
+    },
+    {
+      "index": 173,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "59015000000",
+      "timestamp": "1782086400000"
+    },
+    {
+      "index": 174,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57808000000",
+      "timestamp": "1782172800000"
+    },
+    {
+      "index": 175,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56467000000",
+      "timestamp": "1782259200000"
+    },
+    {
+      "index": 176,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56062000000",
+      "timestamp": "1782345600000"
+    },
+    {
+      "index": 177,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56764000000",
+      "timestamp": "1782432000000"
+    },
+    {
+      "index": 178,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "55720000000",
+      "timestamp": "1782518400000"
+    },
+    {
+      "index": 179,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "55107000000",
+      "timestamp": "1782604800000"
+    },
+    {
+      "index": 180,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "55952000000",
+      "timestamp": "1782691200000"
+    },
+    {
+      "index": 181,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "54652000000",
+      "timestamp": "1782777600000"
+    },
+    {
+      "index": 182,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "55044000000",
+      "timestamp": "1782864000000"
+    },
+    {
+      "index": 183,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "55896000000",
+      "timestamp": "1782950400000"
+    },
+    {
+      "index": 184,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57381000000",
+      "timestamp": "1783036800000"
+    },
+    {
+      "index": 185,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57537000000",
+      "timestamp": "1783123200000"
+    },
+    {
+      "index": 186,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58987000000",
+      "timestamp": "1783209600000"
+    },
+    {
+      "index": 187,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58601000000",
+      "timestamp": "1783296000000"
+    },
+    {
+      "index": 188,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57682000000",
+      "timestamp": "1783382400000"
+    },
+    {
+      "index": 189,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56866000000",
+      "timestamp": "1783468800000"
+    },
+    {
+      "index": 190,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56872000000",
+      "timestamp": "1783555200000"
+    },
+    {
+      "index": 191,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57543000000",
+      "timestamp": "1783641600000"
+    },
+    {
+      "index": 192,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57465000000",
+      "timestamp": "1783728000000"
+    },
+    {
+      "index": 193,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57391000000",
+      "timestamp": "1783814400000"
+    },
+    {
+      "index": 194,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56749000000",
+      "timestamp": "1783900800000"
+    },
+    {
+      "index": 195,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58187000000",
+      "timestamp": "1783987200000"
+    },
+    {
+      "index": 196,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "58055000000",
+      "timestamp": "1784073600000"
+    },
+    {
+      "index": 197,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57245000000",
+      "timestamp": "1784160000000"
+    },
+    {
+      "index": 198,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "56803000000",
+      "timestamp": "1784246400000"
+    },
+    {
+      "index": 199,
+      "symbol": "BNB",
+      "currencyId": "1673723677362319869",
+      "price": "57066000000",
+      "timestamp": "1784332800000"
+    },
+    {
+      "index": 200,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "134080000",
+      "timestamp": "1780099200000"
+    },
+    {
+      "index": 201,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "133300000",
+      "timestamp": "1780185600000"
+    },
+    {
+      "index": 202,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "129720000",
+      "timestamp": "1780272000000"
+    },
+    {
+      "index": 203,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "121170000",
+      "timestamp": "1780358400000"
+    },
+    {
+      "index": 204,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "120120000",
+      "timestamp": "1780444800000"
+    },
+    {
+      "index": 205,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "116880000",
+      "timestamp": "1780531200000"
+    },
+    {
+      "index": 206,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109780000",
+      "timestamp": "1780617600000"
+    },
+    {
+      "index": 207,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109340000",
+      "timestamp": "1780704000000"
+    },
+    {
+      "index": 208,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "115560000",
+      "timestamp": "1780790400000"
+    },
+    {
+      "index": 209,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "116830000",
+      "timestamp": "1780876800000"
+    },
+    {
+      "index": 210,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "113750000",
+      "timestamp": "1780963200000"
+    },
+    {
+      "index": 211,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109700000",
+      "timestamp": "1781049600000"
+    },
+    {
+      "index": 212,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "114280000",
+      "timestamp": "1781136000000"
+    },
+    {
+      "index": 213,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "113250000",
+      "timestamp": "1781222400000"
+    },
+    {
+      "index": 214,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "115070000",
+      "timestamp": "1781308800000"
+    },
+    {
+      "index": 215,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "118610000",
+      "timestamp": "1781395200000"
+    },
+    {
+      "index": 216,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "123820000",
+      "timestamp": "1781481600000"
+    },
+    {
+      "index": 217,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "121730000",
+      "timestamp": "1781568000000"
+    },
+    {
+      "index": 218,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "118680000",
+      "timestamp": "1781654400000"
+    },
+    {
+      "index": 219,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "114650000",
+      "timestamp": "1781740800000"
+    },
+    {
+      "index": 220,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "113590000",
+      "timestamp": "1781827200000"
+    },
+    {
+      "index": 221,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "114990000",
+      "timestamp": "1781913600000"
+    },
+    {
+      "index": 222,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "112480000",
+      "timestamp": "1782000000000"
+    },
+    {
+      "index": 223,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "112950000",
+      "timestamp": "1782086400000"
+    },
+    {
+      "index": 224,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "111030000",
+      "timestamp": "1782172800000"
+    },
+    {
+      "index": 225,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "107360000",
+      "timestamp": "1782259200000"
+    },
+    {
+      "index": 226,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "104350000",
+      "timestamp": "1782345600000"
+    },
+    {
+      "index": 227,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "104900000",
+      "timestamp": "1782432000000"
+    },
+    {
+      "index": 228,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "104750000",
+      "timestamp": "1782518400000"
+    },
+    {
+      "index": 229,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "104850000",
+      "timestamp": "1782604800000"
+    },
+    {
+      "index": 230,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "105900000",
+      "timestamp": "1782691200000"
+    },
+    {
+      "index": 231,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "104010000",
+      "timestamp": "1782777600000"
+    },
+    {
+      "index": 232,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "105300000",
+      "timestamp": "1782864000000"
+    },
+    {
+      "index": 233,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "108810000",
+      "timestamp": "1782950400000"
+    },
+    {
+      "index": 234,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "113480000",
+      "timestamp": "1783036800000"
+    },
+    {
+      "index": 235,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "115740000",
+      "timestamp": "1783123200000"
+    },
+    {
+      "index": 236,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "115720000",
+      "timestamp": "1783209600000"
+    },
+    {
+      "index": 237,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "114500000",
+      "timestamp": "1783296000000"
+    },
+    {
+      "index": 238,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "111200000",
+      "timestamp": "1783382400000"
+    },
+    {
+      "index": 239,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109080000",
+      "timestamp": "1783468800000"
+    },
+    {
+      "index": 240,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109320000",
+      "timestamp": "1783555200000"
+    },
+    {
+      "index": 241,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "110460000",
+      "timestamp": "1783641600000"
+    },
+    {
+      "index": 242,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "109670000",
+      "timestamp": "1783728000000"
+    },
+    {
+      "index": 243,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "108580000",
+      "timestamp": "1783814400000"
+    },
+    {
+      "index": 244,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "106750000",
+      "timestamp": "1783900800000"
+    },
+    {
+      "index": 245,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "111170000",
+      "timestamp": "1783987200000"
+    },
+    {
+      "index": 246,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "111330000",
+      "timestamp": "1784073600000"
+    },
+    {
+      "index": 247,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "108710000",
+      "timestamp": "1784160000000"
+    },
+    {
+      "index": 248,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "108900000",
+      "timestamp": "1784246400000"
+    },
+    {
+      "index": 249,
+      "symbol": "XRP",
+      "currencyId": "1673723677362319871",
+      "price": "108780000",
+      "timestamp": "1784332800000"
+    }
+  ]
+}
