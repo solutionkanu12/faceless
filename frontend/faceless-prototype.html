@@ -294,6 +294,18 @@
   .wallet-pill.clickable { cursor: pointer; transition: background 0.15s ease; }
   .wallet-pill.clickable:hover { background: rgba(20,23,15,0.05); }
 
+  /* minimal real dashboard read */
+  .my-indexes { margin-top: 40px; }
+  .my-indexes-count { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 26px; letter-spacing: -0.02em; margin-bottom: 16px; }
+  .my-index-row { display: flex; justify-content: space-between; align-items: center; gap: 14px; padding: 14px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); margin-bottom: 10px; flex-wrap: wrap; }
+  .my-index-row .min-name { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 14px; }
+  .my-index-row .min-return { font-family: 'Space Mono', monospace; font-weight: 700; font-size: 13px; }
+  .my-index-row .min-return.up { color: var(--seal); }
+  .my-index-row .min-return.down { color: var(--clay); }
+  .my-index-row .min-tx { font-family: 'Space Mono', monospace; font-size: 11px; color: var(--ink-faint); margin-left: auto; }
+  .my-index-row .min-tx:hover { color: var(--seal); }
+  .my-index-empty { padding: 22px; text-align: center; color: var(--ink-soft); border: 1px dashed var(--line-strong); border-radius: 12px; font-size: 13.5px; }
+
   /* mint form */
   .mint-locked { margin-top: 40px; background: var(--card); border: 1px dashed var(--line-strong); border-radius: 16px; padding: 46px 30px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 18px; }
   .mint-locked p { color: var(--ink-soft); font-size: 15px; max-width: 380px; }
@@ -689,6 +701,69 @@ window.Faceless = (function () {
   function _setWalletAddress(address) {
     wallet.address = address || null;
     updateConnectedUI();
+    loadMyIndexes(wallet.address);
+  }
+
+  function escapeHtml(s) {
+    var div = document.createElement('div');
+    div.textContent = s == null ? '' : String(s);
+    return div.innerHTML;
+  }
+
+  // Minimal real dashboard read: real mints for the connected wallet,
+  // public select allowed by RLS. No fake rows, no placeholder counts.
+  function loadMyIndexes(address) {
+    var panel = document.getElementById('my-indexes-panel');
+    var countEl = document.getElementById('my-indexes-count');
+    var listEl = document.getElementById('my-indexes-list');
+    if (!panel || !countEl || !listEl) return;
+
+    if (!address) {
+      panel.style.display = 'none';
+      return;
+    }
+    panel.style.display = 'block';
+    countEl.textContent = 'loading real indexes...';
+    listEl.innerHTML = '';
+
+    var supabase = window.Faceless.getSupabaseClient ? window.Faceless.getSupabaseClient() : null;
+    if (!supabase) {
+      countEl.textContent = 'Supabase is not configured (frontend/supabase-config.js).';
+      return;
+    }
+
+    supabase
+      .from('mints')
+      .select('*')
+      .eq('wallet_address', address)
+      .order('created_at', { ascending: false })
+      .then(function (result) {
+        if (result.error) {
+          countEl.textContent = 'Could not load real indexes: ' + result.error.message;
+          return;
+        }
+        var rows = result.data || [];
+        countEl.textContent = rows.length + (rows.length === 1 ? ' sealed index' : ' sealed indexes');
+        if (rows.length === 0) {
+          listEl.innerHTML = '<div class="my-index-empty">No real mints yet for this wallet. Mint one below and it will show up here.</div>';
+          return;
+        }
+        listEl.innerHTML = rows.map(function (row) {
+          var pct = (row.claimed_return_bp / 100).toFixed(2) + '%';
+          var sign = row.is_negative ? '-' : '+';
+          var cls = row.is_negative ? 'down' : 'up';
+          var txHash = String(row.tx_hash);
+          var txShort = txHash.slice(0, 10) + '...' + txHash.slice(-6);
+          return '<div class="my-index-row">' +
+            '<span class="min-name">' + escapeHtml(row.index_name) + '</span>' +
+            '<span class="min-return ' + cls + '">' + sign + pct + '</span>' +
+            '<a class="min-tx" href="https://sepolia.etherscan.io/tx/' + txHash + '" target="_blank" rel="noopener noreferrer">' + txShort + '</a>' +
+            '</div>';
+        }).join('');
+      })
+      .catch(function (err) {
+        countEl.textContent = 'Could not load real indexes: ' + err.message;
+      });
   }
 
   function backToSite() { dashView.classList.remove('show'); siteView.classList.remove('hide'); window.scrollTo(0, 0); }
@@ -923,6 +998,7 @@ window.Faceless = (function () {
     getPriceSheet: function () { return priceSheet; },
     getAvailableDateRange: function () { return availableDates ? { min: availableDatesMin, max: availableDatesMax, count: availableDates.size } : null; },
     getWalletAddress: function () { return wallet.address; },
+    refreshMyIndexes: function () { loadMyIndexes(wallet.address); },
     _setWalletAddress: _setWalletAddress
   };
 })();
@@ -1584,6 +1660,7 @@ async function submitProof() {
         recordedEl.textContent = 'yes';
         recordedEl.className = 'sv true';
         console.log('[Faceless] Mint recorded to Supabase, confirmed row:', recordedMint);
+        if (window.Faceless.refreshMyIndexes) window.Faceless.refreshMyIndexes();
       } catch (recordErr) {
         console.error('[Faceless] Recording mint to Supabase failed:', recordErr);
         recordedEl.textContent = 'failed: ' + friendlyTxError(recordErr);
